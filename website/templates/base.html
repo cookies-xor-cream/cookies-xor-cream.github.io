@@ -3,9 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Arya</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
 </head>
 <body>
 	{% include "nav.html" %}
 	{% block page %} {% endblock %}
+	<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>

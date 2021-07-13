@@ -1,0 +1,23 @@
+body {
+	/* colour palette  */
+	--eerie-black: #141414;
+	--oxford-blue: #14213D;
+	--orange-web: #FCA311;
+	--platinum: #E5E5E5;
+	--ghost-white: #F5F5F5;
+
+	/* backup colour palette  */
+	--prussian-blue: #003049;
+	--maximum-red: #D62828;
+	--tangy-orange: #F77F00;
+	--firey-yellow: #FCBF49;
+	--lemon-meringue: #EAE2B7;
+
+	--bg-dark: var(--eerie-black);
+	--accent-dark: var(--oxford-blue);
+	--accent-light: var(--platinum);
+	--text-dark: var(--ghost-white);
+
+	background-color: var(--bg-dark);
+	color: var(--text-dark);
+}
