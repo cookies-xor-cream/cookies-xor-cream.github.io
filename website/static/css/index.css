@@ -26,6 +26,7 @@ body {
 	margin: 0;
 	padding: 0;
 
+	font-size: 16pt;
 	font-family: sans-serif;
 }
 
@@ -85,20 +86,44 @@ nav.top-nav a:hover {
 }
 
 hr.breaker {
-	height: 6px;
+	height: 0;
 	color: var(--platinum);
 	background-color: var(--platinum);
 	margin-bottom: 0;
 }
 
-/* page content */
+/* page header */
 
-.page-content-wrapper {
+.header-wrapper {
 	display: flex;
 	align-items: center;
+
+	height: 100%;
+
+	background-color: var(--eerie-black);
 }
 
-.page-content {
+h1.page-header {
+	font-size: 28pt;
+	background-color: inherit;
+
+	margin: 0;
+	margin-top: 24px;
+	padding: 16px;
+	padding-left: 42px;
+}
+
+/* page content */
+
+.content-wrapper {
+	display: flex;
+	align-items: center;
+
+	margin: 0;
+	padding: 0;
+}
+
+.content-block {
 	background-color: var(--eerie-black);
 
 	display: flex;
@@ -109,5 +134,7 @@ hr.breaker {
 
 	margin: auto;
 
-	padding: 26px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 60px;
 }

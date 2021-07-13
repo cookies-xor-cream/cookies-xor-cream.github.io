@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<title>Arya</title>
-	<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-</head>
+{% include "head.html" %}
 <body>
 	{% include "nav.html" %}
-	<div class="page-content-wrapper">
-		<div class="page-content">
+
+	<div class="header-wrapper">
+		<h1 class="page-header">
+			{% block pageheader %} {% endblock %}
+		</h1>
+	</div>
+
+	<div class="content-wrapper">
+		<div class="content-block">
 			{% block page %} {% endblock %}
 		</div>
 	</div>
