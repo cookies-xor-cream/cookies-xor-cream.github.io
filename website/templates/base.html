@@ -7,7 +7,12 @@
 </head>
 <body>
 	{% include "nav.html" %}
-	{% block page %} {% endblock %}
+	<div class="page-content-wrapper">
+		<div class="page-content">
+			{% block page %} {% endblock %}
+		</div>
+	</div>
+
 	<script src="{{ url_for('static', filename='js/index.js') }}"></script>
 </body>
 </html>

@@ -41,6 +41,8 @@ nav.top-nav {
 	margin: 0;
 	padding: 0;
 
+	margin-bottom: 4vw;
+
 	top: 0;
 	left: 0;
 }
@@ -71,13 +73,25 @@ nav.top-nav a:hover {
 	transform: scale(1.2);
 }
 
-.somecontent {
-	margin-left: 5vw;
-	margin-top: 5vh;
-	background-color: var(--platinum);
-	width: 85vw;
-	left: 5vw;
-	height: 120vh;
+hr.breaker {
+	height: 6px;
+	color: var(--eerie-black);
+	background-color: var(--eerie-black);
+}
 
-	padding: 20px;
+.page-content {
+	background-color: var(--platinum);
+
+	display: flex;
+	align-self: center;
+
+	width: 90%;
+	height: 100vw;
+
+	margin: auto;
+}
+
+.page-content-wrapper {
+	display: flex;
+	align-items: center;
 }
