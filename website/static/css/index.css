@@ -26,6 +26,7 @@ body {
 }
 
 
+/* nav stylings */
 nav.top-nav {
 	background-color: var(--platinum);
 	color: gray;
@@ -49,13 +50,19 @@ nav.top-nav {
 
 nav.top-nav ul {
 	list-style-type:  none;
+
 	display: inline-flex;
+	
+	align-content: flex-start;
+	justify-content: space-between;
+
+	position: relative;
 }
 
 nav.top-nav li {
 	margin-left: 20px;
 	margin-right: 20px;
-	height: 30pt;
+	height: 16pt;
 }
 
 nav.top-nav a {
@@ -64,8 +71,8 @@ nav.top-nav a {
 
 	display: inline-block;
 
-	transition-duration: 0.4s;
-	animation-duration: 0.4s;
+	transition-duration: 0.25s;
+	animation-duration: 0.25s;
 }
 
 nav.top-nav a:hover {
@@ -79,6 +86,7 @@ hr.breaker {
 	background-color: var(--eerie-black);
 }
 
+/* page content */
 .page-content {
 	background-color: var(--platinum);
 
@@ -86,7 +94,7 @@ hr.breaker {
 	align-self: center;
 
 	width: 90%;
-	height: 100vw;
+	height: 100vh;
 
 	margin: auto;
 }
