@@ -18,6 +18,66 @@ body {
 	--accent-light: var(--platinum);
 	--text-dark: var(--ghost-white);
 
-	background-color: var(--bg-dark);
-	color: var(--text-dark);
+	background-color: var(--eerie-black);
+	color: var(--bg-dark);
+
+	margin: 0;
+	padding: 0;
+}
+
+
+nav.top-nav {
+	background-color: var(--platinum);
+	color: gray;
+
+	font-size: 22pt;
+	font-style: italic;
+	
+	width: 100%;
+
+	position: sticky;
+	position: -webkit-sticky;
+
+	margin: 0;
+	padding: 0;
+
+	top: 0;
+	left: 0;
+}
+
+nav.top-nav ul {
+	list-style-type:  none;
+	display: inline-flex;
+}
+
+nav.top-nav li {
+	margin-left: 20px;
+	margin-right: 20px;
+	height: 30pt;
+}
+
+nav.top-nav a {
+	text-decoration: none;
+	color: inherit;
+
+	display: inline-block;
+
+	transition-duration: 0.4s;
+	animation-duration: 0.4s;
+}
+
+nav.top-nav a:hover {
+	color: var(--eerie-black);
+	transform: scale(1.2);
+}
+
+.somecontent {
+	margin-left: 5vw;
+	margin-top: 5vh;
+	background-color: var(--platinum);
+	width: 85vw;
+	left: 5vw;
+	height: 120vh;
+
+	padding: 20px;
 }
