@@ -30,6 +30,22 @@ body {
 	font-family: sans-serif;
 }
 
+/* general styling */
+
+h1, h2, h3, h4, h5, h6 {
+	color: var(--lemon-meringue);
+}
+
+a {
+	color: var(--firey-yellow);
+	text-decoration: none;
+
+	transition: 0.3s;
+}
+
+a:hover {
+	color: var(--lemon-meringue);
+}
 
 /* nav stylings */
 nav.top-nav {
@@ -88,10 +104,15 @@ nav.top-nav a:hover {
 }
 
 hr.breaker {
-	height: 0;
+	height: 1px;
 	color: var(--platinum);
 	background-color: var(--platinum);
 	margin-bottom: 0;
+
+	border-bottom-width: 6px;
+	border-bottom-color: var(--eerie-black);
+
+
 }
 
 /* page header */
@@ -128,7 +149,6 @@ h1.page-header {
 .content-block {
 	background-color: var(--eerie-black);
 
-	display: flex;
 	align-self: center;
 
 	width: 98%;
@@ -139,6 +159,7 @@ h1.page-header {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	padding-left: 60px;
+	padding-right: 60px;
 }
 
 /* contact page */
