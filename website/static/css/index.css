@@ -11,14 +11,14 @@ body {
 	--maximum-red: #D62828;
 	--tangy-orange: #F77F00;
 	--firey-yellow: #FCBF49;
-	--lemon-meringue: #EAE2B7;
+	--lemon-meringue: #EADD98;
 
 	--bg-dark: var(--eerie-black);
 	--accent-dark: var(--oxford-blue);
 	--accent-light: var(--platinum);
 	--text-dark: var(--ghost-white);
 
-	--ghastly-gray: gray;
+	--ghastly-gray: #BBBBBB;
 
 	background-color: var(--platinum);
 	color: var(--ghost-white);
@@ -40,11 +40,14 @@ a {
 	color: var(--firey-yellow);
 	text-decoration: none;
 
-	transition: 0.3s;
+	display: inline-block;
+
+	transition: 0.2s;
 }
 
 a:hover {
 	color: var(--lemon-meringue);
+	transform:  scale(103%);
 }
 
 /* nav stylings */
@@ -112,7 +115,8 @@ hr.breaker {
 	border-bottom-width: 6px;
 	border-bottom-color: var(--eerie-black);
 
-
+	transform: translateX(-10%);
+	width: 90%;
 }
 
 /* page header */
