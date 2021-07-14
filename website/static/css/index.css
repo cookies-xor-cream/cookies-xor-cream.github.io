@@ -51,6 +51,8 @@ nav.top-nav {
 
 	top: 0;
 	left: 0;
+
+	z-index: 500;
 }
 
 nav.top-nav ul {
@@ -137,4 +139,43 @@ h1.page-header {
 	padding-top: 8px;
 	padding-bottom: 8px;
 	padding-left: 60px;
+}
+
+/* contact page */
+
+ul.contact-list {
+
+}
+
+ul.contact-row {
+	list-style-type:  none;
+
+	display: grid;
+	
+	grid-template-columns: 80px repeat(2, 1fr);
+	margin-bottom: 18px;
+}
+
+ul.contact-row li {
+	align-self: center;
+}
+
+ul.contact-row li:first-child {
+	margin-right: 52px;
+}
+
+ul.contact-row li:nth-child(2) {
+	font-size: 18pt;
+}
+
+.contact-icon {
+	color: var(--);
+	transform: scale(2);
+	display: inline-block;
+	padding: 4px;
+	margin: 4px;
+}
+
+.fa-phone {
+	transform: scale(2) scaleX(-1);
 }
