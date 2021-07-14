@@ -27,7 +27,3 @@ def about():
 @app.route('/skills')
 def skills():
 	return render_template("skills/skills.html")
-
-@app.route('/resume')
-def resume():
-	return render_template("resume/resume.html")
