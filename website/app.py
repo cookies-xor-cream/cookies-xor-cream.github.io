@@ -24,6 +24,10 @@ def contact():
 def about():
 	return 'about'
 
+@app.route('/skills')
+def skills():
+	return 'skills'
+
 @app.route('/resume')
 def resume():
 	return 'resume'
