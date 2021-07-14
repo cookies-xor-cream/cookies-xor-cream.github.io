@@ -11,7 +11,7 @@ body {
 	--maximum-red: #D62828;
 	--tangy-orange: #F77F00;
 	--firey-yellow: #FCBF49;
-	--lemon-meringue: #EADD98;
+	--lemon-meringue: #eade9f;
 
 	--bg-dark: var(--eerie-black);
 	--accent-dark: var(--oxford-blue);
@@ -34,6 +34,12 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: var(--lemon-meringue);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+p {
+	margin-bottom: 42px;
 }
 
 a {
@@ -112,8 +118,14 @@ hr.breaker {
 	background-color: var(--platinum);
 	margin-bottom: 0;
 
+	box-sizing: content-box;
+
 	border-bottom-width: 6px;
 	border-bottom-color: var(--eerie-black);
+
+	border-right-color: var(--eerie-black);
+	border-top-right-radius: 2px;
+	border-bottom-right-radius: 2px;
 
 	transform: translateX(-10%);
 	width: 90%;
