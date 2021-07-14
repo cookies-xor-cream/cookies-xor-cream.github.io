@@ -10,7 +10,7 @@ def favicon():
 @app.route('/')
 @app.route('/home')
 def index():
-	return render_template("overview/overview.html")
+	return render_template("index/index.html")
 
 @app.route('/projects')
 def projects():
