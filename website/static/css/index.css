@@ -19,6 +19,7 @@ body {
 	--text-dark: var(--ghost-white);
 
 	--ghastly-gray: #BBBBBB;
+	--mine-gray: #303030;
 
 	background-color: var(--platinum);
 	color: var(--ghost-white);
@@ -211,4 +212,52 @@ ul.contact-row li:nth-child(2) {
 
 .fa-phone {
 	transform: scale(2) scaleX(-1);
+}
+
+/* projects */
+
+.project-wrapper {
+	display: grid;
+	box-sizing: border-box;
+
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: 800px 800px;
+}
+
+@media (max-width: 1200px) {
+	.project-wrapper {
+		grid-template-rows: 80vw 80vw;
+	}
+}
+
+.project {
+	border: 8px var(--lemon-meringue) double;
+	border-radius: 12px;
+	box-sizing: border-box;
+
+	background-color: var(--mine-gray);
+
+	padding: 24px;
+	margin: 12px;
+}
+
+.project:hover {
+	filter: brightness(110%);
+	transform: scale(1.01);
+	cursor: pointer;
+}
+
+.img-wrapper {
+	display: flex;
+	justify-content: center;
+
+	margin-bottom: 24px;
+}
+
+.project img {
+	width: 400px;
+	height: 400px;
+
+	margin: 0;
+	padding: 0;
 }
