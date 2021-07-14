@@ -14,7 +14,7 @@ def index():
 
 @app.route('/projects')
 def projects():
-	return 'projects'
+	return render_template("projects/projects.html")
 
 @app.route('/contact')
 def contact():
@@ -22,12 +22,12 @@ def contact():
 
 @app.route('/about')
 def about():
-	return 'about'
+	return render_template("about/about.html")
 
 @app.route('/skills')
 def skills():
-	return 'skills'
+	return render_template("skills/skills.html")
 
 @app.route('/resume')
 def resume():
-	return 'resume'
+	return render_template("resume/resume.html")
