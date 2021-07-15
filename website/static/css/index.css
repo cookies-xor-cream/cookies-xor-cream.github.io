@@ -21,7 +21,7 @@ body {
 	--ghastly-gray: #BBBBBB;
 	--mine-gray: #303030;
 
-	background-color: var(--platinum);
+	background-color: var(--eerie-black);
 	color: var(--ghost-white);
 
 	margin: 0;
@@ -29,6 +29,10 @@ body {
 
 	font-size: 16pt;
 	font-family: sans-serif;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 /* general styling */
@@ -175,7 +179,7 @@ h1.page-header {
 .content-block {
 	background-color: var(--eerie-black);
 
-	align-self: center;
+	justify-self: center;
 
 	width: 98%;
 	height: 100vh;
@@ -302,13 +306,14 @@ ul.contact-row li:nth-child(2) {
 
 .project h3 {
 	text-decoration: underline 2px;
+	padding-top: 2px;
 }
 
 .project p {
 	color: var(--ghost-white);
 	font-size: 14pt;
 
-	padding-top: 24px;
+	padding-top: 8px;
 }
 
 @media (max-width: 1280px) {
