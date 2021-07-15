@@ -2,27 +2,27 @@
 	{
 		"name": "DFT Outline Drawing",
 		"id": "0",
-		"short_description": "Aliqua commodo eiusmod in veniam mollit consequat ut dolor nisi elit pariatur do consequat est elit aliquip consequat sit et qui cupidatat. Ad aliqua dolore irure enim veniam minim ex incididunt nulla anim sed quis excepteur magna do nostrud.",
+		"short_description": "",
 		"description": [
-			"Fourier transform etc. Eu ea ea id enim ut quis amet in mollit exercitation quis est quis sit et excepteur labore deserunt aute consequat sit excepteur cupidatat officia amet sit non laborum nulla eu culpa dolor mollit in sed nostrud officia minim quis ut voluptate et nisi nulla consectetur cillum dolor consequat anim ex eu anim sunt proident eu excepteur ut aliquip consequat ut in eiusmod nostrud anim nisi excepteur laboris minim sint dolore fugiat incididunt nulla aute non ex amet deserunt deserunt dolor adipisicing duis dolore sunt fugiat anim ea pariatur esse officia et velit cillum officia in sed irure aute sunt sed labore dolor esse in commodo reprehenderit aliqua dolore consectetur duis in aliqua occaecat consectetur amet nostrud in magna eiusmod incididunt eu exercitation elit occaecat sit ut excepteur sunt dolore ut voluptate et incididunt et aliqua in consequat aliqua proident esse tempor do excepteur aute dolor dolor occaecat cillum nostrud quis aute anim. Est aliqua id irure dolore dolore mollit ex anim aliqua commodo fugiat laborum mollit id cupidatat irure eiusmod consectetur culpa dolor labore in sint est voluptate consectetur non anim nisi in aliquip nostrud culpa adipisicing in nostrud aliqua quis in aute ullamco eu officia consectetur reprehenderit dolor labore ut commodo ea elit eu mollit nostrud dolore esse enim esse dolor enim tempor commodo nisi proident velit ut ut voluptate amet excepteur incididunt est ex occaecat minim nisi mollit ad sint irure dolor in ex velit duis ut nisi dolore commodo fugiat elit quis nulla id id anim ex excepteur incididunt amet consectetur irure aute excepteur labore incididunt cillum velit duis ad velit qui exercitation reprehenderit aliquip occaecat reprehenderit dolore consectetur reprehenderit sunt in est ea eiusmod in adipisicing pariatur ea in elit. Elit proident et aliquip exercitation excepteur enim dolor excepteur esse culpa deserunt irure occaecat in id consequat veniam veniam veniam laborum aute elit magna nostrud nulla exercitation sed anim non sunt ea proident laboris consectetur eiusmod culpa deserunt aute dolore in minim mollit laboris in laboris aute cupidatat sed mollit ullamco non in anim ex officia est ex proident mollit ut anim ut ut sunt esse esse in veniam exercitation laborum labore ut exercitation nulla duis qui cupidatat et labore ea esse voluptate irure laboris enim dolor quis ea pariatur dolore nisi nisi ad reprehenderit nulla mollit aute ut amet eiusmod ut officia eiusmod eu deserunt aliquip voluptate pariatur labore officia aliqua magna officia adipisicing incididunt sint magna ex laborum in ut dolor laborum minim quis qui fugiat adipisicing tempor consectetur eiusmod reprehenderit ut adipisicing elit sit in ut dolore labore nisi reprehenderit dolore nostrud adipisicing aute qui incididunt sunt ex ex dolore cillum commodo ut eiusmod nulla ut magna et enim sunt adipisicing quis.",
+			
 		],
 		"vidsrc": "assets/project_demo_videos/wile_dft.mov"
 	},
 	{
 		"name": "Quadtree Image Compression",
 		"id": "1",
-		"short_description": "Aliquip dolor minim ad mollit sed officia ut aliqua irure in ad qui voluptate esse in ut sunt ut sunt cupidatat deserunt dolore aliquip anim deserunt consectetur ea nostrud aute excepteur fugiat deserunt excepteur adipisicing. Irure aute non occaecat do laboris aliqua et laboris quis et proident officia.",
+		"short_description": "",
 		"description": [
-			"Id est pariatur do eu veniam consectetur veniam ea enim aliquip in id pariatur non officia ut qui aliquip esse ut eu ex ea ex officia quis elit occaecat pariatur mollit reprehenderit et incididunt ex do nulla proident consectetur officia qui elit ex anim dolore ex excepteur in elit officia ut occaecat excepteur ex sit fugiat culpa veniam enim cillum cupidatat est commodo dolor officia sunt duis nulla ut in tempor irure qui occaecat consectetur labore id eiusmod consectetur eu velit labore sint est reprehenderit aliquip aliquip duis nulla ut elit ad laborum ad aute in deserunt mollit qui labore enim deserunt ex ad ex consequat enim quis pariatur sed et sit voluptate et qui officia excepteur mollit nostrud in irure tempor ut mollit exercitation velit dolore enim enim veniam anim laborum sint fugiat ut reprehenderit occaecat aliquip officia velit commodo eiusmod in sunt occaecat ea in est reprehenderit dolore eiusmod deserunt consequat et duis minim ut aute velit proident in qui ex ullamco nostrud deserunt in laboris velit laboris minim elit non pariatur qui adipisicing do in nostrud pariatur velit qui exercitation non. Occaecat excepteur ea veniam quis ea minim incididunt occaecat do voluptate veniam occaecat dolore occaecat consequat cillum laborum dolor et commodo sed commodo dolore quis do non aute deserunt deserunt ad labore laborum dolore est consectetur adipisicing irure sunt sit sunt fugiat tempor minim aute reprehenderit cillum in ut cillum reprehenderit minim et et sit duis cupidatat irure tempor irure dolore dolor nisi anim eiusmod elit culpa veniam nisi sint laboris dolore minim irure laboris laborum pariatur exercitation laborum occaecat elit voluptate officia dolore aliquip pariatur incididunt dolor consectetur id consectetur pariatur id ullamco consectetur do amet aute laborum elit ea tempor ea reprehenderit culpa excepteur enim eiusmod dolor labore laboris dolore in ullamco reprehenderit minim laborum est ullamco do anim laborum quis sint non esse tempor id do consequat dolor eu laborum enim non do velit ut fugiat in duis do consequat deserunt aliquip tempor reprehenderit ea amet minim cillum duis do ullamco est in in quis labore duis in voluptate enim deserunt eiusmod officia ut enim sed aute in laboris in nulla ullamco officia nostrud nisi nisi.",
+
 		],
 		"vidsrc": "assets/project_demo_videos/artorias_quadtree.mov"
 	},
 	{
 		"name": "Boids Simulation",
 		"id": "2",
-		"short_description": "Laborum adipisicing ut ut dolor dolor dolor sint exercitation excepteur elit officia pariatur mollit eu dolor sunt incididunt mollit in. Elit exercitation sint sunt ullamco velit adipisicing aliqua consectetur velit cillum id duis nisi est id sed.",
+		"short_description": "",
 		"description": [
-			"hello", "hello"	
+			
 		],
 		"vidsrc": "assets/project_demo_videos/boids_demo.mov"
 	}
