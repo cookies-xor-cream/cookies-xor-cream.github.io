@@ -2,6 +2,8 @@ import os
 from flask import render_template, url_for, send_from_directory
 from website import app
 
+import json
+
 @app.route('/favicon.ico')
 def favicon():
 	return send_from_directory(os.path.join(app.root_path, 'static'),
@@ -14,7 +16,11 @@ def index():
 
 @app.route('/projects')
 def projects_page():
-	return render_template("projects/projects.html")
+
+	projects_json = open('static/content/projects/projects.json',)
+	projects = json.load(projects_json)
+
+	return render_template("projects/projects.html", projects=projects)
 
 @app.route('/projects/<proj_id>')
 def project_showcase(proj_id):

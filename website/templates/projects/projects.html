@@ -9,22 +9,6 @@ Project Showcase
 https://imgur.com/YDlCGs8
 
 {% block page %}
-{%
-	set projects=[
-		{
-			"name": "DFT",
-			"id": "0",
-			"description": "Labore ut et esse incididunt occaecat eiusmod esse pariatur elit duis in cillum est incididunt tempor aliqua irure ut magna ut qui ullamco consectetur tempor culpa laboris exercitation esse ex dolor voluptate mollit occaecat do anim est dolore culpa laboris sed quis proident incididunt officia occaecat irure anim",
-			"imgsrc": "https://i.imgur.com/YDlCGs8.gif"
-		},
-		{
-			"name": "DFT",
-			"id": "1",
-			"description": "Fourier transform etc.",
-			"imgsrc": "https://i.imgur.com/YDlCGs8.gif"
-		}
-	]
-%}
 <div class="project-wrapper">
 	{% for project in projects %}
 		<a class="project" href="/projects/{{project.id}}">
