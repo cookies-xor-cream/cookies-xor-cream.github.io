@@ -299,7 +299,7 @@ ul.contact-row li:nth-child(2) {
 	margin: 12px;
 }
 
-.project > img {
+.project img {
 	display: flex;
 
 	max-width: 300px;
@@ -318,7 +318,7 @@ ul.contact-row li:nth-child(2) {
 		justify-content: center;
 	}
 
-	.img-wrapper > img {
+	.img-wrapper img {
 		display:  flex;
 	}
 }
