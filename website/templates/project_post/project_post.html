@@ -12,8 +12,12 @@
 		</video>
 	</div>
 
-	<p>
-		{{project.description}}
-	</p>
+	<div class="project-description">
+		{% for paragraph in project.description %}
+			<p>
+				{{paragraph}}
+			</p>
+		{% endfor %}
+	</div>
 </div>
 {% endblock %}
