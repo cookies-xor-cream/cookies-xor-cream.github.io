@@ -153,8 +153,8 @@ hr.breaker {
 
 @keyframes flash-fade {
 	0%   {opacity: 10%; display: flex}
-	10%  {opacity: 95%;}
-	80%  {opacity: 95%;}
+	8%  {opacity: 95%;}
+	70%  {opacity: 95%;}
 	100%  {opacity: 0%; display: none;}
 }
 
@@ -165,7 +165,7 @@ ul.flash {
 
 	color: var(--platinum);
 
-	animation: flash-fade 2s forwards;
+	animation: flash-fade 3s forwards;
 	
 	display: grid;
 	justify-content: center;
@@ -316,18 +316,14 @@ ul.contact-row li:nth-child(2) {
 
 	transition: 0.4s;
 
-	filter: brightness(100%);
-	animation-name: darken10;
-	animation-duration: 0.8s;
+	animation: darken10 0.8s forwards;
 }
 
 .project:hover {
 	transform: scale(1.01);
 	cursor: pointer;
 
-	filter: brightness(130%);
-	animation-name: lighten10;
-	animation-duration: 0.8s;
+	animation: lighten10 0.8s forwards;
 }
 
 .vid-wrapper {
