@@ -310,7 +310,7 @@ ul.contact-row li:nth-child(2) {
 	padding-top: 2px;
 }
 
-.project p {
+.project p, .project-post-wrapper p {
 	color: var(--ghost-white);
 	font-size: 14pt;
 
@@ -340,6 +340,11 @@ ul.contact-row li:nth-child(2) {
 
 /* project post pages */
 .project-post-wrapper video {
+	display: flex;
+	float: left;
+
 	max-width: 100%;
-	height: auto;
+	max-height: 80vh;
+
+	height: 100%;
 }
