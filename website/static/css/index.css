@@ -254,6 +254,8 @@ ul.contact-row li:nth-child(2) {
 	background-color: var(--mine-gray);
 
 	padding: 24px;
+	padding-top: 18px;
+
 	margin: 12px;
 
 	transform: scale(1);
