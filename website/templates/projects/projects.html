@@ -4,6 +4,10 @@
 Project Showcase
 {% endblock %}
 
+<blockquote class="imgur-embed-pub" lang="en" data-id="YDlCGs8" data-context="false" ><a href="//imgur.com/YDlCGs8"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+https://imgur.com/YDlCGs8
+
 {% block page %}
 <div class="project-wrapper">
 	{% for project in projects %}
@@ -13,8 +17,10 @@ Project Showcase
 			</h3>
 
 			<div class="project-overview">
-				<div class="img-wrapper">
-					<img src="{{project.imgsrc}}">
+				<div class="vid-wrapper">
+					<video draggable="false" playsinline="" autoplay="" loop="" class="">
+						<source src="{{url_for('static', filename=project.vidsrc)}}">
+					</video>
 				</div>
 
 				<p>

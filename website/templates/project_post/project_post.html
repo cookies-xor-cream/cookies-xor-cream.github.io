@@ -6,7 +6,9 @@
 
 {% block page %}
 <div class="project-post-wrapper">
-	<img src="{{project.imgsrc}}">
+	<video draggable="false" playsinline="" autoplay="" loop="" class="">
+		<source src="{{url_for('static', filename=project.vidsrc)}}">
+	</video>
 
 	<p>
 		{{project.description}}
