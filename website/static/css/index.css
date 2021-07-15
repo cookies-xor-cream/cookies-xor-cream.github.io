@@ -8,7 +8,7 @@ body {
 
 	/* backup colour palette  */
 	--prussian-blue: #003049;
-	--maximum-red: #D62828;
+	--maximum-red: #F52020;
 	--tangy-orange: #F77F00;
 	--firey-yellow: #FCBF49;
 	--lemon-meringue: #eade9f;
@@ -149,6 +149,52 @@ hr.breaker {
 	nav.top-nav a {
 		font-size: max(3vw, 14pt);
 	}
+}
+
+@keyframes flash-fade {
+	0%   {opacity: 10%; display: flex}
+	10%  {opacity: 95%;}
+	80%  {opacity: 95%;}
+	100%  {opacity: 0%; display: none;}
+}
+
+/* flash */
+ul.flash {
+	position: fixed;
+	width: 100%;
+
+	color: var(--platinum);
+
+	animation: flash-fade 2s forwards;
+	
+	display: grid;
+	justify-content: center;
+
+	list-style: none;
+
+	font-size: 18pt;
+	font-family: monospace;
+
+	z-index: 500;
+}
+
+ul.flash li {
+	border-color: var(--ghost-white);
+	background-color: var(--mine-gray);
+
+	text-align: center;
+
+	margin: 12px;
+	padding: 12px;
+
+	border-width: 6px;
+	border-style: double;
+	border-radius: 20px;
+}
+
+ul.flash li.danger {
+	color: var(--maximum-red);
+	border-color: var(--maximum-red);
 }
 
 /* page header */

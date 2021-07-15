@@ -1,5 +1,5 @@
 import os
-from flask import render_template, url_for, send_from_directory, redirect
+from flask import render_template, url_for, send_from_directory, redirect, flash
 from website import app
 
 import json
@@ -26,8 +26,6 @@ def project_showcase(proj_id):
 	projects_json = open('static/content/projects/projects.json',)
 	projects = json.load(projects_json)
 
-	print(projects)
-
 	project = (
 		list(
 			filter(
@@ -41,7 +39,9 @@ def project_showcase(proj_id):
 	print(project)
 
 	if project is None:
-		return redirect("/projects")
+		flash(f"There is no project with id={proj_id}!", 'danger')
+		flash(f"second test flash")
+		return redirect(url_for("projects_page"))
 
 	return render_template(f"project_post/project_post.html", project=project)
 
