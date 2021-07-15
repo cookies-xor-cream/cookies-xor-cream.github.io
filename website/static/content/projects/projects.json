@@ -3,27 +3,21 @@
 		"name": "DFT Outline Drawing",
 		"id": "0",
 		"short_description": "",
-		"description": [
-			
-		],
+		"description_url": "projects/descriptions/dft.html",
 		"vidsrc": "assets/project_demo_videos/wile_dft.mov"
 	},
 	{
 		"name": "Quadtree Image Compression",
 		"id": "1",
 		"short_description": "",
-		"description": [
-
-		],
+		"description_url": "projects/descriptions/quadtree.html",
 		"vidsrc": "assets/project_demo_videos/artorias_quadtree.mov"
 	},
 	{
 		"name": "Boids Simulation",
 		"id": "2",
 		"short_description": "",
-		"description": [
-			
-		],
+		"description_url": "/projects/descriptions/boids.html",
 		"vidsrc": "assets/project_demo_videos/boids_demo.mov"
 	}
 ]

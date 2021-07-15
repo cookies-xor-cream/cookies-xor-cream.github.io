@@ -13,11 +13,7 @@
 	</div>
 
 	<div class="project-description">
-		{% for paragraph in project.description %}
-			<p>
-				{{paragraph}}
-			</p>
-		{% endfor %}
+		{% include project.description_url %}
 	</div>
 </div>
 {% endblock %}
