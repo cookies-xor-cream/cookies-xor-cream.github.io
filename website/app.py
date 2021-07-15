@@ -13,8 +13,13 @@ def index():
 	return render_template("index/index.html")
 
 @app.route('/projects')
-def projects():
+def projects_page():
 	return render_template("projects/projects.html")
+
+@app.route('/projects/<proj_id>')
+def project_showcase(proj_id):
+	proj_id = int(proj_id)
+	return render_template("base.html")
 
 @app.route('/contact')
 def contact():

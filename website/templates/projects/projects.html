@@ -10,21 +10,32 @@ https://imgur.com/YDlCGs8
 
 {% block page %}
 {%
-	set projects=[{
-		"name": "DFT",
-		"description": "Fourier transform etc.",
-		"imgsrc": "https://i.imgur.com/YDlCGs8.gif"
-	}]
+	set projects=[
+		{
+			"name": "DFT",
+			"id": "0",
+			"description": "Fourier transform etc.",
+			"imgsrc": "https://i.imgur.com/YDlCGs8.gif"
+		},
+		{
+			"name": "DFT",
+			"id": "1",
+			"description": "Fourier transform etc.",
+			"imgsrc": "https://i.imgur.com/YDlCGs8.gif"
+		}
+	]
 %}
 <div class="project-wrapper">
 	{% for project in projects %}
-		<div class="project">
+		<a class="project" href="/projects/{{project.id}}">
+			<h3>
+				{{project.name}}
+			</h3>
 			<div class="img-wrapper">
 				<img src="{{project.imgsrc}}">
 			</div>
-			{{project.name}}
 			<br> {{project.description}}
-		</div>
+		</a>
 	{% endfor %}
 </div>
 {% endblock %}
