@@ -13,6 +13,8 @@ body {
 	--firey-yellow: #FCBF49;
 	--lemon-meringue: #eade9f;
 
+	--lime: #BFFF00;
+
 	--bg-dark: var(--eerie-black);
 	--accent-dark: var(--oxford-blue);
 	--accent-light: var(--platinum);
@@ -153,7 +155,7 @@ hr.breaker {
 
 @keyframes flash-fade {
 	0%   {opacity: 10%; display: flex}
-	8%  {opacity: 95%;}
+	40%  {opacity: 95%;}
 	70%  {opacity: 95%;}
 	100%  {opacity: 0%; display: none;}
 }
@@ -163,9 +165,11 @@ ul.flash {
 	position: fixed;
 	width: 100%;
 
+	top: 40px;
+
 	color: var(--platinum);
 
-	animation: flash-fade 3s forwards;
+	animation: flash-fade 2s forwards;
 	
 	display: grid;
 	justify-content: center;
@@ -195,6 +199,11 @@ ul.flash li {
 ul.flash li.danger {
 	color: var(--maximum-red);
 	border-color: var(--maximum-red);
+}
+
+ul.flash li.hint {
+	color: var(--lime);
+	border-color: var(--lime);
 }
 
 /* page header */

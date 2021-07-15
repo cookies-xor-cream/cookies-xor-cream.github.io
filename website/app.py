@@ -19,6 +19,8 @@ def projects_page():
 	projects_json = open('static/content/projects/projects.json',)
 	projects = json.load(projects_json)
 
+	flash("Click on a project to look at it in more detail!", 'hint')
+
 	return render_template("projects/projects.html", projects=projects)
 
 @app.route('/projects/<proj_id>')
