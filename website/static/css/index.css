@@ -49,10 +49,6 @@ p {
 	margin-bottom: 0px;
 }
 
-div > p:not(:first-child) {
-	margin-top: 12px;
-}
-
 a {
 	color: var(--firey-yellow);
 	text-decoration: none;
@@ -394,6 +390,19 @@ ul.contact-row li:nth-child(2) {
 }
 
 /* project post pages */
+.project-description h1,
+.project-description h2,
+.project-description h3,
+.project-description h4,
+.project-description h5,
+.project-description h6 {
+	margin-top: 22px;
+}
+
+.project-description p {
+	margin: 0;
+}
+
 .project-post-wrapper video {
 	display: flex;
 	float: left;
