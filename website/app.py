@@ -1,5 +1,5 @@
 import os
-from flask import render_template, url_for, send_from_directory
+from flask import render_template, url_for, send_from_directory, redirect
 from website import app
 
 import json
@@ -28,13 +28,20 @@ def project_showcase(proj_id):
 
 	print(projects)
 
-	project = list(
-		filter(
-			lambda proj: proj['id'] == proj_id,
-			projects
+	project = (
+		list(
+			filter(
+				lambda proj: proj['id'] == proj_id,
+				projects
+			)
 		)
+		+ [None]
 	)[0]
+
 	print(project)
+
+	if project is None:
+		return redirect("/projects")
 
 	return render_template(f"project_post/project_post.html", project=project)
 
