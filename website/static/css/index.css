@@ -232,11 +232,13 @@ ul.contact-row li:nth-child(2) {
 
 @keyframes lighten10 {
 	0%   {filter: brightness(100%);}
+	10%  {filter: brightness(100%);}
 	100% {filter: brightness(130%);}
 }
 
 @keyframes darken10 {
 	0%   {filter: brightness(130%);}
+	10%  {filter: brightness(100%);}
 	100% {filter: brightness(100%);}
 }
 
@@ -283,7 +285,7 @@ ul.contact-row li:nth-child(2) {
 	max-width: 400px;
 
 	margin: 12px;
-	margin-top: 22px;
+	margin-top: 0px;
 }
 
 .project img {
@@ -314,6 +316,8 @@ ul.contact-row li:nth-child(2) {
 		max-width: 100%;
 
 		justify-content: center;
+
+		margin-top: 18px;
 	}
 
 	.img-wrapper img {
