@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block heading %}
+{{project.name}}
+{% endblock %}
+
+{% block page %}
+<div class="project-post-wrapper">
+	<img src="{{project.imgsrc}}">
+
+	<p>
+		{{project.description}}
+	</p>
+</div>
+{% endblock %}

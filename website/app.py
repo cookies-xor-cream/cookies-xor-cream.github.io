@@ -16,7 +16,6 @@ def index():
 
 @app.route('/projects')
 def projects_page():
-
 	projects_json = open('static/content/projects/projects.json',)
 	projects = json.load(projects_json)
 
@@ -24,8 +23,20 @@ def projects_page():
 
 @app.route('/projects/<proj_id>')
 def project_showcase(proj_id):
-	proj_id = int(proj_id)
-	return render_template("base.html")
+	projects_json = open('static/content/projects/projects.json',)
+	projects = json.load(projects_json)
+
+	print(projects)
+
+	project = list(
+		filter(
+			lambda proj: proj['id'] == proj_id,
+			projects
+		)
+	)[0]
+	print(project)
+
+	return render_template(f"project_post/project_post.html", project=project)
 
 @app.route('/contact')
 def contact():
