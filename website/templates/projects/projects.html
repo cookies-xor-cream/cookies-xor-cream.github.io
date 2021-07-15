@@ -14,7 +14,7 @@ https://imgur.com/YDlCGs8
 		{
 			"name": "DFT",
 			"id": "0",
-			"description": "Fourier transform etc.",
+			"description": "Labore ut et esse incididunt occaecat eiusmod esse pariatur elit duis in cillum est incididunt tempor aliqua irure ut magna ut qui ullamco consectetur tempor culpa laboris exercitation esse ex dolor voluptate mollit occaecat do anim est dolore culpa laboris sed quis proident incididunt officia occaecat irure anim",
 			"imgsrc": "https://i.imgur.com/YDlCGs8.gif"
 		},
 		{
@@ -31,10 +31,16 @@ https://imgur.com/YDlCGs8
 			<h3>
 				{{project.name}}
 			</h3>
-			<div class="img-wrapper">
-				<img src="{{project.imgsrc}}">
+
+			<div class="project-overview">
+				<div class="img-wrapper">
+					<img src="{{project.imgsrc}}" align="left">
+				</div>
+
+				<p>
+					{{project.description}}
+				</p>
 			</div>
-			<br> {{project.description}}
 		</a>
 	{% endfor %}
 </div>
