@@ -281,14 +281,14 @@ ul.contact-row li:nth-child(2) {
 	grid-template-columns: repeat(2, 1fr);
 }
 
-@keyframes lighten20 {
+@keyframes lighten10 {
 	0%   {filter: brightness(100%);}
 	10%  {filter: brightness(100%);}
-	100% {filter: brightness(120%);}
+	100% {filter: brightness(110%);}
 }
 
-@keyframes darken20 {
-	0%   {filter: brightness(120%);}
+@keyframes darken10 {
+	0%   {filter: brightness(110%);}
 	10%  {filter: brightness(100%);}
 	100% {filter: brightness(100%);}
 }
@@ -313,14 +313,14 @@ ul.contact-row li:nth-child(2) {
 
 	transition: 0.4s;
 
-	animation: darken20 0.8s forwards;
+	animation: darken10 0.8s forwards;
 }
 
 .project:hover {
 	transform: scale(1.01);
 	cursor: pointer;
 
-	animation: lighten20 0.8s forwards;
+	animation: lighten10 0.8s forwards;
 }
 
 .vid-wrapper {
