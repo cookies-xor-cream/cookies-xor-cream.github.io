@@ -4,20 +4,27 @@
 		"id": "0",
 		"short_description": "Quis id in proident eu sunt ut cupidatat in veniam tempor aliquip dolore qui exercitation occaecat tempor consequat reprehenderit et cupidatat id sed.",
 		"description_url": "projects/descriptions/dft.html",
-		"vidsrc": "assets/project_demo_videos/wile_dft.mov"
+		"vidsrc": "assets/project_demo_videos/wile_dft"
 	},
 	{
 		"name": "Quadtree Image Compression",
 		"id": "1",
 		"short_description": "Lorem ipsum culpa irure consequat in ut deserunt adipisicing labore in labore adipisicing deserunt ut non irure sed esse nisi laborum adipisicing mollit sunt sint tempor minim cupidatat nulla sint magna sit enim esse ut officia exercitation magna non ut ullamco voluptate nulla tempor ex minim ea in veniam aute dolor ad aute mollit nostrud ut nulla mollit culpa incididunt laboris velit incididunt eu eiusmod ad commodo ullamco voluptate occaecat ullamco proident duis irure culpa mollit reprehenderit in pariatur reprehenderit aute sunt tempor id nisi laboris ullamco elit aute quis est fugiat do in excepteur dolore anim aliqua ex incididunt ex culpa tempor consequat ullamco minim officia duis tempor dolore nostrud veniam aute dolore consectetur duis magna laboris exercitation dolor esse ea excepteur magna tempor velit ut id ut excepteur dolor ut do cillum excepteur in incididunt eiusmod minim magna laboris tempor id ex occaecat sit eu nisi esse anim ea mollit et officia irure aliquip ut amet qui anim nisi aliqua labore non laboris commodo elit incididunt eiusmod esse duis proident nostrud sed laboris aute proident culpa proident et ut cupidatat ex duis elit incididunt aute excepteur deserunt sed.",
 		"description_url": "projects/descriptions/quadtree.html",
-		"vidsrc": "assets/project_demo_videos/artorias_quadtree.mov"
+		"vidsrc": "assets/project_demo_videos/artorias_quadtree"
 	},
 	{
 		"name": "Boids Simulation",
 		"id": "2",
 		"short_description": "Consequat non aliquip ex incididunt culpa sit eu qui nulla labore commodo anim ut ullamco qui ea ad ut voluptate aute in nostrud nisi dolore enim ut dolore et mollit dolor culpa tempor tempor ut in et velit.",
 		"description_url": "/projects/descriptions/boids.html",
-		"vidsrc": "assets/project_demo_videos/boids_demo.mov"
+		"vidsrc": "assets/project_demo_videos/boids_demo"
+	},
+	{
+		"name": "Maze Generator/Solver",
+		"id": "3",
+		"short_description": "Consequat non aliquip ex incididunt culpa sit eu qui nulla labore commodo anim ut ullamco qui ea ad ut voluptate aute in nostrud nisi dolore enim ut dolore et mollit dolor culpa tempor tempor ut in et velit.",
+		"description_url": "/projects/descriptions/mazejs.html",
+		"vidsrc": "assets/project_demo_videos/mazejs_gen"
 	}
 ]

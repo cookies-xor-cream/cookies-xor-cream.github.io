@@ -8,7 +8,8 @@
 <div class="project-post-wrapper">
 	<div class="vid-wrapper">
 		<video draggable="false" playsinline="" autoplay="" loop="" class="">
-			<source src="{{url_for('static', filename=project.vidsrc)}}">
+			<source src="{{url_for('static', filename=project.vidsrc)}}.webm">
+			<source src="{{url_for('static', filename=project.vidsrc)}}.mov">
 		</video>
 	</div>
 
