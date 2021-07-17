@@ -6,19 +6,14 @@ body {
 	--platinum: #E5E5E5;
 	--ghost-white: #F5F5F5;
 
-	/* backup colour palette  */
 	--prussian-blue: #003049;
-	--maximum-red: #F52020;
 	--tangy-orange: #F77F00;
 	--firey-yellow: #FCBF49;
-	--lemon-meringue: #eade9f;
 
-	--lime: #BFFF00;
-
-	--bg-dark: var(--eerie-black);
-	--accent-dark: var(--oxford-blue);
-	--accent-light: var(--platinum);
-	--text-dark: var(--ghost-white);
+	--golden-rod: #ebd85c;
+	--royal-purple: #c55ceb;
+	--crimson-blood: #eb5c82;
+	--vibrant-lime: #82eb5c;
 
 	--ghastly-gray: #BBBBBB;
 	--mine-gray: #303030;
@@ -40,13 +35,13 @@ body {
 /* general styling */
 
 h1, h2, h3, h4, h5, h6 {
-	color: var(--lemon-meringue);
+	color: var(--golden-rod);
 	margin-top: 0;
 	margin-bottom: 0;
 }
 
 a {
-	color: var(--firey-yellow);
+	color: var(--royal-purple);
 	text-decoration: none;
 
 	display: inline-block;
@@ -55,7 +50,8 @@ a {
 }
 
 a:hover {
-	color: var(--lemon-meringue);
+	/*color: var(--golden-rod);*/
+	filter: brightness(106%);
 	transform:  scale(102%);
 }
 
@@ -112,7 +108,7 @@ nav.top-nav a {
 
 nav.top-nav a:hover {
 	color: var(--platinum);
-	transform: scale(1.1);
+	transform: scale(1.05);
 }
 
 hr.breaker {
@@ -183,19 +179,19 @@ ul.flash li {
 	margin: 12px;
 	padding: 12px;
 
-	border-width: 6px;
-	border-style: double;
+	border-width: 2px;
+	border-style: solid;
 	border-radius: 20px;
 }
 
 ul.flash li.danger {
-	color: var(--maximum-red);
-	border-color: var(--maximum-red);
+	color: var(--crimson-blood);
+	border-color: var(--crimson-blood);
 }
 
 ul.flash li.hint {
-	color: var(--lime);
-	border-color: var(--lime);
+	color: var(--vibrant-lime);
+	border-color: var(--vibrant-lime);
 }
 
 /* page header */
@@ -302,7 +298,7 @@ ul.contact-row li:nth-child(2) {
 
 	height: auto;
 
-	border: 8px var(--lemon-meringue) double;
+	border: 2px var(--ghastly-gray) solid;
 	border-radius: 12px;
 	box-sizing: border-box;
 
