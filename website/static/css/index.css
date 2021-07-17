@@ -399,7 +399,7 @@ ul.contact-row li:nth-child(2) {
 	margin: 0;
 }
 
-.project-post-wrapper video {
+.project-post-wrapper .vid-wrapper video {
 	display: flex;
 	float: left;
 
