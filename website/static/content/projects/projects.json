@@ -26,5 +26,12 @@
 		"short_description": "Consequat non aliquip ex incididunt culpa sit eu qui nulla labore commodo anim ut ullamco qui ea ad ut voluptate aute in nostrud nisi dolore enim ut dolore et mollit dolor culpa tempor tempor ut in et velit.",
 		"description_url": "/projects/descriptions/mazejs.html",
 		"vidsrc": "assets/project_demo_videos/mazejs_gen"
+	},
+	{
+		"name": "Simple Graphics Engine",
+		"id": "4",
+		"short_description": "Consequat non aliquip ex incididunt culpa sit eu qui nulla labore commodo anim ut ullamco qui ea ad ut voluptate aute in nostrud nisi dolore enim ut dolore et mollit dolor culpa tempor tempor ut in et velit.",
+		"description_url": "/projects/descriptions/graphics_engine.html",
+		"vidsrc": "assets/project_demo_videos/cat_graphics_demo"
 	}
 ]
