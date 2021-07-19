@@ -443,3 +443,27 @@ ul.contact-row li:nth-child(2) {
 	border-radius: 12px;
 	background-color: black;
 }
+
+/* WIP page */
+.WIP-page {
+
+	display: inline-flex;
+	align-items: center;
+	/*justify-content: flex-start;*/
+	margin-top: 60px;
+
+}
+
+.WIP-page > i.fas {
+	margin-right: 40px;
+	color: var(--platinum);
+}
+
+.WIP-page > p > a {
+	color: var(--crimson-blood);
+}
+
+.WIP-page > p {
+	font-size: 24pt;
+	color: var(--ghost-white);
+}

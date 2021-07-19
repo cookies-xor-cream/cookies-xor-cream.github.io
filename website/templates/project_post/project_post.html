@@ -1,10 +1,18 @@
 {% extends "base.html" %}
 
 {% block heading %}
+{% if project.id != "0" %}
+{% include "projects/WIP.html" %}
+{% else %}
+
 {{project.name}}
+
+{% endif %}
 {% endblock %}
 
 {% block page %}
+{% if project.id != "0" %}
+{% else %}
 <div class="project-post-wrapper">
 	<div class="vid-wrapper">
 		<video draggable="false" playsinline="" autoplay="" loop="" class="">
@@ -17,4 +25,5 @@
 		{% include project.description_url %}
 	</div>
 </div>
+{% endif %}
 {% endblock %}
