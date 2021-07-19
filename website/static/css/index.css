@@ -36,8 +36,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
 	color: var(--golden-rod);
-	margin-top: 0;
-	margin-bottom: 0;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }
 
 a {
@@ -50,9 +50,19 @@ a {
 }
 
 a:hover {
-	/*color: var(--golden-rod);*/
 	filter: brightness(106%);
 	transform:  scale(102%);
+
+	cursor: pointer;
+}
+
+h2 ~ p, .content-block > p:first-child {
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+p ~ h2 {
+	margin-top: 36px;
 }
 
 /* nav stylings */
@@ -208,9 +218,9 @@ h1.page-header {
 	font-size: 28pt;
 	background-color: inherit;
 
-	margin: 0;
 	margin-top: 24px;
-	padding: 16px;
+	margin-bottom: 0;
+	padding-top: 16px;
 	padding-left: 42px;
 }
 
@@ -317,9 +327,6 @@ ul.contact-row li:nth-child(2) {
 }
 
 .project:hover {
-	transform: scale(1.01);
-	cursor: pointer;
-
 	animation: lighten10 0.8s forwards;
 }
 
@@ -395,6 +402,10 @@ ul.contact-row li:nth-child(2) {
 	margin: 0;
 }
 
+.project-post-wrapper h3 {
+	margin-bottom: 0;
+}
+
 .project-post-wrapper .vid-wrapper video {
 	display: flex;
 	float: left;
@@ -403,4 +414,23 @@ ul.contact-row li:nth-child(2) {
 	max-height: 80vh;
 
 	height: 100%;
+}
+
+/* gallery (on the home page) */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 16vw;
+	grid-gap: 36px;
+
+	margin-top: 36px;
+}
+
+.gallery-post {
+	display: flex;
+	padding: 4px;
+	box-sizing: border-box;
+	border: 3px solid var(--platinum);
+	border-radius: 12px;
+	background-color: black;
 }

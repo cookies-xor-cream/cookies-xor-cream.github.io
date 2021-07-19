@@ -1,0 +1,18 @@
+<h2>
+	Gallery
+</h2>
+
+<p>
+	Here's a little demo gallery of some projets I've worked on recently, click a video if you want to learn more about it.
+</p>
+
+<div class="gallery">
+{% for project in projects %}
+	<a class="gallery-post" href="/projects/{{project.id}}">
+		<video draggable="false" playsinline="" autoplay="" loop="" class="" width=100% style="display:grid">
+			<source src="{{url_for('static', filename=project.vidsrc)}}.webm">
+			<source src="{{url_for('static', filename=project.vidsrc)}}.mov">
+		</video>
+	</a>
+{% endfor %}
+</div>

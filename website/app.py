@@ -4,6 +4,12 @@ from website import app
 
 import json
 
+def get_projects():
+	projects_json = open('static/content/projects/projects.json',)
+	projects = json.load(projects_json)
+
+	return projects
+
 @app.route('/favicon.ico')
 def favicon():
 	return send_from_directory(os.path.join(app.root_path, 'static'),
@@ -12,12 +18,12 @@ def favicon():
 @app.route('/')
 @app.route('/home')
 def index():
-	return render_template("index/index.html")
+	projects = get_projects()
+	return render_template("index/index.html", projects=projects)
 
 @app.route('/projects')
 def projects_page():
-	projects_json = open('static/content/projects/projects.json',)
-	projects = json.load(projects_json)
+	projects = get_projects()
 
 	flash("Click on a project to look at it in more detail!", 'hint')
 
