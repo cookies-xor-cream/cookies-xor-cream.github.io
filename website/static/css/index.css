@@ -49,10 +49,19 @@ a {
 	transition: 0.2s;
 }
 
-a:hover {
+div > a:hover {
 	filter: brightness(106%);
 	transform:  scale(102%);
 
+	cursor: pointer;
+}
+
+p > a {
+	filter: brightness(130%);
+}
+
+p > a:hover {
+	filter: brightness(100%);
 	cursor: pointer;
 }
 

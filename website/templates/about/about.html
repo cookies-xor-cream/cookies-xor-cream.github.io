@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% from "macros/anchor.html" import anchor %}
 
 {% block heading %}
 About Me And This Site 
@@ -10,9 +11,9 @@ About Me And This Site
 </h2>
 
 <p>
-	I'm a student studying a Bachelor of Science (Computer Science/Data Science) at <a href="https://www.uwa.edu.au/home">UWA</a> who has a passion for all things computer science.
+	I'm a student studying a Bachelor of Science (Computer Science/Data Science) at {{ anchor(href="https://www.uwa.edu.au/home", text="UWA") }} who has a passion for all things computer science.
 	<br>
-	<br> I've been exploring side-projects for the past two years to suplement and spearhead my education. Most of my projects are documented on my <a href="https://github.com/Arithmetic-Overflow">Github</a> and here for anyone who's interested in reading up on my misadventures or giving my projects a try for themselves.
+	<br> I've been exploring side-projects for the past two years to suplement and spearhead my education. Most of my projects are documented on my {{ anchor(href="https://github.com/Arithmetic-Overflow", text="Github") }} and here for anyone who's interested in reading up on my misadventures or giving my projects a try for themselves.
 </p>
 
 <h2>
@@ -22,7 +23,7 @@ About Me And This Site
 <p>
 	I've always wanted to deploy and maintain my own website, even if it's just something small like a blog or place to showcase what I'm doing.
 	<br>
-	<br> Everything you see is built using <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a> (for the backend) and <a href="https://jinja.palletsprojects.com/en/3.0.x/">Jinja</a> templating (for the front-end. And it's all self-hosted on my <a href="https://www.raspberrypi.org/">Raspberry Pi</a>.
+	<br> Everything you see is built using {{ anchor( href="https://flask.palletsprojects.com/en/2.0.x/", text="Flask") }} (for the backend) and {{ anchor(href="https://jinja.palletsprojects.com/en/3.0.x/", text="Jinja" ) }} templating (for the front-end. And it's all self-hosted on my {{ anchor(href="https://www.raspberrypi.org/", text="Raspberry Pi") }}.
 	<br>
 	<br> Though self-hosting isn't the most reliable or robust solution it means that every problem I run into I have to solve myself and gives me first-hand experience and knowledge about web-development.
 	<br>

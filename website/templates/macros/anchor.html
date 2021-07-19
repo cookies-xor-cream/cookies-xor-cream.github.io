@@ -1,0 +1,9 @@
+{% macro anchor(href, text) -%}
+	<a
+		href="{{ href }}"
+		rel="noreferrer noopener"
+		target="_blank"
+	>
+		{{ text }}
+	</a>
+{%- endmacro -%}
