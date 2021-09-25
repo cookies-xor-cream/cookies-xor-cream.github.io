@@ -1,0 +1,17 @@
+@import "colors";
+
+a.projectCard {
+    background-color: white;
+    display: block;
+    height: 80px;
+    width: 100%;
+
+    text-decoration: none;
+    color: inherit;
+
+    > div {
+        background-color: $grey2;
+        height: 100%;
+        width: 100%;
+    }
+}

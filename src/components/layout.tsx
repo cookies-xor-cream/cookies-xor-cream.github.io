@@ -10,9 +10,9 @@ import { ReactNode } from "react";
 import PropTypes from "prop-types";
 import { useStaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import Navbar from "./navbar"
-import "./index.scss"
+import Header from "./header";
+import Navbar from "./navbar";
+import "./styles/index.scss";
 
 type Props = {
   children?: ReactNode[] | [];
