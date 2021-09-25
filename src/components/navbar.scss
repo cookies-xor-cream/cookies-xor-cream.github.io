@@ -1,7 +1,3 @@
-body {
-    background-color: #121212;
-}
-
 nav {
     position: sticky;
     top: 0;
@@ -10,13 +6,9 @@ nav {
     flex-direction: row;
     justify-content: flex-start;
 
+    background-color: $tan;
+
     z-index: 999;
-
-    // color: #edc1b1;
-    // color: #eee0b1;
-    // color: #ddedb1;
-
-    background-color: #eee0b1;
 
     height: 5em;
 
@@ -32,6 +24,8 @@ nav {
         margin: 0;
 
         height: 100%;
+
+        $translate-offset: -5%;
         
         li {
             display:flex;
@@ -57,7 +51,6 @@ nav {
             a {
                 font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
                 Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                // font-family: Arial, Helvetica, sans-serif;
                 font-weight: bold;
                 text-rendering: optimizeLegibility;
                 line-height: 0.8;
@@ -71,7 +64,7 @@ nav {
             }
 
             a:hover {
-                transform: translateY(-5%) scale($scale-grow);
+                transform: translateY($translate-offset) scale($scale-grow);
                 color: hsla(0, 0%, 0%, 0.9);
                 transition: transform $transition-duration, color $transition-duration;
             }
@@ -83,14 +76,16 @@ nav {
 
             width: 9em;
 
+            $upscale-base: 1.20;
+            $upscale-grow: 1.25;
+
             a {
-                // text-decoration: bold;
                 font-weight: bold;
-                transform: scale(1.2);
+                transform: scale($upscale-base);
             }
 
             a:hover {
-                transform: translateY(-5%) scale(1.25);
+                transform: translateY($translate-offset) scale($upscale-grow);
             }
         }
 
@@ -100,7 +95,7 @@ nav {
             div {
                 height: 100%;
                 
-                border-left: 2px #121212 solid;
+                border-left: 2px $black solid;
                 margin-right: 0;
             }
         }
