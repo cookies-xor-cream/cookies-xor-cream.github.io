@@ -1,0 +1,22 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "files.exclude": {
+            "**/.git": true,
+            "**/.DS_Store": true,
+            "**/*.js": { "when": "$(basename).ts" },
+            "**/**.js": { "when": "$(basename).tsx" },
+            "**/*.jsx": { "when": "$(basename).ts" },
+            "**/**.jsx": { "when": "$(basename).tsx" },
+            "gatsby*": true,
+            ".vscode": true,
+            ".cache": true,
+            "public": true,
+            "node_modules": true
+        }
+    }
+}
