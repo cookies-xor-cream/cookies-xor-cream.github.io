@@ -8,9 +8,16 @@
 import * as React from "react"
 import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, PageProps } from "gatsby"
 
-function Seo({ description, lang, meta, title }) {
+type Props = {
+  description: string | '',
+  lang: string | 'en',
+  meta: object[] | [],
+  title: string,
+}
+
+const Seo: React.FC<Props>  = ({ description, lang, meta, title }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
