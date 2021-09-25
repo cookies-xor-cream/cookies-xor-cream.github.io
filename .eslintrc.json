@@ -21,6 +21,6 @@
     ],
     "rules": {
         "quotes": ["warn", "double"],
-        
+        "indent": ["warn", "tab"]
     }
 }

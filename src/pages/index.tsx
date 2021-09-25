@@ -7,7 +7,7 @@ import Seo from "../components/seo"
 
 const IndexPage: React.FC = () => (
   <Layout>
-    <Seo title="Home" />
+    <Seo/>
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>

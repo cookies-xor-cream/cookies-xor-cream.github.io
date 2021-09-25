@@ -16,7 +16,7 @@ import "./index.scss"
 
 type Props = {
   children?: ReactNode[] | [];
-  currentPage: string | "";
+  currentPage?: string | "";
 }
 
 const Layout: React.FC<Props> = ({ children, currentPage }) => {
@@ -33,7 +33,6 @@ const Layout: React.FC<Props> = ({ children, currentPage }) => {
   return (
     <>
       <Navbar currentPage={currentPage} />
-      {/* <Header siteTitle={data.site.siteMetadata?.title || `Title`} /> */}
       <div
         style={{
           margin: `0 auto`,
@@ -47,9 +46,7 @@ const Layout: React.FC<Props> = ({ children, currentPage }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+          Built with Gatsby, React, and SASS
         </footer>
       </div>
     </>
