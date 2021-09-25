@@ -11,7 +11,7 @@ const Navbar: React.FC<Props> = ({ currentPage }) => (
         <ol>
             <li><a href="/">cookies-xor-cream</a></li>
             <li><div></div></li>
-            <li><a href="/"><i>Projects</i></a></li>
+            <li><a href="/projects"><i>Projects</i></a></li>
             <li><a href="/"><i>Contact</i></a></li>
             <li><a href="/"><i>About</i></a></li>
 

@@ -11,9 +11,9 @@ import { Helmet } from "react-helmet"
 import { useStaticQuery, graphql, PageProps } from "gatsby"
 
 type Props = {
-  description: string | '',
-  lang: string | 'en',
-  meta: object[] | [],
+  description?: string | '',
+  lang?: string | 'en',
+  meta?: object[] | [],
   title: string,
 }
 
