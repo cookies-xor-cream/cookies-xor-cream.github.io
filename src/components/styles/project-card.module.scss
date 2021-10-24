@@ -15,7 +15,7 @@ $transition-speed: 0.5s;
     row-gap: $gridgap;
 
     @include mobile {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     
     a.projectCard {
@@ -44,7 +44,11 @@ $transition-speed: 0.5s;
             color: black;
 
             > video {
-                max-width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                
+                width: 100%;
                 height: auto;
 
                 padding: $card-padding;

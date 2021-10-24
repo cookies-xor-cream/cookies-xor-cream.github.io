@@ -4,27 +4,26 @@ import { Link } from "gatsby";
 
 import * as styles from "./styles/project-card.module.scss";
 
-import test from "../videos/boids_demo.webm";
-
 type Props = {
-	projectDetails: Object;
+	projectDetails: {
+		vid: any,
+		title: string,
+		description: string,
+	};
 };
 	
 const ProjectCard: React.FC<Props> = ({ projectDetails }: Props) => (
 	<a href="/" className={styles.projectCard}>
 		<div>
 			<video autoPlay loop>
-				<source src={test} />
+				<source src={projectDetails.vid} />
 			</video>
 
 			<h2>
-				Boids
+				{projectDetails.title}
 			</h2>
 
-			<p>
-				Test
-				test
-			</p>
+			<p dangerouslySetInnerHTML={{__html: projectDetails.description}} />
 		</div>
 	</a>
 );
