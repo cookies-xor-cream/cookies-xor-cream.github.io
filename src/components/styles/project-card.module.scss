@@ -64,6 +64,7 @@ $transition-speed: 0.5s;
                 color: $tan;
 
                 text-decoration: underline;
+                text-decoration-thickness: 2px;
 
                 @include mobile {
                     padding: $mobile-card-padding;

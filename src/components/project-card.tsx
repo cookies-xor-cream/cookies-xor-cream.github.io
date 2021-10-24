@@ -13,7 +13,7 @@ type Props = {
 const ProjectCard: React.FC<Props> = ({ projectDetails }: Props) => (
 	<a href="/" className={styles.projectCard}>
 		<div>
-			<video draggable="false" playsinline="" autoplay="" loop="" class="">
+			<video autoPlay loop>
 				<source src={test} />
 			</video>
 
