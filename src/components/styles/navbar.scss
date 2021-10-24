@@ -1,102 +1,155 @@
-nav {
-    position: sticky;
-    top: 0;
-    
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+@import "colors";
+@import "media";
 
-    background-color: $tan;
-
-    z-index: 999;
-
-    height: 3em;
-
-    margin: 0;
-    margin-bottom: 2.0em;
-
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-
-    ol {
-        display: flex;
-        list-style: none;
-        margin: 0;
-
-        height: 100%;
-
-        $translate-offset: -5%;
+@include desktop {
+    nav {
+        position: sticky;
+        top: 0;
         
-        li {
-            display:flex;
-            align-items: center;
-
-            height: 100%;
-
-            padding-right: 0;
-            width: 5em;
-
-            $scale-grow: 1.03;
-            $transition-duration: 0.15s;
-
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        
+        background-color: $tan;
+        
+        z-index: 999;
+        
+        height: 3em;
+        
+        margin: 0;
+        margin-bottom: 2.0em;
+        
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        
+        ol {
+            display: flex;
+            list-style: none;
             margin: 0;
-
-            font-size: 1.2rem;
-
-            * {
-                display: flex;
-                align-self: center;
-            }
-
-            a {
-                font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-                Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-                font-weight: bold;
-                text-rendering: optimizeLegibility;
-                line-height: 0.8;
+            
+            height: 100%;
+            
+            $translate-offset: -5%;
+            
+            li {
+                display:flex;
+                align-items: center;
                 
-                text-decoration: none;
-                
-                transform: rotate(0) scale(1.0);
-                transition: transform $transition-duration, color $transition-duration;
-                
-                color: hsla(0, 0%, 0%, 0.6);
-            }
-
-            a:hover {
-                transform: translateY($translate-offset) scale($scale-grow);
-                color: hsla(0, 0%, 0%, 0.9);
-                transition: transform $transition-duration, color $transition-duration;
-            }
-        }
-
-        li:first-child {
-            margin-left: 1.5em;
-            margin-right: 1.5em;
-
-            width: 9em;
-
-            $upscale-base: 1.20;
-            $upscale-grow: 1.25;
-
-            a {
-                font-weight: bold;
-                transform: scale($upscale-base);
-            }
-
-            a:hover {
-                transform: translateY($translate-offset) scale($upscale-grow);
-            }
-        }
-
-        li:nth-child(2) {
-            width: 1.2em;
-
-            div {
                 height: 100%;
                 
-                border-left: 2px $black solid;
-                margin-right: 0;
+                padding-right: 0;
+                width: 5em;
+                
+                $scale-grow: 1.03;
+                $transition-duration: 0.15s;
+                
+                margin: 0;
+                
+                font-size: 1.2rem;
+                
+                * {
+                    display: flex;
+                    align-self: center;
+                }
+                
+                a {
+                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                    font-weight: bold;
+                    text-rendering: optimizeLegibility;
+                    line-height: 0.8;
+                    
+                    text-decoration: none;
+                    
+                    transform: rotate(0) scale(1.0);
+                    transition: transform $transition-duration, color $transition-duration;
+                    
+                    color: hsla(0, 0%, 0%, 0.6);
+                }
+                
+                a:hover {
+                    transform: translateY($translate-offset) scale($scale-grow);
+                    color: hsla(0, 0%, 0%, 0.9);
+                    transition: transform $transition-duration, color $transition-duration;
+                }
+            }
+            
+            li:first-child {
+                margin-left: 1.5em;
+                margin-right: 1.5em;
+                
+                width: 9em;
+                
+                $upscale-base: 1.20;
+                $upscale-grow: 1.25;
+                
+                a {
+                    font-weight: bold;
+                    transform: scale($upscale-base);
+                }
+                
+                a:hover {
+                    transform: translateY($translate-offset) scale($upscale-grow);
+                }
+            }
+            
+            li:nth-child(2) {
+                width: 1.2em;
+                
+                div {
+                    height: 100%;
+                    
+                    border-left: 2px $black solid;
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    nav {
+        background-color: $tan;
+
+        ol {
+            list-style: none;
+            display: grid;
+            grid-template-columns: min-content auto;
+            row-gap: 8px;
+            column-gap: 32px;
+
+            button {
+                background-color: transparent;
+                border: none;
+                width: 0;
+            }
+
+            li {
+                grid-column: 1 / 3;
+                align-items: center;
+                font-size: 1.25em;
+
+
+                a {
+                    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+                    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+                    font-weight: bold;
+                    text-rendering: optimizeLegibility;
+                    line-height: 0.8;
+                    
+                    text-decoration: none;
+                    
+                    color: hsla(0, 0%, 0%, 0.6);
+                }
+
+                &:first-child {
+                    grid-column: 1 / 2;
+                }
+                
+                &:nth-child(2) {
+                    font-size: 2em;
+                    grid-column: 2 / 3;
+                }
             }
         }
     }
