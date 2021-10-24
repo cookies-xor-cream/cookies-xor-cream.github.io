@@ -1,6 +1,8 @@
 @import "colors";
 
 $gridgap: 32px;
+$card-padding: 12px;
+$transition-speed: 0.5s;
 
 .projectGrid {
     display: grid;
@@ -10,19 +12,55 @@ $gridgap: 32px;
     column-gap: $gridgap;
     row-gap: $gridgap;
 
-    a.projectCard {
-        background-color: white;
-        display: grid;
-        height: 100%;
-        width: 100%;
     
+    a.projectCard {
+        display: grid;
+        min-height: 100%;
+        width: 100%;
+        
+        border-radius: 8px;
+        border-collapse: separate;
+        background-image: linear-gradient($tan, $pink);
+        
         text-decoration: none;
         color: inherit;
-    
+
+        transition: transform $transition-speed;
+        
+        &:hover {
+            transition: transform $transition-speed;
+            transform: scale(1.03);
+        }
+
         > div {
-            background-color: $grey2;
             height: 100%;
             width: 100%;
+
+            color: black;
+
+            > video {
+                max-width: 100%;
+                height: auto;
+
+                padding: $card-padding;
+            }
+
+            > h2 {
+                padding: $card-padding;
+                padding-bottom: 0;
+                padding-top: 0;
+                margin: 0;
+                color: black !important;
+
+                color: $tan;
+
+                text-decoration: underline;
+            }
+
+            > p {
+                padding: $card-padding;
+                margin: 0;
+            }
         }
     }
 }
