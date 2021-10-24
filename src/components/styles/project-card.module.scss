@@ -1,7 +1,9 @@
 @import "colors";
+@import "media";
 
 $gridgap: 32px;
 $card-padding: 12px;
+$mobile-card-padding: 4px;
 $transition-speed: 0.5s;
 
 .projectGrid {
@@ -12,6 +14,9 @@ $transition-speed: 0.5s;
     column-gap: $gridgap;
     row-gap: $gridgap;
 
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+    }
     
     a.projectCard {
         display: grid;
@@ -43,6 +48,10 @@ $transition-speed: 0.5s;
                 height: auto;
 
                 padding: $card-padding;
+
+                @include mobile {
+                    padding: $mobile-card-padding;
+                }
             }
 
             > h2 {
@@ -55,11 +64,19 @@ $transition-speed: 0.5s;
                 color: $tan;
 
                 text-decoration: underline;
+
+                @include mobile {
+                    padding: $mobile-card-padding;
+                }
             }
 
             > p {
                 padding: $card-padding;
                 margin: 0;
+
+                @include mobile {
+                    padding: $mobile-card-padding;
+                }
             }
         }
     }
