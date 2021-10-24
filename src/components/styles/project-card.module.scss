@@ -1,17 +1,28 @@
 @import "colors";
 
-a.projectCard {
-    background-color: white;
-    display: block;
-    height: 80px;
-    width: 100%;
+$gridgap: 32px;
 
-    text-decoration: none;
-    color: inherit;
+.projectGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(100px, max-content);
 
-    > div {
-        background-color: $grey2;
+    column-gap: $gridgap;
+    row-gap: $gridgap;
+
+    a.projectCard {
+        background-color: white;
+        display: grid;
         height: 100%;
         width: 100%;
+    
+        text-decoration: none;
+        color: inherit;
+    
+        > div {
+            background-color: $grey2;
+            height: 100%;
+            width: 100%;
+        }
     }
 }

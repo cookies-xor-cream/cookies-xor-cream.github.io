@@ -3,7 +3,8 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 
 import * as styles from "./styles/project-card.module.scss";
-type Props  = {
+
+type Props = {
 	projectDetails: Object;
 };
 	

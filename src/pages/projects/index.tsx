@@ -3,13 +3,24 @@ import { Link } from "gatsby";
 
 import Layout from "../../components/layout";
 import Seo from "../../components/seo";
-import ProjectCard from "../../components/project-card";
+import ProjectCardGrid from "../../components/project-card-grid";
+
+const pdl = [
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+  {},
+]
 
 const SecondPage: React.FC = () => (
   <Layout currentPage="projects">
     <Seo title="projects" />
     <h1>Projects</h1>
-    <ProjectCard />
+    <ProjectCardGrid projectDetailsList={pdl} />
   </Layout>
 )
 
