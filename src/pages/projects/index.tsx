@@ -16,27 +16,27 @@ const pdl = [
   {
     vid: DFTVid,
     title: "DFT",
-    description: "Bottom Text"
+    description: "Graphs the contours of an image via epicycles by using the discrete Fourier transform."
   },
   {
     vid: QuadVid,
     title: "Quadtree Compression",
-    description: "Bottom Text"
+    description: "Compresses an image by recursively decomposing areas of high colour deviation into four smaller sections"
   },
   {
     vid: BoidVid,
     title: "Boids",
-    description: "Bottom Text"
+    description: "Simulates bird-like or fish-like behaviours through three simple rules: separation, alignment, and cohesion. <br/><br/> An example of emergent behaviours."
   },
   {
     vid: MazeGenVid,
     title: "Maze Generator/Solver",
-    description: "Bottom Text"
+    description: "A program that generates and solves mazes using a variety of seemingly unrelated graph algorithms."
   },
   {
     vid: GraphicsVid,
     title: "Graphics Engine",
-    description: "Bottom Text"
+    description: "A rudimentary graphics engine that runs solely on 1 CPU thread, written to practice the mathematical foundations of graphics programming."
   },
 ]
 
