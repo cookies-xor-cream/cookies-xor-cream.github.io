@@ -1,11 +1,17 @@
 @import "colors";
 @import "media";
 
+nav {
+    border-bottom: 2px solid $black;
+    position: sticky;
+    top: 0;
+
+    // width: 100vw;
+    overflow: visible;
+}
+
 @include desktop {
     nav {
-        position: sticky;
-        top: 0;
-        
         display: flex;
         flex-direction: row;
         justify-content: flex-start;

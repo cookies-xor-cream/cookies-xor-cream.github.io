@@ -21,7 +21,7 @@ const pdl = [
   {
     vid: QuadVid,
     title: "Quadtree Compression",
-    description: "Compresses an image by recursively decomposing areas of high colour deviation into four smaller sections"
+    description: "Compresses an image by recursively decomposing areas of high deviation into four smaller sections."
   },
   {
     vid: BoidVid,
@@ -37,7 +37,7 @@ const pdl = [
     vid: GraphicsVid,
     title: "Graphics Engine",
     description: "A rudimentary graphics engine that runs solely on 1 CPU thread, written to practice the mathematical foundations of graphics programming."
-  },
+    },
 ]
 
 const SecondPage: React.FC = () => (

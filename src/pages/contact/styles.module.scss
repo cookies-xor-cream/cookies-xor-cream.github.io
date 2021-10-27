@@ -1,0 +1,24 @@
+ul.contact-list {
+    list-style: none;
+
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin: 0;
+
+        align-items: center;
+
+        li {
+            margin: 0;
+            font-weight: bold;
+
+            &:first-child {
+                width: 4em;
+            }
+        }
+    }
+}
