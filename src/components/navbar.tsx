@@ -8,8 +8,10 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 type Props  = {
 	currentPage: string | '/';
 };
-	
+
 const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
+	const paths = ["/projects", "/contact"];
+	
 	const mobileWidth = 768;
 	const isMobile = () => window.innerWidth < 768;
 
@@ -26,10 +28,6 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 		window.addEventListener('resize', onWindowResize);
 	});
 
-	const paths = ["/projects", "/contact"];
-	const activePath = paths.indexOf(`/${currentPage}`);
-	
-
 	return (
 		<nav>
 			<ol>
@@ -44,12 +42,19 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 
 				{((mobile && !open) || (!mobile)) &&
 					<>
-						{paths.map((path, i) => 
-							<li>
-								<a href={path} className={activePath == i ? "active-nav" : ""}>
-									<i>{`${path[1].toUpperCase()}${path.slice(2)}`}</i>
-								</a>
-							</li>
+						{paths.map(path => {
+							const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
+							const navItemClass = path.slice(1) === currentPage
+								? "active-nav"
+								: "";
+							return (
+								<li>
+									<a href={path} className={navItemClass}>
+										<i>{navItemText}</i>
+									</a>
+								</li>
+							)
+						}
 						)}
 					</>
 				}
