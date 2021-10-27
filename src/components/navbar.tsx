@@ -9,7 +9,7 @@ type Props  = {
 		currentPage: string | '/';
 };
 	
-const Navbar: React.FC<Props> = ({ currentPage }) => {
+const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	const mobileWidth = 768;
 	const isMobile = () => window.innerWidth < 768;
 
