@@ -58,6 +58,7 @@ a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   transition: color 0.15s;
+  text-decoration: none;
 }
 a:active,
 a:hover {
@@ -277,6 +278,9 @@ h2 {
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
   line-height: 1.1;
+  color: $white;
+  text-decoration: underline;
+  text-decoration-color: $tan;
 }
 h3 {
   margin-left: 0;

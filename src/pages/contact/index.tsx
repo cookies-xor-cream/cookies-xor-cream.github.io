@@ -8,9 +8,6 @@ import * as styles from './styles.module.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCodeBranch, FaEnvelope, FaLinkedin } from 'react-icons/fa';
-// import {} from '@react'
-
-// const FaGithub = faEnvelope;
 
 const SecondPage: React.FC = () => (
   <Layout currentPage="contact">
