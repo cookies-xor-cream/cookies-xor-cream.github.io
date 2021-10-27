@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 type Props  = {
-		currentPage: string | '/';
+	currentPage: string | '/';
 };
 	
 const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
@@ -24,7 +24,11 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	
 	useEffect(() => {
 		window.addEventListener('resize', onWindowResize);
-	})
+	});
+
+	const paths = ["/projects", "/contact"];
+	const activePath = paths.indexOf(`/${currentPage}`);
+	
 
 	return (
 		<nav>
@@ -34,14 +38,19 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 					<FontAwesomeIcon size='2x' icon={faBars}></FontAwesomeIcon>
 				</button>
 				}
-				<li><a href="/">cookies-xor-cream</a></li>
+				<li><a href="/" className={currentPage == "/" ? "active-nav" : ""}>cookies-xor-cream</a></li>
 
 				{!mobile && <li><div></div></li>}
 
 				{((mobile && !open) || (!mobile)) &&
 					<>
-						<li><a href="/projects"><i>Projects</i></a></li>
-						<li><a href="/contact"><i>Contact</i></a></li>
+						{paths.map((path, i) => 
+							<li>
+								<a href={path} className={activePath == i ? "active-nav" : ""}>
+									<i>{`${path[1].toUpperCase()}${path.slice(2)}`}</i>
+								</a>
+							</li>
+						)}
 					</>
 				}
 			</ol>

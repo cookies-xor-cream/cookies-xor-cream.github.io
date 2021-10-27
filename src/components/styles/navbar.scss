@@ -6,8 +6,14 @@ nav {
     position: sticky;
     top: 0;
 
-    // width: 100vw;
     overflow: visible;
+
+    & .active-nav {
+        color: $black;
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+    }
 }
 
 @include desktop {
@@ -70,12 +76,12 @@ nav {
                     transform: rotate(0) scale(1.0);
                     transition: transform $transition-duration, color $transition-duration;
                     
-                    color: hsla(0, 0%, 0%, 0.6);
+                    color: $grey2;
                 }
                 
                 a:hover {
                     transform: translateY($translate-offset) scale($scale-grow);
-                    color: hsla(0, 0%, 0%, 0.9);
+                    color: $black;
                     transition: transform $transition-duration, color $transition-duration;
                 }
             }
@@ -87,7 +93,7 @@ nav {
                 width: 9em;
                 
                 $upscale-base: 1.20;
-                $upscale-grow: 1.25;
+                $upscale-grow: 1.23;
                 
                 a {
                     font-weight: bold;
@@ -145,7 +151,7 @@ nav {
                     
                     text-decoration: none;
                     
-                    color: hsla(0, 0%, 0%, 0.6);
+                    color: $grey2;
                 }
 
                 &:first-child {
