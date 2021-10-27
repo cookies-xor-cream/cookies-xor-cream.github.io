@@ -1,3 +1,5 @@
+@import "media";
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -55,10 +57,12 @@ a {
   color: $pink;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  transition: color 0.15s;
 }
 a:active,
 a:hover {
   outline-width: 0;
+  color: $red;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -601,14 +605,35 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} 
 
 footer {
   margin-top: 2rem;
 }
 
 .main {
-  margin: 0 auto;
   max-width: 960px;
+  margin: 0 auto;
   padding: 0 1.0875rem 1.45rem;
+}
+
+@include desktop {
+  h1 {
+    color: $black;
+    text-decoration-color: $grey2;
+  }
+
+  .wave {
+    z-index: -900;
+    position: absolute;
+    aspect-ratio: 16/9;
+    width: 100%;
+    background-image: url("../../images/waves/red-wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: top center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+  }
 }
