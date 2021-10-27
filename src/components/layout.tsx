@@ -33,19 +33,9 @@ const Layout: React.FC<Props> = ({ children, currentPage }) => {
   return (
     <>
       <Navbar currentPage={currentPage} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className="main">
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
+        <footer>
           Built with Gatsby, React, and SASS
         </footer>
       </div>

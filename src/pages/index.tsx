@@ -17,7 +17,6 @@ const IndexPage: React.FC = () => (
       quality={95}
       formats={["auto", "webp", "avif"]}
       alt="A Gatsby astronaut"
-      style={{ marginBottom: `1.45rem` }}
     />
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
