@@ -42,7 +42,6 @@ const Navbar: React.FC<Props> = ({ currentPage }) => {
 					<>
 						<li><a href="/projects"><i>Projects</i></a></li>
 						<li><a href="/contact"><i>Contact</i></a></li>
-						<li><a href="/about"><i>About</i></a></li>
 					</>
 				}
 			</ol>
