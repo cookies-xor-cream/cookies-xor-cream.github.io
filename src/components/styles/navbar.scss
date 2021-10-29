@@ -6,6 +6,8 @@ nav {
     position: sticky;
     top: 0;
 
+    background-color: $brown;
+
     overflow: visible;
 
     & .active-nav {
@@ -21,8 +23,6 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        
-        background-color: $tan;
         
         z-index: 999;
         
@@ -76,7 +76,7 @@ nav {
                     transform: rotate(0) scale(1.0);
                     transition: transform $transition-duration, color $transition-duration;
                     
-                    color: $grey2;
+                    color: $grey1;
                 }
                 
                 a:hover {
@@ -121,8 +121,6 @@ nav {
 
 @include mobile {
     nav {
-        background-color: $tan;
-
         ol {
             list-style: none;
             display: grid;
@@ -151,7 +149,7 @@ nav {
                     
                     text-decoration: none;
                     
-                    color: $grey2;
+                    color: $grey1;
                 }
 
                 &:first-child {

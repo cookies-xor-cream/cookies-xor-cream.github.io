@@ -36,9 +36,8 @@ $transition-speed: 0.5s;
         background-image: url("../../images/waves/project-card-wave.svg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: top center;
 
-        background-color: $pink;
+        background-color: $cream;
     
         &:hover {
             transition: transform $transition-speed;
