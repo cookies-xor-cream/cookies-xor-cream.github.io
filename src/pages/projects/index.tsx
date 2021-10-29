@@ -5,12 +5,12 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import ProjectCardGrid from "../../components/project-card-grid";
 
-import BoidVid from "../../videos/boids_demo.webm";
-import QuadVid from "../../videos/artorias_quadtree.webm";
-import GraphicsVid from "../../videos/cat_graphics_demo.webm";
-import MazeGenVid from "../../videos/mazejs_gen.webm";
-import MazeSolveVid from "../../videos/mazejs_solve.webm";
-import DFTVid from "../../videos/wile_dft.webm"
+import BoidVid from "/src/videos/boids_demo.webm";
+import QuadVid from "/src/videos/artorias_quadtree.webm";
+import GraphicsVid from "/src/videos/cat_graphics_demo.webm";
+import MazeGenVid from "/src/videos/mazejs_gen.webm";
+import MazeSolveVid from "/src/videos/mazejs_solve.webm";
+import DFTVid from "/src/videos/wile_dft.webm"
 
 const pdl = [
   {
