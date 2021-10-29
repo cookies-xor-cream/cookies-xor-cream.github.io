@@ -54,7 +54,7 @@ template {
   display: none;
 }
 a {
-  color: $pink;
+  color: $brown;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   transition: color 0.15s;
@@ -63,7 +63,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: $red;
+  color: $darker-brown;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
