@@ -76,7 +76,7 @@ nav {
                     transform: rotate(0) scale(1.0);
                     transition: transform $transition-duration, color $transition-duration;
                     
-                    color: $grey1;
+                    color: $grey2;
                 }
                 
                 a:hover {
@@ -149,7 +149,7 @@ nav {
                     
                     text-decoration: none;
                     
-                    color: $grey1;
+                    color: $grey2;
                 }
 
                 &:first-child {
