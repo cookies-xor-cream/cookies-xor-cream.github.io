@@ -2,17 +2,26 @@
 
 .project-post {
     h2 {
+        color: $cream;
         margin-top: 2em;
         margin-bottom: 0.25em;
     }
 
     h3 {
         margin-bottom: 0.25em;
-        color: $cream;
     }
 
     h2 + h3 {
         margin-top: 1em;
+    }
+
+    h3, h4, h5, h6 {
+        color: $tan;
+    }
+
+    h4 {
+        margin-bottom: 0.25em;
+        font-size: 16pt;
     }
 
     .project-video {
