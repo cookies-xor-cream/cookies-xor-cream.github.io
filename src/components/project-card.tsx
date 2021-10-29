@@ -9,11 +9,12 @@ type Props = {
 		vid: any,
 		title: string,
 		description: string,
+		href: string,
 	};
 };
 	
 const ProjectCard: React.FC<Props> = ({ projectDetails }: Props) => (
-	<a href="/" className={styles.projectCard}>
+	<a href={projectDetails.href} className={styles.projectCard}>
 		<div>
 			<video autoPlay loop>
 				<source src={projectDetails.vid} />
