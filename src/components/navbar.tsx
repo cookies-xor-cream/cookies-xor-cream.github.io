@@ -13,9 +13,9 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	const paths = ["/projects", "/contact"];
 	
 	const mobileWidth = 768;
-	const isMobile = () => window.innerWidth < 768;
+	const isMobile = () => window.innerWidth < mobileWidth;
 
-	const [mobile, setMobile] = useState<boolean>(isMobile());
+	const [mobile, setMobile] = useState<boolean>(false);
 	
 	const onWindowResize = () => {
 		setMobile(isMobile());
@@ -25,6 +25,7 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	const toggleOpen = () => setOpen(!open);
 	
 	useEffect(() => {
+		setMobile(isMobile);
 		window.addEventListener('resize', onWindowResize);
 	});
 
