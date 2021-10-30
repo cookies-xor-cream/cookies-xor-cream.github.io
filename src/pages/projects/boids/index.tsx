@@ -149,6 +149,50 @@ const IndexPage: React.FC = () => (
         <p>
             A pleasant side-effect of this approach however is that it causes the boids to have some more unique flourishes and gives depth to their behaviour.
         </p>
+
+        <h2>
+            Optimizations
+        </h2>
+
+        <p>
+            Naively checking for nearby boids runs in quadratic time, but the question is can we do better than O(N<sup>2</sup>)?
+        </p>
+
+        <h3>
+            Spatial Hashing
+        </h3>
+        <p>
+            Turns out that O(N) is possible! So how do we achieve it? Well it's quite simple with a concept known as spatial hashing. We will divide the screen into a set of grids and assign each boid to the grid that it's currently in. Now when doing neighbour lookups only nearby grid cells need to be checked for neighbouring boids.
+        </p>
+
+        <h3>
+            Quadtree
+        </h3>
+        <p>
+            While O(N log(N)) so technically slower than spatial hashing it is both much more interesting and works much better on sparse maps as it has a varying resolution. It defines non-uniform cells that the boids could be in and only searches for nearby boids from nearby cells.
+        </p>
+
+        <h4>
+            Structure of a Quadtree
+        </h4>
+        <p>
+            A quadtree is akin to a binary tree but with a branching factor of 4 as the name suggests. This gives a way to systematically partition two dimensional space: when there more than a certain number of boids in a region, split up the region into four quadrants, and recursively apply this process to each of the quadrants.
+        </p>
+
+        <p>
+            This means area of dense populations will be more densely represented in the tree, and areas that are sparse will be sparsely represented in the tree.
+        </p>
+        
+        <h4>
+            Generalizations
+        </h4>
+        <p>
+            A quadtree is fine for two dimensions where space can be partioned into four quadrants but what about three dimensional (or curiously: N-dimensional) space? In that case a 2<sup>N</sup>-ary tree will partition the space appropriately. As an example in three dimensional space you could use an <i>octree</i>.
+        </p>
+
+        <p>
+            Higher dimensions are of course not applicable to boid simulations but there are applications in fields such as data analysis and machine learning where they could be used as an alternative to data structures such as k-d trees for fast spacial partioning and lookups.
+        </p>
     </div>
   </Layout>
 )
