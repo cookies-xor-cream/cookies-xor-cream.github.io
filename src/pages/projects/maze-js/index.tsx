@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { navigate } from 'gatsby-link'
 
 const GraphicsEngine = () => {
-    navigate('/projects/project-not-implemented');
+    useEffect(() => {
+        navigate('/projects/project-not-implemented');
+    }, []);
     return null;
 }
 
