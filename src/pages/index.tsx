@@ -18,14 +18,12 @@ const IndexPage: React.FC = () => (
       I'm a second year computer science student at <a href="https://www.uwa.edu.au/">UWA</a> due to graduate at the end of 2022 and I'm working as a Jr Web Developer at <a href="https://league.agency/">The League Agency</a>/<a href="https://www.autoleague.com.au/">AutoLeague</a>.
     </p>
     <p>
-      Head over to <i>Projects</i> if you want to see some work I've done before (as well as related blog posts) and to <i>Contact</i> if you'd like to get in touch with me.
+      Head over to the <i>Projects</i> page if you want to see some work I've done before (as well as related blog posts) and to the <i>Contact</i> page if you'd like to get in touch with me.
     </p>
 
     <h2> Tech Stack </h2>
     <p>
-      This website is built to only have a front-end (not back-end) and therefore able to be deployed on <a href="https://pages.github.com/">Github Pages</a>.
-      <br/>
-      It's built using the following technologies:
+      This site is built on the following tech stack:
       <ul>
         <li>
           React: a component-based front-end framework for quickly developping websites and UIs

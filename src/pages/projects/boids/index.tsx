@@ -8,7 +8,6 @@ import Seo from "/src/components/seo";
 import BoidsVid from "/src/videos/boids_demo.webm";
 
 import * as styles from "../project-styles.module.scss";
-console.log(styles);
 
 const IndexPage: React.FC = () => (
   <Layout>
