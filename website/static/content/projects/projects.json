@@ -1,0 +1,37 @@
+[
+	{
+		"name": "DFT Outline Tracing",
+		"id": "0",
+		"short_description": "Detects the edges of an image and orders them into a path. It then emulates the image being drawing through epicycles by using a certain compressed representation of the image.",
+		"description_url": "projects/descriptions/dft.html",
+		"vidsrc": "assets/project_demo_videos/wile_dft"
+	},
+	{
+		"name": "Quadtree Compression",
+		"id": "1",
+		"short_description": "A program that compresses an image by dividing it into quadrants using a data structure called a 'quadtree'. It starts with a fully compressed image (represented as a single massive pixel) and 'decompresses' it one level at a time until a desired quality or size limit is reached.",
+		"description_url": "projects/descriptions/quadtree.html",
+		"vidsrc": "assets/project_demo_videos/artorias_quadtree"
+	},
+	{
+		"name": "Boids Simulation",
+		"id": "2",
+		"short_description": "A flock behaviour simulation program that shows that through few simple rules complex emergent behaviours can be observed within groups. The rules for the algorithm were created by Craig Reynolds to mimic flocks of birds.",
+		"description_url": "/projects/descriptions/boids.html",
+		"vidsrc": "assets/project_demo_videos/boids_demo"
+	},
+	{
+		"name": "Maze Generator/Solver",
+		"id": "3",
+		"short_description": "A web-app written fully in HTML/CSS/JS to explore the properties of different maze generation and pathfinding algorithms.",
+		"description_url": "/projects/descriptions/mazejs.html",
+		"vidsrc": "assets/project_demo_videos/mazejs_gen"
+	},
+	{
+		"name": "Graphics Engine",
+		"id": "4",
+		"short_description": "An experiment to myself to see if I could build a simple graphics engine using only the operations of addition, subtraction, division, and multiplication. Built as a learning challenge to apply maths courses that I took outside my major, rather than a feature-rich engine.",
+		"description_url": "/projects/descriptions/graphics_engine.html",
+		"vidsrc": "assets/project_demo_videos/cat_graphics_demo"
+	}
+]

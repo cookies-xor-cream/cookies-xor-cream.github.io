@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block heading %}
+Project Showcase
+{% endblock %}
+
+{% block page %}
+<div class="project-wrapper">
+	{% for project in projects %}
+		<a class="project" href="/projects/{{project.id}}">
+			<h3>
+				{{project.name}}
+			</h3>
+
+			<div class="project-overview">
+				<div class="vid-wrapper">
+					<video draggable="false" playsinline="" autoplay="" loop="" class="">
+						<source src="{{url_for('static', filename=project.vidsrc)}}.webm">
+						<source src="{{url_for('static', filename=project.vidsrc)}}.mov">
+					</video>
+				</div>
+
+				<p>
+					{{project.short_description}}
+				</p>
+			</div>
+		</a>
+	{% endfor %}
+</div>
+{% endblock %}
