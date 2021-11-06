@@ -11,7 +11,7 @@ interface Props {
     vidSrc: string;
 }
 
-const InfoGrid: React.FC<Props> = ({ vidSrc }) => (
+const InfoGrid: React.FC<Props> = ({ vidSrc, overview, techStack, prereqs, timeEstimate }) => (
     <div className={styles.overviewWrapper}>
 
         <div className={styles.infoGrid}>
@@ -22,7 +22,7 @@ const InfoGrid: React.FC<Props> = ({ vidSrc }) => (
             <div className={styles.overview}>
                 <h3> Overview </h3>
                 <p>
-                    The compression of images through a compact tree representation of regions of colour.
+                    {overview}
                 </p>
             </div>
 
@@ -35,25 +35,20 @@ const InfoGrid: React.FC<Props> = ({ vidSrc }) => (
             <div className={styles.techStack}>
                 <h3> Tech Stack </h3>
 
-                <TechStack stack={[
-                    { logo: FaPython, size: 36, name: "Python" },
-                    { logo: GiPillow, size: 36, name: "PIL (Pillow)" }
-                ]} />
+                <TechStack stack={techStack} />
             </div>
 
             <div className={styles.prerequisites}>
                 <h3> Prerequisites </h3>
 
-                <TechStack stack={[
-                    { logo: FaTree, size: 36, name: "Trees"}
-                ]} />
+                <TechStack stack={prereqs} />
             </div>
 
             <div className={styles.timeEstimate}>
                 <h3> Time Estimate </h3>
 
                 <TechStack stack={[
-                    { logo: FaClock, size: 36, name: "1 week" }
+                    { logo: FaClock, size: 36, name: timeEstimate }
                 ]} />
             </div>
         </div>

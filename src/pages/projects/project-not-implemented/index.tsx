@@ -12,7 +12,7 @@ const ProjectNotFound = () => (
             Seems like the project you wanna check out doesn't have a blog post written up for it yet...
         </h3>
         <h3>
-            Keep an eye peeled, it'll be comming soon!
+            Keep an eye peeled, it'll be coming soon!
         </h3>
     </Layout>
 );

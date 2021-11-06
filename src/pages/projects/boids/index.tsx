@@ -8,6 +8,20 @@ import InfoGrid from "../../../components/projects/info-grid";
 
 import BoidsVid from "/src/videos/boids_demo.webm";
 
+import {
+    FaArrowsAlt
+} from "react-icons/fa";
+
+import {
+    BsTriangleHalf
+} from "react-icons/bs";
+
+import {
+    SiCplusplus,
+    SiSfml
+} from "react-icons/si";
+
+
 import * as styles from "../project-styles.module.scss";
 
 const IndexPage: React.FC = () => (
@@ -15,7 +29,19 @@ const IndexPage: React.FC = () => (
         <Seo/>
         <h1>Boids</h1>
 
-        <InfoGrid vidSrc={BoidsVid} />
+        <InfoGrid
+            vidSrc={BoidsVid}
+            timeEstimate="1 week"
+            overview="Simulation of emergent bird-like behaviours using simple rules."
+            techStack={[
+                { logo: SiCplusplus, size: 36, name: "C++" },
+                { logo: SiSfml, size: 36, name: "SFML" }
+            ]}
+            prereqs={[
+                { logo: FaArrowsAlt, size: 36, name: "Vectors"},
+                { logo: BsTriangleHalf, size: 36, name: "Trig (sin, cos, arccos)"}
+            ]}
+        />
 
         <div className={styles.projectPost}>
             <h2>
