@@ -44,12 +44,15 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 				{((mobile && !open) || (!mobile)) &&
 					<>
 						{paths.map(path => {
+							console.log(currentPage, path.slice(1))
 							const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
-							const navItemClass = path.slice(1) === currentPage
+							const regex = new RegExp(path.slice(1));
+							const navItemClass = regex.test(currentPage) // path.slice(1) === currentPage
 								? "active-nav"
 								: "";
+
 							return (
-								<li>
+								<li key={path}>
 									<a href={path} className={navItemClass}>
 										<i>{navItemText}</i>
 									</a>

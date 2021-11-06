@@ -5,7 +5,7 @@ import Layout from "/src/components/layout";
 import Seo from "/src/components/seo";
 
 const ProjectNotFound = () => (
-    <Layout>
+    <Layout currentPage="projects">
         <Seo />
         <h1>Blog Post Unavailable</h1>
         <h3>

@@ -42,6 +42,10 @@ $transition-speed: 0.5s;
         &:hover {
             transition: transform $transition-speed;
             transform: scale(1.03);
+
+            @include mobile {
+                z-index: 0;
+            }
         }
 
         > div {

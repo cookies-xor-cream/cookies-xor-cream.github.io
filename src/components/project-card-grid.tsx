@@ -11,7 +11,7 @@ type Props = {
 const ProjectCardGrid: React.FC<Props> = ({ projectDetailsList }: Props) => (
     <div className={styles.projectGrid}>
         {projectDetailsList.map((projectDetails: Object) =>
-            <ProjectCard projectDetails={projectDetails as any} />
+            <ProjectCard projectDetails={projectDetails as any} key={projectDetails.title} />
         )}
     </div>
 );
