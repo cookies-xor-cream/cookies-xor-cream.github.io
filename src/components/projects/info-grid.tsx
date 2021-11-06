@@ -41,7 +41,7 @@ const InfoGrid: React.FC<Props> = ({
             <div className={styles.difficulty}>
                 <h3> Difficulty </h3>
 
-                <SlideBar skillLevel={difficulty} />
+                <SlideBar value={difficulty} />
             </div>
 
             <div className={styles.techStack}>

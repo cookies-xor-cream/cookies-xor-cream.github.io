@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 import * as styles from "./styles/slidebar.module.scss";
 
 type Props = {
-    skillLevel: number;
+    value: number;
 };
 	
-const slideBar: React.FC<Props> = ({ skillLevel }: Props) => (
+const slideBar: React.FC<Props> = ({ value }: Props) => (
 	<div className={styles.slideBar}>
-        <div className={styles[`_${skillLevel}`]} />
+        <div className={styles[`_${value}`]} />
     </div>
 );
 

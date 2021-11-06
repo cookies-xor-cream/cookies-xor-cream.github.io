@@ -34,7 +34,7 @@ const IndexPage: React.FC = () => (
         <InfoGrid
             vidSrc={BoidsVid}
             timeEstimate="1 week"
-            difficulty={4}
+            difficulty={3}
             overview="Simulation of emergent bird-like behaviours using simple rules."
             techStack={[
                 { logo: SiCplusplus, size: logoSize, name: "C++" },

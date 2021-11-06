@@ -22,7 +22,7 @@ const IndexPage: React.FC = () => (
         <InfoGrid
             vidSrc={QuadVid}
             timeEstimate="1 week"
-            difficulty={6}
+            difficulty={4}
             overview="The compression of images through a compact tree representation of regions of colour."
             techStack={[
                 { logo: FaPython, size: 36, name: "Python" },

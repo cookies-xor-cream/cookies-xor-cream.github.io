@@ -13,7 +13,7 @@ const skill: React.FC<Props> = ({ logos, skillLevel  }) => (
         </li>
 
         <li>
-            <SkillBar skillLevel={skillLevel} />
+            <SkillBar value={skillLevel} />
         </li>
     </ul>
 );
