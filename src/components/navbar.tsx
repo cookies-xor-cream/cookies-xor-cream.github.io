@@ -53,7 +53,7 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 							return (
 								<li key={path}>
 									<a href={path} className={navItemClass}>
-										<i>{navItemText}</i>
+										{navItemText}
 									</a>
 								</li>
 							)

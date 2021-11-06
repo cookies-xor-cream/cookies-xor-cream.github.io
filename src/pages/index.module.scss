@@ -7,7 +7,7 @@ $svgmargin: 18px;
 
 .contentMatrix {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: $blockpadding;
 
     @include mobile {
@@ -24,12 +24,12 @@ $svgmargin: 18px;
             text-align: center;
         }
 
-        grid-column: span 3;
+        grid-column: span 6;
 
         &.techBlock,
         &.skillsBlock,
         &.recentPosts {
-            grid-column: span 1;
+            grid-column: span 2;
         }
 
         .techStack {
@@ -39,6 +39,8 @@ $svgmargin: 18px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
+
+                margin-bottom: 18px;
 
                 svg {
                     margin-right: $svgmargin;

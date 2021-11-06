@@ -2,7 +2,7 @@
 @import "media";
 
 nav {
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 2px 2px 0px $black;
     position: sticky;
     top: 0;
 
@@ -12,9 +12,6 @@ nav {
 
     & .active-nav {
         color: $black;
-        text-decoration: underline;
-        text-underline-offset: 4px;
-        text-decoration-thickness: 2px;
     }
 }
 
@@ -73,16 +70,14 @@ nav {
                     
                     text-decoration: none;
                     
-                    transform: rotate(0) scale(1.0);
-                    transition: transform $transition-duration, color $transition-duration;
+                    transition: filter $transition-duration, color $transition-duration;
                     
-                    color: $grey2;
+                    color: $grey3;
                 }
                 
                 a:hover {
-                    transform: translateY($translate-offset) scale($scale-grow);
+                    filter: brightness(60%);
                     color: $black;
-                    transition: transform $transition-duration, color $transition-duration;
                 }
             }
             
@@ -98,11 +93,7 @@ nav {
                 a {
                     font-weight: bold;
                     transform: scale($upscale-base);
-                }
-                
-                a:hover {
-                    transform: translateY($translate-offset) scale($upscale-grow);
-                }
+                }   
             }
             
             li:nth-child(2) {

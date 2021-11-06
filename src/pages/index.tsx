@@ -32,7 +32,13 @@ import {
   SiC,
   SiCplusplus,
   SiGnubash,
-} from 'react-icons/si'
+} from 'react-icons/si';
+
+import {
+  DiPostgresql,
+  DiSqllite,
+  DiMysql
+} from 'react-icons/di';
 
 const skillsLogoSize = 32;
 const techLogoSize = 56;
@@ -44,15 +50,12 @@ const IndexPage: React.FC = () => (
     <div className={styles.contentMatrix}>
       <div className={styles.contentBlock}>
         <h2> Welcome to my portfolio website! </h2>
+        <p>
+          Welcome! This is somewhere for me to publish information and projects I'd like to share, if you're interested in them head over to <i><a href="/projects">Projects</a></i> and check them out!
+        </p>
 
         <p>
-          I built this website to have somewhere to show off cool things that I have done (and to of course have something to fill out in the `website` section of any future applications potentially).
-        </p>
-        <p>
-          I'm a second year computer science student at <a href="https://www.uwa.edu.au/">UWA</a> due to graduate at the end of 2022 and I'm working as a Jr Web Developer at <a href="https://league.agency/">The League Agency</a>/<a href="https://www.autoleague.com.au/">AutoLeague</a>.
-        </p>
-        <p>
-          Head over to the <i>Projects</i> page if you want to see some work I've done before (as well as related blog posts) and to the <i>Contact</i> page if you'd like to get in touch with me.
+          The intended audience is for people who already have a little programming background but all of the terms are searchable so anyone should be able to read them.
         </p>
       </div>
 
@@ -122,10 +125,23 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
+                <DiMysql size={skillsLogoSize} />
+                <DiPostgresql size={skillsLogoSize} />
+                <DiMysql size={skillsLogoSize} />
+              </li>
+              <li>
+                <SkillBar skillLevel={7} />
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
                 <FaJava size={skillsLogoSize} />
               </li>
               <li>
-                <SkillBar skillLevel={6} />
+                <SkillBar skillLevel={5} />
               </li>
             </ul>
           </li>
