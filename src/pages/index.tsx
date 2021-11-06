@@ -25,19 +25,19 @@ import {
 
 import {
   GrGatsbyjs,
-  GrGraphQl
+  GrGraphQl,
+  GrMysql
 } from 'react-icons/gr';
 
 import {
   SiC,
   SiCplusplus,
   SiGnubash,
+  SiPostgresql
 } from 'react-icons/si';
 
 import {
-  DiPostgresql,
-  DiSqllite,
-  DiMysql
+  DiSqllite
 } from 'react-icons/di';
 
 const skillsLogoSize = 32;
@@ -51,7 +51,7 @@ const IndexPage: React.FC = () => (
       <div className={styles.contentBlock}>
         <h2> Welcome to my portfolio website! </h2>
         <p>
-          Welcome! This is somewhere for me to publish information and projects I'd like to share, if you're interested in them head over to <i><a href="/projects">Projects</a></i> and check them out!
+          Welcome! This is somewhere for me to publish information and projects I'd like to share, if you're interested in them head over to <a href="/projects">Projects</a> and check them out!
         </p>
 
         <p>
@@ -125,9 +125,9 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <DiMysql size={skillsLogoSize} />
-                <DiPostgresql size={skillsLogoSize} />
-                <DiMysql size={skillsLogoSize} />
+                <GrMysql size={skillsLogoSize} />
+                <SiPostgresql size={skillsLogoSize} />
+                <DiSqllite size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={7} />
