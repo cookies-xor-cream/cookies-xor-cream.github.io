@@ -2,58 +2,29 @@
 @import "media.scss";
 
 $border-radius: 12px;
+$skill-bar-height: 12px;
 
 .skillBar {
-    height: 8px;
+    height: $skill-bar-height;
     width: 100%;
     background-color: $grey3;
-    border-radius: 12px;
+    border-radius: $border-radius;
 
     div {
-        background-color: $green2;
         height: 100%;
+        background-color: $green2;
         border-top-left-radius: $border-radius;
         border-bottom-left-radius: $border-radius;
     }
 
-    ._1 {
-        width: 10%;
-    }
-
-    ._2 {
-        width: 20%;
-    }
-
-    ._3 {
-        width: 30%;
-    }
-
-    ._4 {
-        width: 40%;
-    }
-
-    ._5 {
-        width: 50%;
-    }
-
-    ._6 {
-        width: 60%;
-    }
-
-    ._7 {
-        width: 70%;
-    }
-
-    ._8 {
-        width: 80%;
-    }
-
-    ._9 {
-        width: 90%;
-    }
-
-    ._10 {
-        width: 100%;
-        border-radius: $border-radius;
-    }
+    ._1 { width: 10%; }
+    ._2 { width: 20%; }
+    ._3 { width: 30%; }
+    ._4 { width: 40%; }
+    ._5 { width: 50%; }
+    ._6 { width: 60%; }
+    ._7 { width: 70%; }
+    ._8 { width: 80%; }
+    ._9 { width: 90%; }
+    ._10 { width: 100%; border-radius: $border-radius; }
 }
