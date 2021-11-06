@@ -8,7 +8,7 @@ $svgmargin: 18px;
 .contentMatrix {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: $blockpadding;
+    gap: $blockpadding * 0.5;
 
     @include mobile {
         grid-template-columns: 1fr;

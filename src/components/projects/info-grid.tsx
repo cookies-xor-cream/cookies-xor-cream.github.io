@@ -9,9 +9,21 @@ import SlideBar from "../slidebar";
 
 interface Props {
     vidSrc: string;
+    overview: string;
+    difficulty: number;
+    timeEstimate: string;
+    techStack: any;
+    prereqs: any;
 }
 
-const InfoGrid: React.FC<Props> = ({ vidSrc, overview, techStack, prereqs, timeEstimate }) => (
+const InfoGrid: React.FC<Props> = ({
+    vidSrc,
+    overview,
+    techStack,
+    prereqs,
+    difficulty,
+    timeEstimate
+}) => (
     <div className={styles.overviewWrapper}>
 
         <div className={styles.infoGrid}>
@@ -29,7 +41,7 @@ const InfoGrid: React.FC<Props> = ({ vidSrc, overview, techStack, prereqs, timeE
             <div className={styles.difficulty}>
                 <h3> Difficulty </h3>
 
-                <SlideBar skillLevel={6} />
+                <SlideBar skillLevel={difficulty} />
             </div>
 
             <div className={styles.techStack}>

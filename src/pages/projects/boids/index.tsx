@@ -24,6 +24,8 @@ import {
 
 import * as styles from "../project-styles.module.scss";
 
+const logoSize = 36;
+
 const IndexPage: React.FC = () => (
     <Layout currentPage="projects">
         <Seo/>
@@ -32,14 +34,15 @@ const IndexPage: React.FC = () => (
         <InfoGrid
             vidSrc={BoidsVid}
             timeEstimate="1 week"
+            difficulty={4}
             overview="Simulation of emergent bird-like behaviours using simple rules."
             techStack={[
-                { logo: SiCplusplus, size: 36, name: "C++" },
-                { logo: SiSfml, size: 36, name: "SFML" }
+                { logo: SiCplusplus, size: logoSize, name: "C++" },
+                { logo: SiSfml, size: logoSize, name: "SFML" }
             ]}
             prereqs={[
-                { logo: FaArrowsAlt, size: 36, name: "Vectors"},
-                { logo: BsTriangleHalf, size: 36, name: "Trig (sin, cos, arccos)"}
+                { logo: FaArrowsAlt, size: logoSize, name: "Vectors"},
+                { logo: BsTriangleHalf, size: logoSize, name: "Trig (sin, cos, arccos)"}
             ]}
         />
 
