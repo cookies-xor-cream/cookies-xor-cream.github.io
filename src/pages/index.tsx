@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import Seo from "../components/skill-bar"
 
 import SkillBar from "../components/skill-bar";
+import TechStack from "../components/home/TechStack";
 
 import cc from "classcat";
 
@@ -130,7 +131,7 @@ const IndexPage: React.FC = () => (
                 <DiSqllite size={skillsLogoSize} />
               </li>
               <li>
-                <SkillBar skillLevel={7} />
+                <SkillBar skillLevel={6} />
               </li>
             </ul>
           </li>
@@ -151,22 +152,20 @@ const IndexPage: React.FC = () => (
       <div className={cc([styles.contentBlock, styles.techBlock])}>
         <h2> Tech Stack </h2>
 
-        <ul className={styles.techStack}>
-          <li><FaReact size={techLogoSize} /> ReactJS</li>
-          <li><GrGatsbyjs size={techLogoSize} />GatsbyJS</li>
-          <li><FaSass size={techLogoSize} />Sass</li>
-          <li><GrGraphQl size={techLogoSize} />GraphQL</li>
-          <li><FaGithub size={techLogoSize} />Github Pages</li>
-        </ul>
+        <TechStack stack={[
+          {logo: FaReact, name: "ReactJS"},
+          {logo: GrGatsbyjs, name: "GatsbyJS"},
+          {logo: FaSass, name: "Sass"},
+          {logo: GrGraphQl, name: "GraphQL"},
+          {logo: FaGithub, name: "Github Pages"}
+        ]} />
       </div>
 
-      <div className={cc([styles.contentBlock, styles.skillsBlock])}>
+      <div className={cc([styles.contentBlock, styles.recentPosts])}>
         <h2> Recent Posts </h2>
 
         <ul>
-          <li>
-
-          </li>
+          {/* <RecentPost /> */}
         </ul>
       </div>
     </div>

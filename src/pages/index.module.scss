@@ -32,19 +32,21 @@ $svgmargin: 18px;
             grid-column: span 2;
         }
 
-        .techStack {
-            list-style: none;
-
-            li {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-
-                margin-bottom: 18px;
-
-                svg {
-                    margin-right: $svgmargin;
-                    margin-left: $svgmargin;
+        &.techBlock {
+            ul {
+                list-style: none;
+    
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+    
+                    margin-bottom: 32px;
+    
+                    svg {
+                        margin-right: $svgmargin;
+                        margin-left: $svgmargin;
+                    }
                 }
             }
         }
