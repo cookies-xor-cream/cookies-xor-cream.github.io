@@ -1,15 +1,15 @@
-@import "../../styles/colors";
-@import "../../styles/media";
+@import "colors";
+@import "media";
 
 $border-radius: 12px;
 $skill-bar-height: 12px;
 
-.skillBar {
-    height: $skill-bar-height;
+.slideBar {
     width: 100%;
-    background-color: $grey3;
+    height: $skill-bar-height;
     border-radius: $border-radius;
-
+    background-color: $grey3;
+    
     div {
         height: 100%;
         background-color: $green2;

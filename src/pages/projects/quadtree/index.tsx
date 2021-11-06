@@ -5,6 +5,8 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "/src/components/layout";
 import Seo from "/src/components/seo";
 
+import InfoGrid from "/src/components/projects/info-grid";
+
 import QuadVid from "/src/videos/artorias_quadtree.webm";
 
 import * as styles from "../project-styles.module.scss";
@@ -13,11 +15,10 @@ const IndexPage: React.FC = () => (
     <Layout currentPage="projects">
         <Seo/>
         <h1>Quadtree Image Compression</h1>
-        <div className={styles.projectPost}>
-            <video autoPlay loop className={styles.projectVideo}>
-                <source src={QuadVid} />
-            </video>
 
+        <InfoGrid vidSrc={QuadVid} />
+        
+        <div className={styles.projectPost}>
             <h2>
                 What Is a Quadtree?
             </h2>

@@ -1,5 +1,5 @@
 import * as React from "react";
-import SkillBar from "./skill-bar";
+import SkillBar from "../../slidebar";
 
 interface Props{
     logos: any[];

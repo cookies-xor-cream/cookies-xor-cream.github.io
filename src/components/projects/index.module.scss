@@ -1,0 +1,102 @@
+@import "../styles/colors";
+@import "../styles/media";
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+    height: 100%;
+
+    > * {
+        padding: 16px;
+        background-color: $black1;
+
+        > h3 {
+            text-align: center;
+        }
+    }
+
+    @include desktop {
+        .demoVid {
+            grid-column: span 3;
+            grid-row: span 2;
+        }
+
+        .overview {
+            grid-column: span 3;
+        }
+    
+        .prerequisites {
+            grid-column: span 2;
+        }
+    
+        .techStack {
+            grid-column: span 2;
+        }
+    
+        .difficulty {
+            grid-column: span 3;
+    
+            > h4 {
+                margin-bottom: 12px;
+            }
+        }
+    
+        .timeEstimate {
+            grid-column: span 2;
+        }
+    }
+
+    @include mobile {
+        .demoVid {
+            grid-column: span 6;
+            grid-row: 2;
+        }
+
+        .overview {
+            grid-column: span 6;
+            grid-row: 1;
+        }
+    
+        .prerequisites {
+            grid-column: span 6;
+        }
+    
+        .techStack {
+            grid-column: span 6;
+        }
+    
+        .difficulty {
+            grid-column: span 6;
+        }
+    
+        .timeEstimate {
+            grid-column: span 6;
+        }
+    }
+    
+    .demoVid {
+        max-width: 100%;
+        height: 100%;
+    }
+
+    .prerequisites,
+    .techStack,
+    .timeEstimate {
+        ul {
+            list-style: none;
+
+            li {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                svg {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+}

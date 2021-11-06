@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "/src/components/layout";
 import Seo from "/src/components/seo";
+import InfoGrid from "../../../components/projects/info-grid";
 
 import BoidsVid from "/src/videos/boids_demo.webm";
 
@@ -13,11 +14,10 @@ const IndexPage: React.FC = () => (
     <Layout currentPage="projects">
         <Seo/>
         <h1>Boids</h1>
-        <div className={styles.projectPost}>
-            <video autoPlay loop className={styles.projectVideo}>
-                <source src={BoidsVid} />
-            </video>
 
+        <InfoGrid vidSrc={BoidsVid} />
+
+        <div className={styles.projectPost}>
             <h2>
                 What Are Boids?
             </h2>

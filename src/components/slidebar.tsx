@@ -1,16 +1,16 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
-import * as styles from "./skill-bar.module.scss";
+import * as styles from "./styles/slidebar.module.scss";
 
 type Props = {
     skillLevel: number;
 };
 	
-const skillBar: React.FC<Props> = ({ skillLevel }: Props) => (
-	<div className={styles.skillBar}>
+const slideBar: React.FC<Props> = ({ skillLevel }: Props) => (
+	<div className={styles.slideBar}>
         <div className={styles[`_${skillLevel}`]} />
     </div>
 );
 
-export default skillBar;
+export default slideBar;

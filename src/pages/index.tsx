@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/home/Skills/skill-bar"
+import Seo from "../components/slidebar"
 
 import TechStack from "../components/home/TechStack";
 import Skills from "../components/home/Skills";
@@ -40,9 +40,6 @@ import {
 import {
   DiSqllite
 } from 'react-icons/di';
-
-const skillsLogoSize = 32;
-const techLogoSize = 56;
 
 const IndexPage: React.FC = () => (
   <Layout>
