@@ -7,6 +7,9 @@ import Seo from "../components/seo"
 
 import * as styles from "./index.module.scss";
 
+import { FaReact, FaSass, FaGithub } from 'react-icons/fa';
+import { GrGatsbyjs, GrGraphQl } from 'react-icons/gr';
+
 const IndexPage: React.FC = () => (
   <Layout>
     <Seo/>
@@ -15,6 +18,7 @@ const IndexPage: React.FC = () => (
     <div className={styles.contentMatrix}>
       <div className={styles.contentBlock}>
         <h2> Welcome to my portfolio website! </h2>
+
         <p>
           I built this website to have somewhere to show off cool things that I have done (and to of course have something to fill out in the `website` section of any future applications potentially).
         </p>
@@ -28,26 +32,24 @@ const IndexPage: React.FC = () => (
 
       <div className={styles.contentBlock}>
         <h2> Tech Stack </h2>
-        <p>
-          This site is built on the following tech stack:
-          <ul>
-            <li>
-              React: a component-based front-end framework for quickly developping websites and UIs
-            </li>
-            <li>
-              GatsbyJS: a React-based, GraphQL powered, static site generator
-            </li>
-            <li>
-              Sass: a CSS framework with quality-of-life features such as variables and class nesting
-            </li>
-            <li>
-              GraphQL: a query language to request for content from the website
-            </li>
-            <li>
-              Github Pages: a free place to host the website with little fuss
-            </li>
-          </ul>
-        </p>
+
+        <ul className={styles.techStack}>
+          <li><FaReact size={56} /> ReactJS</li>
+          <li><GrGatsbyjs size={56} />GatsbyJS</li>
+          <li><FaSass size={56} />Sass</li>
+          <li><GrGraphQl size={56} />GraphQL</li>
+          <li><FaGithub size={56} />Github Pages</li>
+        </ul>
+      </div>
+      
+      <div className={styles.contentBlock}>
+        <h2> Skills </h2>
+
+      </div>
+
+      <div className={styles.contentBlock}>
+        <h2> Skills </h2>
+
       </div>
     </div>
   </Layout>
