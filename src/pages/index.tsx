@@ -3,7 +3,9 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import Seo from "../components/seo"
+import Seo from "../components/skill-bar"
+
+import SkillBar from "../components/skill-bar";
 
 import * as styles from "./index.module.scss";
 
@@ -29,6 +31,8 @@ import {
   SiCplusplus,
   SiGnubash,
 } from 'react-icons/si'
+
+const logoSize = 32;
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -74,24 +78,11 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaHtml5 size={42} />
-                <FaCss3 size={42} />
-                <FaJs size={42} />
+                <FaLinux size={logoSize} />
+                <SiGnubash size={logoSize} />
               </li>
               <li>
-                placeholder
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <ul>
-              <li>
-                <FaLinux size={42} />
-                <SiGnubash size={42} />
-              </li>
-              <li>
-                placeholder
+                <SkillBar skillLevel={9} />
               </li>
             </ul>
           </li>
@@ -99,11 +90,12 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <SiC size={42} />
-                <SiCplusplus size={42} />
+                <FaHtml5 size={logoSize} />
+                <FaCss3 size={logoSize} />
+                <FaJs size={logoSize} />
               </li>
               <li>
-                placeholder
+                <SkillBar skillLevel={8} />
               </li>
             </ul>
           </li>
@@ -111,21 +103,10 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaReact size={42} />
+                <FaReact size={logoSize} />
               </li>
               <li>
-                placeholder
-              </li>
-            </ul>
-          </li>
-
-          <li>
-            <ul>
-              <li>
-                <FaPython size={42} />
-              </li>
-              <li>
-                placeholder
+                <SkillBar skillLevel={7} />
               </li>
             </ul>
           </li>
@@ -133,10 +114,33 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaJava size={42} />
+                <FaPython size={logoSize} />
               </li>
               <li>
-                placeholder
+                <SkillBar skillLevel={7} />
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <SiC size={logoSize} />
+                <SiCplusplus size={logoSize} />
+              </li>
+              <li>
+                <SkillBar skillLevel={7} />
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <FaJava size={logoSize} />
+              </li>
+              <li>
+                <SkillBar skillLevel={6} />
               </li>
             </ul>
           </li>

@@ -48,22 +48,36 @@ $svgmargin: 18px;
             list-style: none;
             width: 100%;
             margin: 0;
-
+            
             > li {
                 margin-bottom: 32px;
-
+                width: 100%;
+                
                 ul {
                     margin: 0;
-    
+                    display: flex;
+                    flex-direction: row;
+
+                    width: 100%;
+
                     li {
                         display: flex;
                         flex-direction: row;
                         align-items: center;
                         justify-content: center;
+
+                        &:first-child {
+                            width: 40%;
+                        }
+
+                        &:nth-child(2) {
+                            margin-left: 10%;
+                            width: 50%;
+                        }
     
                         > svg {
-                            margin-right: $svgmargin;
-                            margin-left: $svgmargin
+                            margin-right: 4px;
+                            margin-left: 4px
                         }
                     }
                 }
