@@ -35,6 +35,8 @@ const Seo: React.FC<Props>  = ({ description, lang, meta, title }) => {
   const metaDescription = description || site.siteMetadata.description
   const defaultTitle = site.siteMetadata?.title
 
+  console.log("!!!!", meta);
+
   return (
     <Helmet
       htmlAttributes={{

@@ -32,11 +32,11 @@ import {
   SiGnubash,
 } from 'react-icons/si'
 
-const logoSize = 32;
+const skillsLogoSize = 32;
+const techLogoSize = 56;
 
 const IndexPage: React.FC = () => (
   <Layout>
-    <Seo/>
     <h1>cookies-xor-cream</h1>
 
     <div className={styles.contentMatrix}>
@@ -58,11 +58,11 @@ const IndexPage: React.FC = () => (
         <h2> Tech Stack </h2>
 
         <ul className={styles.techStack}>
-          <li><FaReact size={56} /> ReactJS</li>
-          <li><GrGatsbyjs size={56} />GatsbyJS</li>
-          <li><FaSass size={56} />Sass</li>
-          <li><GrGraphQl size={56} />GraphQL</li>
-          <li><FaGithub size={56} />Github Pages</li>
+          <li><FaReact size={techLogoSize} /> ReactJS</li>
+          <li><GrGatsbyjs size={techLogoSize} />GatsbyJS</li>
+          <li><FaSass size={techLogoSize} />Sass</li>
+          <li><GrGraphQl size={techLogoSize} />GraphQL</li>
+          <li><FaGithub size={techLogoSize} />Github Pages</li>
         </ul>
       </div>
       
@@ -78,8 +78,8 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaLinux size={logoSize} />
-                <SiGnubash size={logoSize} />
+                <FaLinux size={skillsLogoSize} />
+                <SiGnubash size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={9} />
@@ -90,9 +90,9 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaHtml5 size={logoSize} />
-                <FaCss3 size={logoSize} />
-                <FaJs size={logoSize} />
+                <FaHtml5 size={skillsLogoSize} />
+                <FaCss3 size={skillsLogoSize} />
+                <FaJs size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={8} />
@@ -103,7 +103,7 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaReact size={logoSize} />
+                <FaReact size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={7} />
@@ -114,7 +114,7 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaPython size={logoSize} />
+                <FaPython size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={7} />
@@ -125,8 +125,8 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <SiC size={logoSize} />
-                <SiCplusplus size={logoSize} />
+                <SiC size={skillsLogoSize} />
+                <SiCplusplus size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={7} />
@@ -137,7 +137,7 @@ const IndexPage: React.FC = () => (
           <li>
             <ul>
               <li>
-                <FaJava size={logoSize} />
+                <FaJava size={skillsLogoSize} />
               </li>
               <li>
                 <SkillBar skillLevel={6} />
