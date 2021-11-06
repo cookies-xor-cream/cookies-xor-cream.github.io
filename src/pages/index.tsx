@@ -7,8 +7,28 @@ import Seo from "../components/seo"
 
 import * as styles from "./index.module.scss";
 
-import { FaReact, FaSass, FaGithub } from 'react-icons/fa';
-import { GrGatsbyjs, GrGraphQl } from 'react-icons/gr';
+import {
+  FaReact,
+  FaSass,
+  FaGithub,
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaJava,
+  FaPython,
+  FaLinux
+} from 'react-icons/fa';
+
+import {
+  GrGatsbyjs,
+  GrGraphQl
+} from 'react-icons/gr';
+
+import {
+  SiC,
+  SiCplusplus,
+  SiGnubash,
+} from 'react-icons/si'
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -50,6 +70,77 @@ const IndexPage: React.FC = () => (
       <div className={styles.contentBlock}>
         <h2> Skills </h2>
 
+        <ul className={styles.skills}>
+          <li>
+            <ul>
+              <li>
+                <FaHtml5 size={42} />
+                <FaCss3 size={42} />
+                <FaJs size={42} />
+              </li>
+              <li>
+                placeholder
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <FaLinux size={42} />
+                <SiGnubash size={42} />
+              </li>
+              <li>
+                placeholder
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <ul>
+              <li>
+                <SiC size={42} />
+                <SiCplusplus size={42} />
+              </li>
+              <li>
+                placeholder
+              </li>
+            </ul>
+          </li>
+          
+          <li>
+            <ul>
+              <li>
+                <FaReact size={42} />
+              </li>
+              <li>
+                placeholder
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <FaPython size={42} />
+              </li>
+              <li>
+                placeholder
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <ul>
+              <li>
+                <FaJava size={42} />
+              </li>
+              <li>
+                placeholder
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </Layout>

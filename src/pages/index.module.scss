@@ -3,10 +3,12 @@
 
 $blockpadding: 16px;
 $blockmargin: 6px;
+$svgmargin: 18px;
 
 .contentMatrix {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: $blockpadding;
 
     @include mobile {
         grid-template-columns: 1fr;
@@ -14,9 +16,6 @@ $blockmargin: 6px;
 
     .contentBlock {
         padding: $blockpadding;
-        margin: $blockmargin;
-        margin-left: 0;
-
         background-color: $black1;
 
         &:first-child,
@@ -39,14 +38,36 @@ $blockmargin: 6px;
                 align-items: center;
 
                 svg {
-                    fill: $tan;
-                    margin-right: 18px;
+                    margin-right: $svgmargin;
+                    margin-left: $svgmargin;
                 }
             }
         }
 
         .skills {
             list-style: none;
+            width: 100%;
+            margin: 0;
+
+            > li {
+                margin-bottom: 32px;
+
+                ul {
+                    margin: 0;
+    
+                    li {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+    
+                        > svg {
+                            margin-right: $svgmargin;
+                            margin-left: $svgmargin
+                        }
+                    }
+                }
+            }
         }
     }
 }
