@@ -7,6 +7,8 @@ import Seo from "../components/skill-bar"
 
 import SkillBar from "../components/skill-bar";
 
+import cc from "classcat";
+
 import * as styles from "./index.module.scss";
 
 import {
@@ -54,24 +56,7 @@ const IndexPage: React.FC = () => (
         </p>
       </div>
 
-      <div className={styles.contentBlock}>
-        <h2> Tech Stack </h2>
-
-        <ul className={styles.techStack}>
-          <li><FaReact size={techLogoSize} /> ReactJS</li>
-          <li><GrGatsbyjs size={techLogoSize} />GatsbyJS</li>
-          <li><FaSass size={techLogoSize} />Sass</li>
-          <li><GrGraphQl size={techLogoSize} />GraphQL</li>
-          <li><FaGithub size={techLogoSize} />Github Pages</li>
-        </ul>
-      </div>
-      
-      <div className={styles.contentBlock}>
-        <h2> Skills </h2>
-
-      </div>
-
-      <div className={styles.contentBlock}>
+      <div className={cc([styles.contentBlock, styles.skillsBlock])}>
         <h2> Skills </h2>
 
         <ul className={styles.skills}>
@@ -143,6 +128,28 @@ const IndexPage: React.FC = () => (
                 <SkillBar skillLevel={6} />
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+
+      <div className={cc([styles.contentBlock, styles.techBlock])}>
+        <h2> Tech Stack </h2>
+
+        <ul className={styles.techStack}>
+          <li><FaReact size={techLogoSize} /> ReactJS</li>
+          <li><GrGatsbyjs size={techLogoSize} />GatsbyJS</li>
+          <li><FaSass size={techLogoSize} />Sass</li>
+          <li><GrGraphQl size={techLogoSize} />GraphQL</li>
+          <li><FaGithub size={techLogoSize} />Github Pages</li>
+        </ul>
+      </div>
+
+      <div className={cc([styles.contentBlock, styles.skillsBlock])}>
+        <h2> Recent Posts </h2>
+
+        <ul>
+          <li>
+
           </li>
         </ul>
       </div>
