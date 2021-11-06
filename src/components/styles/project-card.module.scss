@@ -4,7 +4,7 @@
 $gridgap: 32px;
 $card-padding: 12px;
 $mobile-card-padding: 4px;
-$transition-speed: 0.5s;
+$transition-speed: 0.1s;
 
 .projectGrid {
     display: grid;
@@ -25,23 +25,22 @@ $transition-speed: 0.5s;
         min-height: 100%;
         width: 100%;
         
-        border-radius: 16px;
         border-collapse: separate;
         
         text-decoration: none;
         color: inherit;
 
-        transition: transform $transition-speed;
+        transition: filter $transition-speed;
 
         background-image: url("../../images/waves/project-card-wave.svg");
         background-repeat: no-repeat;
         background-size: cover;
 
         background-color: $cream;
-    
+
         &:hover {
-            transition: transform $transition-speed;
-            transform: scale(1.03);
+            transition: filter $transition-speed;
+            filter: brightness(120%);
 
             @include mobile {
                 z-index: 0;
@@ -59,8 +58,6 @@ $transition-speed: 0.5s;
                 margin-left: auto;
                 margin-right: auto;
 
-                border-radius: 24px;
-                
                 width: 100%;
                 height: auto;
 
