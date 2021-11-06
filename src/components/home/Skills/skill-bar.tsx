@@ -1,7 +1,7 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 
-import * as styles from "./styles/skill-bar.module.scss";
+import * as styles from "./skill-bar.module.scss";
 
 type Props = {
     skillLevel: number;
