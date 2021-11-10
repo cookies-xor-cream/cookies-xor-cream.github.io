@@ -88,9 +88,8 @@ const IndexPage: React.FC = () => (
         <h2> Recent Posts </h2>
 
         <RecentPosts posts={[
-          {href: "./projects",header: "1", desc: "1.1", readTime: "1 week"},
-          {href: "./projects",header: "1", desc: "1.1", readTime: "1 week"},
-          {href: "./projects",header: "1", desc: "1.1", readTime: "1 week"}
+          {href: "./projects/quadtree",header: "Quadtree Compression", desc: "Image compression using quadtree representation of images", readTime: "15 mins"},
+          {href: "./projects/boids",header: "Boids", desc: "Bird-like simulation using simple rules to construct emergent behaviours", readTime: "10 mins"},
         ]} />
       </div>
     </div>

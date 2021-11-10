@@ -17,9 +17,9 @@ a.postEntry {
     color: white;
 
     box-shadow: 0 0 2px $tan;
+    transition: all $transition-speed;
 
     &:hover {
-        transition: all $transition-speed;
         filter: brightness(120%);
         box-shadow: 0 0 6px $tan;
 

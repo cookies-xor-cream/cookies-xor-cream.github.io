@@ -30,8 +30,8 @@ $transition-speed: 0.1s;
         text-decoration: none;
         color: inherit;
 
-        transition: filter $transition-speed;
-
+        transition: all $transition-speed;
+        
         background-image: url("../../images/waves/project-card-wave.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -41,7 +41,6 @@ $transition-speed: 0.1s;
         box-shadow: 0 0 2px $tan;
 
         &:hover {
-            transition: all $transition-speed;
             filter: brightness(120%);
             box-shadow: 0 0 6px $tan;
 
