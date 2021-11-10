@@ -38,13 +38,14 @@ $transition-speed: 0.1s;
 
         background-color: $cream;
 
-        &:hover {
-            transition: filter $transition-speed;
-            filter: brightness(120%);
+        box-shadow: 0 0 2px $tan;
 
-            @include mobile {
-                z-index: 0;
-            }
+        &:hover {
+            transition: all $transition-speed;
+            filter: brightness(120%);
+            box-shadow: 0 0 6px $tan;
+
+            z-index: 0;
         }
 
         > div {
