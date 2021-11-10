@@ -5,6 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
 import Seo from "../components/slidebar"
 
+import RecentPosts from "../components/home/RecentPosts";
 import TechStack from "../components/home/TechStack";
 import Skills from "../components/home/Skills";
 
@@ -86,9 +87,11 @@ const IndexPage: React.FC = () => (
       <div className={cc([styles.contentBlock, styles.recentPosts])}>
         <h2> Recent Posts </h2>
 
-        <ul>
-          {/* <RecentPost /> */}
-        </ul>
+        <RecentPosts posts={[
+          {href: "./projects",header: "1", desc: "1.1", readTime: "1 week"},
+          {href: "./projects",header: "1", desc: "1.1", readTime: "1 week"},
+          {href: "./projects",header: "1", desc: "1.1", readTime: "1 week"}
+        ]} />
       </div>
     </div>
   </Layout>
