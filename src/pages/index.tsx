@@ -47,7 +47,7 @@ const IndexPage: React.FC = () => (
     <h1>cookies-xor-cream</h1>
 
     <div className={styles.contentMatrix}>
-      <div className={styles.contentBlock}>
+      <div className={cc([styles.contentBlock, styles.introBlock])}>
         <h2> Welcome to my portfolio website! </h2>
         <p>
           Welcome! This is somewhere for me to publish information and projects I'd like to share, if you're interested in them head over to <a href="/projects">Projects</a> and check them out!

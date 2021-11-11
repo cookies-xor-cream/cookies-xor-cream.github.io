@@ -7,8 +7,8 @@ $svgmargin: 18px;
 
 .contentMatrix {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     gap: $blockpadding * 0.5;
+    grid-template-columns: repeat(6, 1fr);
 
     @include mobile {
         grid-template-columns: 1fr;
@@ -24,15 +24,28 @@ $svgmargin: 18px;
             text-align: center;
         }
 
-        grid-column: span 6;
+        &.introBlock {
+            grid-column: span 6;
+            
+            @include mobile {
+                grid-column: span 1;
+            }
+        }
 
         &.techBlock,
         &.skillsBlock,
         &.recentPosts {
             grid-column: span 2;
+
+            @include mobile {
+                grid-column: span 1;
+            }
         }
 
         &.techBlock {
+            @include mobile {
+                grid-row: 3;
+            }
             ul {
                 list-style: none;
     
@@ -91,6 +104,12 @@ $svgmargin: 18px;
                         }
                     }
                 }
+            }
+        }
+
+        &.recentPosts {
+            @include mobile {
+                grid-row: 2;
             }
         }
     }
