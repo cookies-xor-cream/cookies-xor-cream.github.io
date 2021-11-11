@@ -13,20 +13,31 @@
     }
 
     .techCard {
-        display: grid;
-        grid-template-columns: 48px auto;
         padding: 16px;
         background-color: $black1;
-
-        box-shadow: 0 0 2px $tan;
-
-        h3 {
-            color: $tan;
-            margin-bottom: 16px;
-        }
         
-        svg {
-            fill: $cream;
+        box-shadow: 0 0 2px $tan;
+        
+        > div {
+            display: grid;
+            grid-template-columns: 48px auto;
+            
+            svg {
+                fill: $cream;
+            }
+
+            h3 {
+                color: $tan;
+                margin-bottom: 16px;
+            }
+        }
+
+        hr {
+            grid-column: span 2;
+            background-color: $tan;
+            border-radius: 12px;
+            width: 100%;
+            height: 2px;
         }
 
         p {

@@ -16,8 +16,13 @@ interface Props {
 
 const techCard: React.FC<Props> = ({ Logo, name, desc, id }) => (
     <div className={styles.techCard} id={id}>
-        <Logo size={32} />
-        <h3>{name}</h3>
+        <div>
+            <Logo size={32} />
+            <h3>{name}</h3>
+        </div>
+
+        <hr />
+
         <p>{desc}</p>
     </div>
 )
