@@ -30,6 +30,6 @@ export default <InfoGrid
     ]}
     prereqs={[
         { logo: FaArrowsAlt, size: logoSize, name: "Vectors"},
-        { logo: BsTriangleHalf, size: logoSize, name: "Trig (sin, cos, arccos)"}
+        { logo: BsTriangleHalf, size: logoSize, name: "Trig"}
     ]}
 />

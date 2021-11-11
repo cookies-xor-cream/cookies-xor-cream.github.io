@@ -15,7 +15,7 @@ export default <InfoGrid
     overview="The compression of images through a compact tree representation of regions of colour."
     techStack={[
         { logo: FaPython, size: logoSize, name: "Python" },
-        { logo: GiPillow, size: logoSize, name: "PIL (Pillow)" }
+        { logo: GiPillow, size: logoSize, name: "PIL/Pillow" }
     ]}
     prereqs={[
         { logo: FaTree, size: logoSize, name: "Trees"}

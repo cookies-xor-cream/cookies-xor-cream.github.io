@@ -13,34 +13,9 @@ import cc from "classcat";
 
 import * as styles from "./index.module.scss";
 
-import {
-  FaReact,
-  FaSass,
-  FaGithub,
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaJava,
-  FaPython,
-  FaLinux
-} from 'react-icons/fa';
-
-import {
-  GrGatsbyjs,
-  GrGraphQl,
-  GrMysql
-} from 'react-icons/gr';
-
-import {
-  SiC,
-  SiCplusplus,
-  SiGnubash,
-  SiPostgresql
-} from 'react-icons/si';
-
-import {
-  DiSqllite
-} from 'react-icons/di';
+import recentPosts from "./recentPosts";
+import techStack from "./techStack";
+import skills from "./skills";
 
 const IndexPage: React.FC = () => (
   <Layout>
@@ -61,36 +36,19 @@ const IndexPage: React.FC = () => (
       <div className={cc([styles.contentBlock, styles.skillsBlock])}>
         <h2> Skills </h2>
 
-        <Skills skillList={[
-          { logos: [FaLinux, SiGnubash], skillLevel: 9 },
-          { logos: [FaHtml5, FaCss3, FaJs], skillLevel: 8 },
-          { logos: [FaReact], skillLevel: 7 },
-          { logos: [FaPython], skillLevel: 7 },
-          { logos: [SiC, SiCplusplus], skillLevel: 7 },
-          { logos: [GrMysql, SiPostgresql, DiSqllite], skillLevel: 6 },
-          { logos: [FaJava], skillLevel: 5 },
-        ]} />
+        <Skills skillList={skills} />
       </div>
 
       <div className={cc([styles.contentBlock, styles.techBlock])}>
         <h2> Tech Stack </h2>
 
-        <TechStack stack={[
-          { logo: FaReact, name: "ReactJS" },
-          { logo: GrGatsbyjs, name: "GatsbyJS" },
-          { logo: FaSass, name: "Sass" },
-          { logo: GrGraphQl, name: "GraphQL" },
-          { logo: FaGithub, name: "Github Pages" }
-        ]} />
+        <TechStack stack={techStack} />
       </div>
 
       <div className={cc([styles.contentBlock, styles.recentPosts])}>
         <h2> Recent Posts </h2>
 
-        <RecentPosts posts={[
-          {href: "./projects/quadtree",header: "Quadtree Compression", desc: "Image compression using quadtree representation of images", readTime: "15 mins"},
-          {href: "./projects/boids",header: "Boids", desc: "Bird-like simulation using simple rules to construct emergent behaviours", readTime: "10 mins"},
-        ]} />
+        <RecentPosts posts={recentPosts} />
       </div>
     </div>
   </Layout>
