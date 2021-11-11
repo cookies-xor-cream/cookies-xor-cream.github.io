@@ -4,47 +4,16 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "/src/components/layout";
 import Seo from "/src/components/seo";
-import InfoGrid from "../../../components/projects/info-grid";
-
-import BoidsVid from "/src/videos/boids_demo.webm";
-
-import {
-    FaArrowsAlt
-} from "react-icons/fa";
-
-import {
-    BsTriangleHalf
-} from "react-icons/bs";
-
-import {
-    SiCplusplus,
-    SiSfml
-} from "react-icons/si";
-
 
 import * as styles from "../project-styles.module.scss";
-
-const logoSize = 36;
+import overview from "./overview";
 
 const IndexPage: React.FC = () => (
     <Layout currentPage="projects">
         <Seo/>
         <h1>Boids</h1>
 
-        <InfoGrid
-            vidSrc={BoidsVid}
-            timeEstimate="1 week"
-            difficulty={3}
-            overview="Simulation of emergent bird-like behaviours using simple rules."
-            techStack={[
-                { logo: SiCplusplus, size: logoSize, name: "C++" },
-                { logo: SiSfml, size: logoSize, name: "SFML" }
-            ]}
-            prereqs={[
-                { logo: FaArrowsAlt, size: logoSize, name: "Vectors"},
-                { logo: BsTriangleHalf, size: logoSize, name: "Trig (sin, cos, arccos)"}
-            ]}
-        />
+        {overview}
 
         <div className={styles.projectPost}>
             <h2>

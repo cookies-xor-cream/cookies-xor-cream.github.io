@@ -5,33 +5,16 @@ import { StaticImage } from "gatsby-plugin-image"
 import Layout from "/src/components/layout";
 import Seo from "/src/components/seo";
 
-import InfoGrid from "/src/components/projects/info-grid";
-
-import QuadVid from "/src/videos/artorias_quadtree.webm";
-
 import * as styles from "../project-styles.module.scss";
 
-import { FaPython, FaTree } from "react-icons/fa";
-import { GiPillow } from "react-icons/gi";
+import overview from "./overview";
 
 const IndexPage: React.FC = () => (
     <Layout currentPage="projects">
         <Seo/>
         <h1>Quadtree Image Compression</h1>
 
-        <InfoGrid
-            vidSrc={QuadVid}
-            timeEstimate="1 week"
-            difficulty={4}
-            overview="The compression of images through a compact tree representation of regions of colour."
-            techStack={[
-                { logo: FaPython, size: 36, name: "Python" },
-                { logo: GiPillow, size: 36, name: "PIL (Pillow)" }
-            ]}
-            prereqs={[
-                { logo: FaTree, size: 36, name: "Trees"}
-            ]}
-        />
+        {overview}
         
         <div className={styles.projectPost}>
             <h2>
