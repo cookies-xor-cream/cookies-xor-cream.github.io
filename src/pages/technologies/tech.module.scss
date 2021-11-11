@@ -3,13 +3,13 @@
 
 .techGrid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1fr;
 
     grid-gap: 16px;
 
     @include mobile {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 
     .techCard {
@@ -22,7 +22,7 @@
 
         h3 {
             color: $tan;
-            margin-bottom: 8px;
+            margin-bottom: 16px;
         }
         
         svg {

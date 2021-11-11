@@ -16,7 +16,9 @@ import {
     SiC,
     SiCplusplus,
     SiGnubash,
-    SiPostgresql
+    SiPostgresql,
+    SiTypescript,
+    SiJavascript
 } from 'react-icons/si';
 
 import {
@@ -25,57 +27,63 @@ import {
 
 export default [
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: FaHtml5,
+        name: "HTML",
+        id: "html",
+        desc: "The universal markup language of the web"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: FaCss3,
+        name: "CSS",
+        id: "css",
+        desc: "Language used to style markup (HTML)"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: SiJavascript,
+        name: "Javascript",
+        id: "js",
+        desc: "Language that runs natively in the browser"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: SiTypescript,
+        name: "Typescript",
+        id: "ts",
+        desc: "Superset of Javascript with a type system"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: FaPython,
+        name: "Python",
+        id: "python",
+        desc: "Dynamically typed interpretted general purpose language"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: FaJava,
+        name: "Java",
+        id: "java",
+        desc: "Staticaly typed language - compiled to bytecode that runs on the JVM"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: SiC,
+        name: "C",
+        id: "c",
+        desc: "Statically typed language that runs natively on almost all hardware"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: SiCplusplus,
+        name: "C++",
+        id: "cpp",
+        desc: "(Almost) a superset of C that adds object-oriented features"
     },
     {
-        logo: FaReact,
-        name: "React",
-        id: "react",
-        desc: "this is a description"
+        logo: FaLinux,
+        name: "Linux",
+        id: "linux",
+        desc: "A developer-friendly and open source unix-like operating system"
+    },
+    {
+        logo: SiGnubash,
+        name: "Bash",
+        id: "bash",
+        desc: "The default shell in most unix-based or unix-like operating systems"
     }
 ]
