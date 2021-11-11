@@ -13,12 +13,17 @@ import {
 } from 'react-icons/gr';
 
 import {
+    GiPillow
+} from 'react-icons/gi';
+
+import {
     SiC,
     SiCplusplus,
     SiGnubash,
     SiPostgresql,
     SiTypescript,
-    SiJavascript
+    SiJavascript,
+    SiSfml
 } from 'react-icons/si';
 
 import {
@@ -85,5 +90,17 @@ export default [
         name: "Bash",
         id: "bash",
         desc: "The default shell in most unix-based or unix-like operating systems"
+    },
+    {
+        logo: SiSfml,
+        name: "SFML",
+        id: "sfml",
+        desc: "A C++ library for 'simple, fast' multimedia functionality"
+    },
+    {
+        logo: GiPillow,
+        name: "PIL/Pillow",
+        id: "pillow",
+        desc: "A C++ and Python library for image analysis and manipulation"
     }
 ]
