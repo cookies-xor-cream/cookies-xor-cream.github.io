@@ -5,7 +5,7 @@ import Layout from "../../components/layout";
 import Seo from "../../components/seo";
 import ProjectCardGrid from "../../components/project-card-grid";
 
-import projectInfo from "./projectInfo.tsx";
+import projectInfo from "../../pageData/projects/projectInfo.tsx";
 
 const SecondPage: React.FC = () => (
   <Layout currentPage="projects">

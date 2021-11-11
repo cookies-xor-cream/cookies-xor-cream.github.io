@@ -6,7 +6,7 @@ import Layout from "/src/components/layout";
 import Seo from "/src/components/seo";
 
 import * as styles from "../project-styles.module.scss";
-import overview from "./overview";
+import overview from "../../../pageData/projects/boids/overview";
 
 const IndexPage: React.FC = () => (
     <Layout currentPage="projects">

@@ -7,8 +7,8 @@ import Seo from "/src/components/seo";
 
 import * as styles from "./tech.module.scss";
 
-import technologies from "./technologies";
-import TechCard from "./techCard";
+import technologies from "../../pageData/technologies/technologies";
+import TechCard from "../../components/technologies/techCard";
 
 const IndexPage: React.FC = () => (
     <Layout currentPage="technologies">

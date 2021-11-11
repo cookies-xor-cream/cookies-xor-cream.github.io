@@ -13,9 +13,9 @@ import cc from "classcat";
 
 import * as styles from "./index.module.scss";
 
-import recentPosts from "./recentPosts";
-import techStack from "./techStack";
-import skills from "./skills";
+import recentPosts from "../pageData/recentPosts";
+import techStack from "../pageData/techStack";
+import skills from "../pageData/skills";
 
 const IndexPage: React.FC = () => (
   <Layout>
