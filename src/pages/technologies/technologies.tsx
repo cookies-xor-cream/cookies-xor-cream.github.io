@@ -29,5 +29,53 @@ export default [
         name: "React",
         id: "react",
         desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "this is a description"
     }
 ]

@@ -1,0 +1,37 @@
+@import "../../components/styles/colors";
+@import "../../components/styles/media";
+
+.techGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1fr;
+
+    grid-gap: 16px;
+
+    @include mobile {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .techCard {
+        display: grid;
+        grid-template-columns: 48px auto;
+        padding: 16px;
+        background-color: $black1;
+
+        box-shadow: 0 0 2px $tan;
+
+        h3 {
+            color: $tan;
+            margin-bottom: 8px;
+        }
+        
+        svg {
+            fill: $cream;
+        }
+
+        p {
+            grid-column: span 2;
+            margin-bottom: 8px;
+        }
+    }
+}
