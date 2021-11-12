@@ -5,7 +5,8 @@ import {
     FaJs,
     FaJava,
     FaPython,
-    FaLinux
+    FaLinux,
+    FaGithub
 } from 'react-icons/fa';
 
 import {
@@ -23,7 +24,10 @@ import {
     SiPostgresql,
     SiTypescript,
     SiJavascript,
-    SiSfml
+    SiSfml,
+    SiGatsby,
+    SiGraphql,
+    SiSass
 } from 'react-icons/si';
 
 import {
@@ -102,5 +106,35 @@ export default [
         name: "PIL/Pillow",
         id: "pillow",
         desc: "A C++ and Python library for image analysis and manipulation"
+    },
+    {
+        logo: FaReact,
+        name: "React",
+        id: "react",
+        desc: "A front-end framework allowing for fast and modular development"
+    },
+    {
+        logo: SiGatsby,
+        name: "Gatsby",
+        id: "gatsby",
+        desc: "A static site builder and server written in react"
+    },
+    {
+        logo: SiGraphql,
+        name: "GraphQL",
+        id: "graphql",
+        desc: "A data query and manipulation language for APIs"
+    },
+    {
+        logo: SiSass,
+        name: "Sass",
+        id: "sass",
+        desc: "A preprocessor language transpiled or interpretted to css"
+    },
+    {
+        logo: FaGithub,
+        name: "Github Pages",
+        id: "gh-pages",
+        desc: "A static site hosting service that serves files from a Github repository"
     }
 ]
