@@ -4,17 +4,8 @@ import InfoGrid from "../../../components/projects/info-grid";
 
 import BoidsVid from "/src/videos/boids_demo.webm";
 
-import {
-    FaArrowsAlt
-} from "react-icons/fa";
-
-import {
-    BsTriangleHalf
-} from "react-icons/bs";
-
 import techlinks from '../techlinks';
-
-const logoSize = 36;
+import prereqs from '../prereqs';
 
 export default <InfoGrid
     vidSrc={BoidsVid}
@@ -26,7 +17,7 @@ export default <InfoGrid
         techlinks.sfml
     ]}
     prereqs={[
-        { logo: FaArrowsAlt, size: logoSize, name: "Vectors"},
-        { logo: BsTriangleHalf, size: logoSize, name: "Trig"}
+        prereqs.vectors,
+        prereqs.trig
     ]}
 />
