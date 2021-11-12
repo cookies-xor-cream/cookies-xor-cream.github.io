@@ -4,12 +4,15 @@ import { Link } from "gatsby";
 
 import * as styles from "./styles/project-card.module.scss";
 
+import ProjectTags from "./projects/projectTags";
+
 type Props = {
 	projectDetails: {
-		vid: any,
-		title: string,
-		description: string,
-		href: string,
+		vid: any;
+		title: string;
+		description: string;
+		href: string;
+		tags: string[];
 	};
 };
 	
@@ -19,6 +22,8 @@ const ProjectCard: React.FC<Props> = ({ projectDetails }: Props) => (
 			<video autoPlay loop>
 				<source src={projectDetails.vid} />
 			</video>
+
+			<ProjectTags tags={projectDetails.tags} />
 
 			<h2>
 				{projectDetails.title}

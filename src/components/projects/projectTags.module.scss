@@ -1,0 +1,30 @@
+@import "../styles/colors";
+@import "../styles/media";
+
+.projectIcons {
+    display: flex;
+    flex-direction: row;
+
+    list-style: none;
+
+    margin: 0 12px 0 12px;
+
+    li {
+        padding: 0px 8px 0px 8px;
+        margin: 0px 4px 4px 0px;
+
+        width: max-content;
+        height: min-content;
+        line-height: 1.25rem;
+        
+        font-size: 10pt;
+
+        box-shadow: 0 0 1px $black1;
+
+        &.blue { background-color: $blue; }
+        &.pink { background-color: $pink; }    
+        &.purple { background-color: $purple; }
+        &.red { background-color: $red; }
+        &.green { background-color: $green; }
+    }
+}

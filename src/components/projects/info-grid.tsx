@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as styles from "./index.module.scss";
+import * as styles from "./infoGrid.module.scss";
 
 import { FaClock, FaTree, FaPython } from "react-icons/fa";
 import { GiPillow } from "react-icons/gi";
