@@ -6,7 +6,11 @@ import {
     FaJava,
     FaPython,
     FaLinux,
-    FaGithub
+    FaGithub,
+    FaGithubAlt,
+    FaCodeBranch,
+    FaSass,
+    FaGit
 } from 'react-icons/fa';
 
 import {
@@ -27,7 +31,8 @@ import {
     SiSfml,
     SiGatsby,
     SiGraphql,
-    SiSass
+    SiSass,
+    SiGithub
 } from 'react-icons/si';
 
 import {
@@ -126,7 +131,7 @@ export default [
         desc: "A data query and manipulation language for APIs"
     },
     {
-        logo: SiSass,
+        logo: FaSass,
         name: "Sass",
         id: "sass",
         desc: "A preprocessor language transpiled or interpretted to css"
@@ -136,5 +141,17 @@ export default [
         name: "Github Pages",
         id: "gh-pages",
         desc: "A static site hosting service that serves files from a Github repository"
+    },
+    {
+        logo: FaCodeBranch,
+        name: "Git",
+        id: "git",
+        desc: "A version control software used with development"
+    },
+    {
+        logo: FaGithubAlt,
+        name: "Github",
+        id: "github",
+        desc: "A platform that can be used as a server to host git repositories"
     }
 ]
