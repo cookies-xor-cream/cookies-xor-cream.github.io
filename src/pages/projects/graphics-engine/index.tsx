@@ -1,11 +1,8 @@
-import React, { useEffect } from 'react'
-import { navigate } from 'gatsby-link'
+import React from 'react'
+import ProjectNotFound from '../project-not-implemented';
 
-const GraphicsEngine = () => {
-    useEffect(() => {
-        navigate('/projects/project-not-implemented');
-    }, []);
-    return null;
-}
+const GraphicsEngine = () => (
+    <ProjectNotFound />
+)
 
 export default GraphicsEngine
