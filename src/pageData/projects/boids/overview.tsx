@@ -12,10 +12,7 @@ import {
     BsTriangleHalf
 } from "react-icons/bs";
 
-import {
-    SiCplusplus,
-    SiSfml
-} from "react-icons/si";
+import techlinks from '../techlinks';
 
 const logoSize = 36;
 
@@ -25,8 +22,8 @@ export default <InfoGrid
     difficulty={2}
     overview="Simulation of emergent bird-like behaviours using simple rules."
     techStack={[
-        { logo: SiCplusplus, size: logoSize, name: "C++" },
-        { logo: SiSfml, size: logoSize, name: "SFML" }
+        techlinks.cpp,
+        techlinks.sfml
     ]}
     prereqs={[
         { logo: FaArrowsAlt, size: logoSize, name: "Vectors"},

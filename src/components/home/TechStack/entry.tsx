@@ -7,7 +7,7 @@ interface Props{
 };
 
 const Entry: React.FC<Props> = ({ Logo, name, size }) => (
-    <li><Logo size={size} /> {name}</li>
+    <li><Logo size={size} /> <span dangerouslySetInnerHTML={{__html : name}} /> </li>
 );
 
 export default Entry
