@@ -14,6 +14,10 @@ const IndexPage: React.FC = () => (
     <Layout currentPage="technologies">
         <Seo/>
         <h1>Technologies</h1>
+        <h3>
+            A short description of the various technologies used to build this site and the <a href="/projects">projects</a> showcased on it
+        </h3>
+
         <div className={styles.techGrid}>
             {
                 technologies.map(
