@@ -1,18 +1,18 @@
 ---
 slug: /projects/boids/
-date: "2019-06-04"
+date: "2021-11-13"
 title: "Boids"
 
 videoName: "BoidVid"
 
-carddesc: "Simulates bird-like or fish-like behaviours through three simple rules: separation, alignment, and cohesion. An example of emergent behaviours."
+carddesc: "Simulates complex swarm-like behaviours through three simple rules. An example of emergent behaviour."
 tags: ["simulation"]
 
 overview: "Emergent bird-like behaviours using three simple rules"
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
 timeest: "1 week"
-difficulty: 2
+difficulty: 8
 ---
 
 ## What Are Boids?

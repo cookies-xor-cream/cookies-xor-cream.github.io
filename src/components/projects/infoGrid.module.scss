@@ -18,6 +18,18 @@
         }
     }
 
+    .difficulty {
+        position: relative;
+
+        > div {
+            position: absolute;
+            left: 10%;
+            top: 50%;
+
+            width: 80%;
+        }
+    }
+
     @include desktop {
         .demoVid {
             grid-column: span 3;

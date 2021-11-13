@@ -9,7 +9,7 @@ $transition-speed: 0.1s;
 .projectGrid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-rows: minmax(100px, max-content);
+    grid-auto-rows: 1fr;
 
     column-gap: $gridgap;
     row-gap: $gridgap;
@@ -60,6 +60,8 @@ $transition-speed: 0.1s;
 
                 width: 100%;
                 height: auto;
+
+                max-height: 200px;
 
                 padding: $card-padding;
 

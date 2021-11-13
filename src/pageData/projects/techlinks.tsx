@@ -13,7 +13,8 @@ import {
 } from 'react-icons/gr';
 
 import {
-    GiPillow
+    GiPillow,
+    GiSnakeTongue
 } from 'react-icons/gi';
 
 import {
@@ -23,7 +24,8 @@ import {
     SiPostgresql,
     SiTypescript,
     SiJavascript,
-    SiSfml
+    SiSfml,
+    SiNumpy
 } from 'react-icons/si';
 
 import {
@@ -46,5 +48,7 @@ export default {
     linux:          { logo: FaLinux,        size: logoSize,     name: `<a href='${techurl}#linux'> Linux </a>`},
     bash:           { logo: SiGnubash,      size: logoSize,     name: `<a href='${techurl}#bash'> Bash </a>`},
     sfml:           { logo: SiSfml,         size: logoSize,     name: `<a href='${techurl}#sfml'> SFML </a>`},
-    pillow:         { logo: GiPillow,       size: logoSize,     name: `<a href='${techurl}#pillow'> PIL/Pillow </a>` }
+    pillow:         { logo: GiPillow,       size: logoSize,     name: `<a href='${techurl}#pillow'> PIL/Pillow </a>` },
+    numpy:          { logo: SiNumpy,        size: logoSize,     name: `<a href='${techurl}#numpy'> NumPy </a>` },
+    pygame:         { logo: GiSnakeTongue,  size: logoSize,     name: `<a href='${techurl}#pygame'> PyGame </a>` },
 }

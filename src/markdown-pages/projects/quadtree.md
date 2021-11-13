@@ -1,6 +1,6 @@
 ---
 slug: /projects/quadtree/
-date: "2019-09-04"
+date: "2021-11-14"
 title: "Quadtree Compression"
 
 videoName: "QuadVid"

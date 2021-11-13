@@ -18,7 +18,8 @@ import {
 } from 'react-icons/gr';
 
 import {
-    GiPillow
+    GiPillow,
+    GiSnakeTongue
 } from 'react-icons/gi';
 
 import {
@@ -32,7 +33,8 @@ import {
     SiGatsby,
     SiGraphql,
     SiSass,
-    SiGithub
+    SiGithub,
+    SiNumpy
 } from 'react-icons/si';
 
 import {
@@ -153,5 +155,17 @@ export default [
         name: "Github",
         id: "github",
         desc: "A platform that can be used as a server to host git repositories"
+    },
+    {
+        logo: SiNumpy,
+        name: "NumPy",
+        id: "numpy",
+        desc: "A fast and efficient numerical analysis library for python"
+    },
+    {
+        logo: GiSnakeTongue,
+        name: "PyGame",
+        id: "pygame",
+        desc: "A game development library for python built on SDL2"
     }
 ]

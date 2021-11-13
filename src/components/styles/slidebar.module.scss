@@ -5,26 +5,34 @@ $border-radius: 12px;
 $skill-bar-height: 12px;
 
 .slideBar {
+    position: relative;
     width: 100%;
     height: $skill-bar-height;
+
     border-radius: $border-radius;
+
     background-color: $grey3;
+    background: linear-gradient(to right, $lime, $red);
     
     div {
+        position: absolute;
         height: 100%;
-        background-color: $lime;
-        border-top-left-radius: $border-radius;
-        border-bottom-left-radius: $border-radius;
+
+        background-color: $grey3;
+
+        border-top-right-radius: $border-radius;
+        border-bottom-right-radius: $border-radius;
     }
 
-    ._1 { width: 10%; }
-    ._2 { width: 20%; }
-    ._3 { width: 30%; }
-    ._4 { width: 40%; }
-    ._5 { width: 50%; }
-    ._6 { width: 60%; }
-    ._7 { width: 70%; }
-    ._8 { width: 80%; }
-    ._9 { width: 90%; }
-    ._10 { width: 100%; border-radius: $border-radius; }
+    ._0 { right: 0; width: 100%; border-radius: 100%; }
+    ._1 { right: 0; width: 90%; }
+    ._2 { right: 0; width: 80%; }
+    ._3 { right: 0; width: 70%; }
+    ._4 { right: 0; width: 60%; }
+    ._5 { right: 0; width: 50%; }
+    ._6 { right: 0; width: 40%; }
+    ._7 { right: 0; width: 30%; }
+    ._8 { right: 0; width: 20%; }
+    ._9 { right: 0; width: 10%; }
+    ._10 { right: 0; width: 100%; border-radius: $border-radius; }
 }
