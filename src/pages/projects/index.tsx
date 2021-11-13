@@ -7,6 +7,7 @@ import ProjectCardGrid from "../../components/project-card-grid";
 
 import projectInfo from "../../pageData/projects/projectInfo.tsx";
 import videos from "../../pageData/projects/videos.tsx";
+import tagdata from "../../pageData/projects/tagdata";
 
 const SecondPage: React.FC = () => (
   <Layout currentPage="projects">
@@ -26,7 +27,7 @@ const IndexPage = ({
     href: data.frontmatter.slug,
     title: data.frontmatter.title,
     description: data.frontmatter.carddesc,
-    tags: data.frontmatter.tags,
+    tags: data.frontmatter.tags.map(tag => tagdata[tag]),
     vid: videos[data.frontmatter.videoName]
   }})
 
