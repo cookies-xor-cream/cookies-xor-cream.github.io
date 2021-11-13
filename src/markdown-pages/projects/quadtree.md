@@ -1,6 +1,6 @@
 ---
 slug: /projects/quadtree/
-date: "2019-05-04"
+date: "2019-09-04"
 title: "Quadtree Compression"
 
 videoName: "QuadVid"
@@ -8,7 +8,7 @@ videoName: "QuadVid"
 carddesc: "Compresses an image by recursively decomposing areas of high deviation into four smaller sections."
 tags: ["imageprocessing"]
 
-overview: "The compression of images through a compact tree representation of regions of colour."
+overview: "Image compression via compact representations of regions of colour"
 techStack: ["python", "pillow"]
 prereqs: ["trees"]
 timeest: "1 week"

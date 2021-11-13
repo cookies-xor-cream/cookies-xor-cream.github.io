@@ -31,8 +31,6 @@ const IndexPage = ({
     vid: videos[data.frontmatter.videoName]
   }})
 
-  console.log("???", projectData);
-
   return (
     <Layout currentPage="projects">
       <Seo title="projects" />
@@ -47,7 +45,7 @@ const IndexPage = ({
 export default IndexPage
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: {order: DESC, fields: frontmatter___date}) {
       nodes {
         frontmatter {
           slug

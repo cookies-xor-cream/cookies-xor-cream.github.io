@@ -3,16 +3,16 @@ slug: /projects/boids/
 date: "2019-06-04"
 title: "Boids"
 
-videoName: "BoidsVid"
+videoName: "BoidVid"
 
-carddesc: "Compresses an image by recursively decomposing areas of high deviation into four smaller sections."
-tags: ["imageprocessing"]
+carddesc: "Simulates bird-like or fish-like behaviours through three simple rules: separation, alignment, and cohesion. An example of emergent behaviours."
+tags: ["simulation"]
 
-overview: "Simulation of emergent bird-like behaviours using simple rules."
-techStack: ["python", "pillow"]
-prereqs: ["trees"]
-timeest: "1 week"
-difficulty: 3
+overview: "Emergent bird-like behaviours using three simple rules"
+techStack: []
+prereqs: []
+timeest: ""
+difficulty: 10
 ---
 
 # Boids
