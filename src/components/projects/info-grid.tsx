@@ -25,7 +25,6 @@ const InfoGrid: React.FC<Props> = ({
     timeEstimate
 }) => (
     <div className={styles.overviewWrapper}>
-
         <div className={styles.infoGrid}>
             <video autoPlay loop className={styles.demoVid}>
                 <source src={vidSrc} />

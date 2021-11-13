@@ -12,7 +12,7 @@ overview: "Emergent bird-like behaviours using three simple rules"
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
 timeest: "1 week"
-difficulty: 8
+difficulty: 2
 ---
 
 ## What Are Boids?
