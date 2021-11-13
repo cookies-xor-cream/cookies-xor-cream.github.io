@@ -72,13 +72,13 @@ Unfortunately while this approach does dictate that on average boids will remain
 A pleasant sideeffect of this approach however is that it causes the boids to have some more unique flourishes and gives depth to their behaviour.
 
 ## Optimizations
-Naively checking for nearby boids runs in quadratic time, but the question is can we do better than (LATEX HERE) O(N^2)?
+Naively checking for nearby boids runs in quadratic time, but the question is can we do better than $O(N^{2})$?
 
 ### Spatial Hashing
-Turns out that O(N) is possible! So how do we achieve it? Well it's quite simple with a concept known as spatial hashing. We will divide the screen into a set of grids and assign each boid to the grid that it's currently in. Now when doing neighbour lookups only nearby grid cells need to be checked for neighbouring boids.
+Turns out that $O(N)$ is possible! So how do we achieve it? Well it's quite simple with a concept known as spatial hashing. We will divide the screen into a set of grids and assign each boid to the grid that it's currently in. Now when doing neighbour lookups only nearby grid cells need to be checked for neighbouring boids.
 
 ### Quadtree
-While O(N log(N)) so technically slower than spatial hashing it is both much more interesting and works much better on sparse maps as it has a varying resolution. It defines nonuniform cells that the boids could be in and only searches for nearby boids from nearby cells.
+While $O(N\ log(N))$ so technically slower than spatial hashing it is both much more interesting and works much better on sparse maps as it has a varying resolution. It defines nonuniform cells that the boids could be in and only searches for nearby boids from nearby cells.
 
 #### Structure of a Quadtree
 A quadtree is akin to a binary tree but with a branching factor of 4 as the name suggests. This gives a way to systematically partition two dimensional space: when there more than a certain number of boids in a region, split up the region into four quadrants, and recursively apply this process to each of the quadrants.
@@ -86,6 +86,6 @@ A quadtree is akin to a binary tree but with a branching factor of 4 as the name
 This means area of dense populations will be more densely represented in the tree, and areas that are sparse will be sparsely represented in the tree.
 
 #### Generalizations
-A quadtree is fine for two dimensions where space can be partioned into four quadrants but what about three dimensional (or curiously: N-dimensional) space? In that case a (LATEX HERE) $2^{N}$ary tree will partition the space appropriately. As an example in three dimensional space you could use an *octree*.
+A quadtree is fine for two dimensions where space can be partioned into four quadrants but what about three dimensional (or curiously: N-dimensional) space? In that case a $2^{N}$ary tree will partition the space appropriately. As an example in three dimensional space you could use an *octree*.
 
 Higher dimensions are of course not applicable to boid simulations but there are applications in fields such as data analysis and machine learning where they could be used as an alternative to data structures such as kd trees for fast spacial partioning and lookups.
