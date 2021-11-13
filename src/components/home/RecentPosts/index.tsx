@@ -5,9 +5,10 @@ import * as styles from "./post.module.scss";
 
 interface Props{
     posts: {
-        header: string;
-        desc: string;
-        readTime: string;
+        title: string;
+        overview: string;
+        timeToRead: string;
+        slug: string;
     }[];
 };
 
@@ -17,10 +18,10 @@ const recentPosts: React.FC = ({ posts }) => (
             posts.map(post => (
                 <li>
                     <Post
-                        href={post.href}
-                        header={post.header}
-                        description={post.desc}
-                        readTime={post.readTime}
+                        href={post.slug}
+                        title={post.title}
+                        description={post.overview}
+                        timeToRead={post.timeToRead}
                     />
                 </li>
             ))

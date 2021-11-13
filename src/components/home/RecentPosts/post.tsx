@@ -5,22 +5,22 @@ import * as styles from "./post.module.scss";
 import { FaClock } from "react-icons/fa";
 
 interface Props {
-    header: string;
+    title: string;
     description: string;
-    readTime: string;
+    timeToRead: string;
     href: string;
 };
 
-const post: React.FC<Props> = ({ href, header, description, readTime }) => (
+const post: React.FC<Props> = ({ href, title, description, timeToRead }) => (
     <a href={href} className={styles.postEntry}>
-        <h4> {header} </h4>
+        <h4> {title} </h4>
         <p>
             {description}
         </p>
 
-        <div className={styles.readTime}>
+        <div className={styles.timeToRead}>
             <FaClock size={14} />
-            {readTime}
+            {timeToRead} minute{timeToRead !== 1 && "s"}
         </div>
     </a>
 );

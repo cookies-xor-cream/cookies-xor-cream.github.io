@@ -1,7 +1,8 @@
 ---
 slug: /projects/quadtree/
 date: "2019-05-04"
-title: "My first blog post"
+title: "Quadtree Compression"
+overview: "The compression of images through a compact tree representation of regions of colour."
 ---
 
 ## What Is a Quadtree?
