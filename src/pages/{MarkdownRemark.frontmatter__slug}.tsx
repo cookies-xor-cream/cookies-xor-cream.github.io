@@ -5,6 +5,7 @@ import Layout from "/src/components/layout"
 import Seo from "/src/components/seo";
 
 import * as styles from "/src/pages/projects/project-styles.module.scss";
+import "katex/dist/katex.min.css"
 
 import InfoGrid from "/src/components/projects/info-grid";
 
