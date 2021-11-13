@@ -87,6 +87,8 @@
     .timeEstimate {
         ul {
             list-style: none;
+            width: max-content;
+            margin: auto;
 
             li {
                 display: flex;

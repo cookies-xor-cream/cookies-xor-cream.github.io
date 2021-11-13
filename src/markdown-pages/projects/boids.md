@@ -9,10 +9,10 @@ carddesc: "Simulates bird-like or fish-like behaviours through three simple rule
 tags: ["simulation"]
 
 overview: "Emergent bird-like behaviours using three simple rules"
-techStack: []
-prereqs: []
-timeest: ""
-difficulty: 10
+techStack: ["cpp", "sfml"]
+prereqs: ["vectors", "trig"]
+timeest: "1 week"
+difficulty: 2
 ---
 
 ## What Are Boids?
