@@ -3,6 +3,8 @@ slug: /projects/quadtree/
 date: "2019-05-04"
 title: "Quadtree Compression"
 
+videoName: "QuadVid"
+
 carddesc: "Compresses an image by recursively decomposing areas of high deviation into four smaller sections."
 tags: ["imageprocessing"]
 

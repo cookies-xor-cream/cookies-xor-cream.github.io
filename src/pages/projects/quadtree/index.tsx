@@ -11,6 +11,7 @@ import InfoGrid from "../../../components/projects/info-grid";
 
 import techlinks from "../../../pageData/projects/techlinks";
 import prereqs from "../../../pageData/projects/prereqs";
+import videos from "../../../pageData/projects/videos";
 
 import QuadVid from "../../../videos/artorias_quadtree.webm";
 
@@ -33,6 +34,7 @@ const IndexPage: React.FC = () => {
               difficulty
               techStack
               timeest
+              videoName
             }
             html
             tableOfContents
@@ -42,9 +44,11 @@ const IndexPage: React.FC = () => {
 
     const postData = {
         title: rawData.frontmatter.title,
+        video: videos[rawData.frontmatter.videoName],
         overview: rawData.frontmatter.overview,
         prereqs: rawData.frontmatter.prereqs.map(prereq => prereqs[prereq]),
         techStack: rawData.frontmatter.techStack.map(tech => techlinks[tech]),
+        difficulty: rawData.frontmatter.difficulty,
         timeest: rawData.frontmatter.timeest,
         __html: rawData.html,
         tableOfContents: rawData.tableOfContents,
@@ -56,10 +60,10 @@ const IndexPage: React.FC = () => {
             <h1>{postData.title}</h1>
 
             <InfoGrid
-                vidSrc={QuadVid}
-                timeEstimate="1 week"
-                difficulty={3}
-                overview="The compression of images through a compact tree representation of regions of colour."
+                vidSrc={postData.video}
+                timeEstimate={postData.timeest}
+                difficulty={postData.difficulty}
+                overview={postData.overview}
                 techStack={postData.techStack}
                 prereqs={postData.prereqs}
             />
