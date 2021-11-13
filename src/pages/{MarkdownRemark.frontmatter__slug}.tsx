@@ -12,6 +12,8 @@ import techlinks from "/src/pageData/projects/techlinks";
 import prereqs from "/src/pageData/projects/prereqs";
 import videos from "/src/pageData/projects/videos";
 
+import ProjectNotFound from "/src/pages/projects/project-not-implemented";
+
 export default function ProjectPost({ data }) {
   const rawData = data.markdownRemark;
 
@@ -26,6 +28,10 @@ export default function ProjectPost({ data }) {
       __html: rawData.html,
       tableOfContents: rawData.tableOfContents,
   };
+
+  if(postData.overview === "") {
+    return <ProjectNotFound />
+  }
 
   return (
       <Layout currentPage="projects">
