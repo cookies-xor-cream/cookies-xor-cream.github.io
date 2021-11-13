@@ -2,7 +2,15 @@
 slug: /projects/quadtree/
 date: "2019-05-04"
 title: "Quadtree Compression"
+
+carddesc: "Compresses an image by recursively decomposing areas of high deviation into four smaller sections."
+tags: ["imageprocessing"]
+
 overview: "The compression of images through a compact tree representation of regions of colour."
+techStack: ["python", "pillow"]
+prereqs: ["trees"]
+timeest: "1 week"
+difficulty: 3
 ---
 
 ## What Is a Quadtree?
