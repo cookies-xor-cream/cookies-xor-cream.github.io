@@ -38,6 +38,42 @@ Alignment dictates that a flock of boids will attempt to travel in the same dire
 
 To keep the boids travelling as a flock a force will be applied in the direction of the average velocitiy of nearby boids
 
+## Behavioural Rules as Functions
+Cohesion, separation, and allignment are defined as follows:
+$$
+\begin{align}
+X := &\text{ set of other boids in vision} \\
+x.v := &\text{ velocity of boid $x$} \\
+x.p := &\text{ position of boid $x$} \\
+x.a := &\text{ acceleration of boid $x$} \\
+s := &\text{ the boid whose behaviour is being altered} \\
+\\
+&\text{Cohesion: }   \dfrac{1}{|X|}\sum\limits_{x \in X}x.p - s.p \\
+&\text{Separation: } -\sum\limits_{x \in X}\dfrac{1}{|x.p - s.p|} \\
+&\text{Allignment: } \dfrac{1}{|X|}\sum\limits_{x \in X}x.v - s.v \\
+\end{align}
+$$
+
+The update function is as follows:
+$$
+s.v_{new} = \mathrm{clamp}(s.v_{old} + (\text{Cohesion} + \text{Separation} + \text{Allignment}),\ v_{max})
+$$
+
+Where $\mathrm{clamp}$ limits $|v|$ to $v_{max}$:
+$$
+\mathrm{clamp}(v,\ v_{max}) = \hat{v} \cdot \min(|v|,\ v_{max})
+$$
+
+Clamping helps prevent the problem where boids *instantly accelerate into infinity*.
+
+### Rule Coefficients
+If we want to weight the different rules we can choose constant $w_{c}, w_{s}, w_{a} \in \mathbb{R}$ and update the velocity accordingly:
+$$
+s.v_{new} = \mathrm{clamp}(s.v_{old} + (w_{c} \text{Cohesion} + w_{s} \text{Separation} + w_{a} \text{Allignment}),\ v_{max})
+$$
+
+This will cause different rules to have varying impacts on the behaviour of the boids.
+
 ## Vision
 The term 'vision' or 'nearby' make intuitive sense but how would they actually be implemented?
 

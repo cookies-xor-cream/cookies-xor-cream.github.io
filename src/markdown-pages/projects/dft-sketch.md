@@ -1,6 +1,6 @@
 ---
 slug: /projects/dft-sketch/
-date: "2019-11-04"
+date: "2021-11-14"
 title: "DFT"
 
 videoName: "DFTVid"
