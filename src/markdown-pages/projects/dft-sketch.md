@@ -72,13 +72,13 @@ Now that we have our estimation for a contrast at a given point we can compute t
 
 RGB values are between $0$ and $255$, therefore the largest distance between two pixels is the difference of these tuples:
 $$
-\begin{align}
+\begin{align*}
 & = d((255,255,255) - (0,0,0)) \\
 & = d((255,255,255)) \\
 & = \sqrt{(255^{2} \cdot 3)} \\
 & \approx 442 \\
 & \therefore C \in (0, 442)
-\end{align}
+\end{align*}
 $$
 
 The exact value of $C$ is still context dependent and best found by experimentation.
@@ -207,12 +207,12 @@ Where $\Im(X)$ is the imaginary component of $X$ and $\Re(X)$ is the real compon
 #### Calculating Amplitude at a Given Time
 Given an amplitude $a$ and phase $b$ corresponding to a frequency $n$ we can calculate the complex coordinate at each point in time using eulers formula:
 $$
-\begin{align}
+\begin{align*}
 &e^{i (n\theta + b)} \\
 &a[\cos(n\theta+b) + i\sin(n\theta+b)] &\text{ using euler's formula} \\
 &a(\cos(n\theta+b),\ \sin(n\theta+b)) &\mathbb{C} \rightarrow \mathbb{R}^{2} \\
 &a(\cos(nt+b),\ \sin(nt+b)) &\theta \rightarrow t
-\end{align}
+\end{align*}
 $$
 
 now we simply need to do so by taking a sum using a vector of amplitudes and phases: $\{a_{1}, \ldots, a_{k}\}, \{b_{1}, \ldots, b_{k}\}$:

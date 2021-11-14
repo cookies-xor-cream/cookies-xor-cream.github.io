@@ -41,7 +41,7 @@ To keep the boids travelling as a flock a force will be applied in the direction
 ## Behavioural Rules as Functions
 Cohesion, separation, and allignment are defined as follows:
 $$
-\begin{align}
+\begin{align*}
 X := &\text{ set of other boids in vision} \\
 x.v := &\text{ velocity of boid $x$} \\
 x.p := &\text{ position of boid $x$} \\
@@ -51,7 +51,7 @@ s := &\text{ the boid whose behaviour is being altered} \\
 &\text{Cohesion: }   \dfrac{1}{|X|}\sum\limits_{x \in X}x.p - s.p \\
 &\text{Separation: } -\sum\limits_{x \in X}\dfrac{1}{|x.p - s.p|} \\
 &\text{Allignment: } \dfrac{1}{|X|}\sum\limits_{x \in X}x.v - s.v \\
-\end{align}
+\end{align*}
 $$
 
 The update function is as follows:
