@@ -46,9 +46,12 @@ $svgmargin: 18px;
             @include mobile {
                 grid-row: 3;
             }
+
             ul {
                 list-style: none;
-    
+                width: max-content;
+                margin: auto;
+
                 li {
                     display: flex;
                     flex-direction: row;
