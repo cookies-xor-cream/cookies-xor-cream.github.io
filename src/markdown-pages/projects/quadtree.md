@@ -49,12 +49,17 @@ Since all the children of a node represent the entire area of their parent witho
 
 ## Formalizing Definitions
 
-Formalizing what the 'average' colour and how much 'deviation' of colour there is in a certain region is the last step to implement the algorithm, and thankfully by treating colours as three dimensional vectors, the underlying math becomes much simpler
-### Average Colour
-Lorem ipsum
+Formalizing what the 'average' colour and how much 'deviation' of colour there is in a certain region is the last step to implement the algorithm, and thankfully by treating colours as three dimensional vectors, the underlying math becomes much simpler.
+### The Mean and Standard Deviation of Colours
+How do you take the mean and standard deviations of colours then? Well the same way you do with vectors!
 
-### Standard Deviation of Colours
-Lorem ipsum
+In truth it's a little more complicated but the mean can be thought of as the mean of each component of the vector, and the standard deviation as the magnitude of the standard deviation of each component. This makes them computationally efficient to calculate as they are highly parallelizable and makes them simple for humans to comprehend as it extends maths that they are already familiar with.
+
+Given the sets of $x$, $y$ and $z$ components of all colour vectors $V$ as $X$, $Y$, $Z$:
+$$
+\mu_{V} = \dfrac{(\sum X, \sum Y, \sum Z)}{|V|} \\
+\sigma_{V} = |(\sigma_{X}, \sigma_{Y}, \sigma_{Z})|
+$$
 
 ## Pros and Cons of Quadtree Compression
 ### Pros
