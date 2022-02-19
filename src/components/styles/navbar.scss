@@ -121,6 +121,7 @@ nav {
         display: grid;
         margin-bottom: 2rem;
         transition: max-height 2s;
+        overflow: hidden;
 
         &.navUncollapse {
             max-height: 13rem;
