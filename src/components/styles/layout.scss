@@ -621,22 +621,29 @@ footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1.0875rem 1.45rem;
+
+  @include mobile {
+    margin-top: 7rem;
+  }
 }
 
-@include desktop {
-  h1 {
-    color: $black;
-    text-decoration-color: $grey2;
-  }
+h1 {
+  color: $black;
+  text-decoration-color: $grey2;
+}
 
-  .wave {
-    z-index: -900;
-    position: absolute;
-    aspect-ratio: 16/9;
-    width: 100%;
-    background-image: url("../../images/waves/tan-wave.svg");
-    background-repeat: repeat-x;
-    background-position: top center;
+.wave {
+  z-index: -900;
+  position: absolute;
+  aspect-ratio: 16/9;
+  width: 100%;
+  background-image: url("../../images/waves/tan-wave.svg");
+  background-repeat: repeat-x;
+  background-position: top center;
+  top: 0;
+
+  @include mobile {
+    top: 3rem;
   }
 }
 
