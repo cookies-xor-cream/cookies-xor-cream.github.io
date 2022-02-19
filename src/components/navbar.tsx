@@ -33,7 +33,7 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 
 	return (
 		<nav className={cc({
-			['navUncollapse']: (mobile && !open)
+			['navUncollapse']: (mobile && open)
 		})}>
 			<ol>
 				{mobile && (
@@ -45,26 +45,21 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 
 				{!mobile && <li><div></div></li>}
 
-				{true &&
-					<>
-						{paths.map(path => {
-							const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
-							const regex = new RegExp(path.slice(1));
-							const navItemClass = regex.test(currentPage)
-								? "active-nav"
-								: "";
+				{paths.map(path => {
+					const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
+					const regex = new RegExp(path.slice(1));
+					const navItemClass = regex.test(currentPage)
+						? "active-nav"
+						: "";
 
-							return (
-								<li key={path}>
-									<a href={path} className={navItemClass}>
-										{navItemText}
-									</a>
-								</li>
-							)
-						}
-						)}
-					</>
-				}
+					return (
+						<li key={path}>
+							<a href={path} className={navItemClass}>
+								{navItemText}
+							</a>
+						</li>
+					)
+				})}
 			</ol>
 		</nav>
 	);
