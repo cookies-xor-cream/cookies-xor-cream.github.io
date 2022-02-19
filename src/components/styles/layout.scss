@@ -644,6 +644,7 @@ h1 {
 
   @include mobile {
     top: 3rem;
+    background-position-y: -3vh;
   }
 }
 
