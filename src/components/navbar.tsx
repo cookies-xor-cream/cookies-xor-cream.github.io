@@ -5,6 +5,8 @@ import { Link } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import cc from 'classcat';
+
 type Props  = {
 	currentPage: string | '/';
 };
@@ -30,18 +32,20 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	});
 
 	return (
-		<nav>
+		<nav className={cc({
+			['navUncollapse']: (mobile && !open)
+		})}>
 			<ol>
-				{mobile &&
-				<button onClick={toggleOpen}>
-					<FontAwesomeIcon size='2x' icon={faBars}></FontAwesomeIcon>
-				</button>
-				}
+				{mobile && (
+					<button onClick={toggleOpen}>
+						<FontAwesomeIcon size='2x' icon={faBars}></FontAwesomeIcon>
+					</button>
+				)}
 				<li><a href="/" className={currentPage == "/" ? "active-nav" : ""}>cookies-xor-cream</a></li>
 
 				{!mobile && <li><div></div></li>}
 
-				{((mobile && !open) || (!mobile)) &&
+				{true &&
 					<>
 						{paths.map(path => {
 							const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
