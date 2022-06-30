@@ -12,7 +12,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
-  background-color: $black;
+  background-color: $background;
   font-family: sans-serif, georgia, serif;
   font-weight: normal;
   word-wrap: break-word;
@@ -56,7 +56,7 @@ template {
   display: none;
 }
 a {
-  color: $brown;
+  color: $textHighlight;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   transition: color 0.15s;
@@ -83,12 +83,12 @@ dfn {
 h1 {
   margin-left: 0;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 5rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -628,8 +628,13 @@ footer {
 }
 
 h1 {
-  color: $black;
+  color: $primary;
   text-decoration-color: $grey2;
+  text-shadow:
+    -1px -1px 0 $black,
+     1px -1px 0 $black,
+    -1px  1px 0 $black,
+     1px  1px 0 $black;
 }
 
 .wave {
@@ -637,7 +642,7 @@ h1 {
   position: absolute;
   aspect-ratio: 16/9;
   width: 100%;
-  background-image: url("../../images/waves/tan-wave.svg");
+  background-image: url("../../images/waves/yellow-black-wave.svg");
   background-repeat: repeat-x;
   background-position: top center;
   top: 0;

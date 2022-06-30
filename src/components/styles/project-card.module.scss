@@ -36,13 +36,13 @@ $transition-speed: 0.1s;
         background-repeat: no-repeat;
         background-size: cover;
 
-        background-color: $cream;
+        background-color: $primary;
 
-        box-shadow: 0 0 2px $tan;
+        box-shadow: 0 0 2px $primaryHighlight;
 
         &:hover {
             filter: brightness(110%);
-            box-shadow: 0 0 6px $tan;
+            box-shadow: 0 0 6px $primaryHighlight;
 
             z-index: 0;
         }
@@ -77,7 +77,7 @@ $transition-speed: 0.1s;
                 margin: 0;
                 color: $black !important;
 
-                color: $tan;
+                color: $primaryHighlight;
 
                 text-decoration: underline;
                 text-decoration-thickness: 2px;

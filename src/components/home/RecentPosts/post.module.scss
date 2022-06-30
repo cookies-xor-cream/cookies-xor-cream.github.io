@@ -16,19 +16,19 @@ a.postEntry {
     display: block;
     color: white;
 
-    box-shadow: 0 0 2px $tan;
+    box-shadow: 0 0 2px $primaryHighlight;
     transition: all $transition-speed;
 
     &:hover {
         filter: brightness(120%);
-        box-shadow: 0 0 6px $tan;
+        box-shadow: 0 0 6px $primaryHighlight;
 
         z-index: 0;
     }
 
     h4 {
         margin-bottom: 0.25rem;
-        color: $tan;
+        color: $primaryHighlight;
     }
 
     p {

@@ -3,27 +3,27 @@
 
 .techCard {
     padding: 16px;
-    background-color: $black1;
+    background-color: $dark;
     
-    box-shadow: 0 0 2px $tan;
+    box-shadow: 0 0 2px $primaryHighlight;
     
     > div {
         display: grid;
         grid-template-columns: 48px auto;
         
         svg {
-            fill: $cream;
+            fill: $primary;
         }
 
         h3 {
-            color: $tan;
+            color: $primaryHighlight;
             margin-bottom: 16px;
         }
     }
 
     hr {
         grid-column: span 2;
-        background-color: $tan;
+        background-color: $primaryHighlight;
         width: 100%;
         height: 1px;
 

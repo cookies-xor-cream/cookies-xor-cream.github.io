@@ -16,10 +16,10 @@ $svgmargin: 18px;
 
     .contentBlock {
         padding: $blockpadding;
-        background-color: $black1;
+        background-color: $dark;
 
         > h2 {
-            color: $cream;
+            color: $primary;
             padding-bottom: $blockmargin;
             text-align: center;
         }
