@@ -637,15 +637,21 @@ h1 {
      1px  1px 0 $background;
 }
 
-.wave {
-  z-index: -900;
+.wave-wrapper {
   position: absolute;
+  width: 100%;
+  z-index: -2;
+}
+
+.wave {
+  position: relative;
+  top: -36px;
+  z-index: -1;
   aspect-ratio: 16/9;
   width: 100%;
   background-image: url("../../images/waves/yellow-black-wave.svg");
   background-repeat: repeat-x;
   background-position: top center;
-  top: 0;
 
   @include mobile {
     top: 3rem;

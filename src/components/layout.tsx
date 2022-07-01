@@ -32,9 +32,10 @@ const Layout: React.FC<Props> = ({ children, currentPage }) => {
 
   return (
     <>
-      <div className="wave" />
-
       <Navbar currentPage={currentPage ? currentPage : "/"} />
+      <div className="wave-wrapper">
+        <div className="wave" />
+      </div>
       <div className="main">
         <main>{children}</main>
         <footer>
