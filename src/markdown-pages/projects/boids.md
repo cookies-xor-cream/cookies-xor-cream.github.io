@@ -6,7 +6,7 @@ title: "Boids"
 videoName: "BoidVid"
 
 carddesc: "Simulates complex swarm-like behaviours through three simple rules. An example of emergent behaviour."
-tags: ["simulation"]
+tags: ["simulation", "realtime"]
 
 overview: "Emergent bird-like behaviours using three simple rules"
 techStack: ["cpp", "sfml"]

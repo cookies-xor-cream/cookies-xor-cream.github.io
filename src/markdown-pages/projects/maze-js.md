@@ -6,7 +6,7 @@ title: "Maze Generator/Solver"
 videoName: "MazeGenVid"
 
 carddesc: "A program that generates and solves mazes using a variety of seemingly unrelated graph algorithms."
-tags: ["graphtheory"]
+tags: ["graphtheory", "realtime"]
 
 overview: "test"
 techStack: ["html", "css", "javascript"]

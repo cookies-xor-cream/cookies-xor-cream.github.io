@@ -6,7 +6,7 @@ title: "Graphics Engine"
 videoName: "GraphicsVid"
 
 carddesc: "A rudimentary graphics engine that runs solely on 1 CPU thread, written to practice the mathematical foundations of graphics programming."
-tags: ["interactive"]
+tags: ["interactive", "realtime"]
 
 overview: ""
 techStack: []

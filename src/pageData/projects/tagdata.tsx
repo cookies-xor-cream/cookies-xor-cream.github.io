@@ -1,6 +1,7 @@
 export default {
-    imageprocessing:    { name: "image processing", color: "blue" },
-    graphtheory:        { name: "graph theory", color: "purple" },
-    interactive:        { name: "interactive", color: "pink" },
-    simulation:         { name: "simulation", color: "green" }
+    imageprocessing:    { name: "image processing", color: "c1" },
+    graphtheory:        { name: "graph theory", color: "c2" },
+    interactive:        { name: "interactive", color: "c3" },
+    simulation:         { name: "simulation", color: "c4" },
+    realtime:           {name: "realtime", color: "c5"}
 }

@@ -9,6 +9,10 @@
 
     margin: 0 20px 20px 20px;
 
+    @include mobile {
+        margin: 0 15px 0 15px;
+    }
+
     li {
         padding: 0px 8px 0px 8px;
         margin: 0px 4px 4px 0px;
@@ -23,11 +27,11 @@
 
         transform: skewX(-20deg);
 
-        &.blue { background-color: $tag1; }
-        &.pink { background-color: $tag2; }
-        &.purple { background-color: $tag3; }
-        &.red { background-color: $tag4; }
-        &.green { background-color: $tag5; }
+        &.c1 { background-color: $tag1; }
+        &.c2 { background-color: $tag2; }
+        &.c3 { background-color: $tag3; }
+        &.c4 { background-color: $tag4; }
+        &.c5 { background-color: $tag5; }
 
         p {
             transform: skew(20deg);
