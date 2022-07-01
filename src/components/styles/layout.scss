@@ -633,6 +633,10 @@ h1 {
      1px -1px 0 $background,
     -1px  1px 0 $background,
      1px  1px 0 $background;
+
+  @include mobile {
+    margin: 20px 0;
+  }
 }
 
 .wave-wrapper {
@@ -652,7 +656,7 @@ h1 {
   background-position: top center;
 
   @include mobile {
-    background-position-y: -3vh;
+    background-image: none;
   }
 }
 
