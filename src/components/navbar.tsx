@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import Cookie from "/src/images/cookie.png";
 
 import cc from 'classcat';
 
@@ -12,7 +13,6 @@ type Props  = {
 };
 
 const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
-	return null;
 	const paths = ["/projects", "/contact", "/technologies"];
 	
 	const mobileWidth = 768;
@@ -36,15 +36,13 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 		<nav className={cc({
 			['navUncollapse']: (mobile && open)
 		})}>
-			<ol>
+			<ul>
 				{mobile && (
 					<button onClick={toggleOpen}>
 						<FontAwesomeIcon size='2x' icon={faBars}></FontAwesomeIcon>
 					</button>
 				)}
-				<li><a href="/" className={currentPage == "/" ? "active-nav" : ""}>cookies-xor-cream</a></li>
-
-				{!mobile && <li><div></div></li>}
+				<li><a href="/" className={currentPage == "/" ? "active-nav" : ""}><img src={Cookie} width="32px" height="32px" /></a></li>
 
 				{paths.map(path => {
 					const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
@@ -61,7 +59,7 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 						</li>
 					)
 				})}
-			</ol>
+			</ul>
 		</nav>
 	);
 }
