@@ -31,17 +31,18 @@ nav {
         margin: 0;
 
         @include mobile {
-            height: 0;
+            position: fixed;
+            background: $background;
+            transition: height 500ms ease-in-out;
+            flex-direction: column;
+            justify-content: flex-start;
             padding: 0;
+            height: 0;
+            overflow: hidden;
+
             top: 64px;
             left: 0;
             right: 0;
-            overflow: hidden;
-            transition: 800ms ease-in-out;
-            display: block;
-            background: $background;
-            position: fixed;
-            flex-direction: column;
 
             &.open {
                 height: 100%;
@@ -54,12 +55,21 @@ nav {
             width: max-content;
             height: max-content;
 
+            @include mobile {
+                padding: 4px 0;
+            }
+
             &:first-child {
                 padding-left: 0;
                 padding-right: 32px;
-                filter: drop-shadow(0 0 0 $primaryHighlight);
+                filter: drop-shadow(0 0 3px $primaryHighlight);
                 transition: 500ms;
                 height: 32px;
+
+                @include mobile {
+                    padding: 4px 0;
+                    margin-bottom: 12px;
+                }
 
                 a {
                     width: max-content;
@@ -67,9 +77,12 @@ nav {
                     display: inline-block;
                 }
 
-                img:hover {
-                    filter: drop-shadow(0 0 6px $primaryHighlight);
+                img {
                     transition: 500ms;
+
+                    &:hover {
+                        filter: drop-shadow(0 0 6px $primaryHighlight);
+                    }
                 }
             }
         }

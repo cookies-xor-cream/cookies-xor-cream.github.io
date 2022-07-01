@@ -3,7 +3,7 @@ import { useState, useEffect, useMemo } from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Cookie from "/src/images/cookie.png";
-import Hamburger from 'hamburger-react'
+import { Squash as Hamburger } from 'hamburger-react'
 import AnimateHeight from "react-animate-height";
 
 import cc from 'classcat';
@@ -42,10 +42,10 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 		})}>
 			{mobile && (
 				<div className="nav-header">
-					<Hamburger onToggle={toggleOpen} />
+					<Hamburger onToggle={toggleOpen} size={32} direction={'left'} />
 				</div>
 			)}
-			<ul className={cc({['open']: open || !mobile})}>
+			<ul className={cc({['open']: open && mobile})}>
 				<li>
 					<a href="/" className={currentPage == "/" ? "active-nav" : ""}>
 						<img src={Cookie} width="32px" height="32px" />

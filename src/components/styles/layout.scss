@@ -623,10 +623,6 @@ footer {
   max-width: 960px;
   margin: 0 auto;
   padding: 0 1.0875rem 1.45rem;
-
-  @include mobile {
-    margin-top: 7rem;
-  }
 }
 
 h1 {
@@ -656,7 +652,6 @@ h1 {
   background-position: top center;
 
   @include mobile {
-    top: 3rem;
     background-position-y: -3vh;
   }
 }
