@@ -8,11 +8,15 @@ $skill-bar-height: 12px;
     position: relative;
     width: 100%;
     height: $skill-bar-height;
-
     border-radius: $border-radius;
 
     background-color: $dark4;
-    background: linear-gradient(to right, $error, $accept);
+    background: linear-gradient(to right, $accept, $error);
+
+
+    &.flipped {
+        background: linear-gradient(to right, $error, $accept);
+    }
     
     div {
         position: absolute;

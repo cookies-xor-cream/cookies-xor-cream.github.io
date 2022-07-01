@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import PropTypes from "prop-types";
 import { Link } from "gatsby";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,6 +7,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Cookie from "/src/images/cookie.png";
 
 import cc from 'classcat';
+import { useScrollYPosition } from "react-use-scroll-position";
 
 type Props  = {
 	currentPage: string | '/';
@@ -17,6 +18,8 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	
 	const mobileWidth = 768;
 	const isMobile = () => window.innerWidth < mobileWidth;
+	const scrollY = useScrollYPosition();
+	const dropShadow = useMemo(() => scrollY > 100, [scrollY])
 
 	const [mobile, setMobile] = useState<boolean>(false);
 	
@@ -34,7 +37,8 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 
 	return (
 		<nav className={cc({
-			['navUncollapse']: (mobile && open)
+			['navUncollapse']: (mobile && open),
+			['dropShadow']: dropShadow,
 		})}>
 			<ul>
 				{mobile && (
