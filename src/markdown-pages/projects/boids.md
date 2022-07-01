@@ -46,17 +46,20 @@ X := &\text{ set of other boids in vision} \\
 x.v := &\text{ velocity of boid $x$} \\
 x.p := &\text{ position of boid $x$} \\
 x.a := &\text{ acceleration of boid $x$} \\
-s := &\text{ the boid whose behaviour is being altered} \\
+s := &\text{ the boid being updated} \\
 \\
-&\text{Cohesion: }   \dfrac{1}{|X|}\sum\limits_{x \in X}x.p - s.p \\
-&\text{Separation: } -\sum\limits_{x \in X}\dfrac{1}{|x.p - s.p|} \\
-&\text{Allignment: } \dfrac{1}{|X|}\sum\limits_{x \in X}x.v - s.v \\
+&\text{Cohesion (s.c): }   \dfrac{1}{|X|}\sum\limits_{x \in X}x.p - s.p \\
+&\text{Separation (s.s): } -\sum\limits_{x \in X}\dfrac{1}{|x.p - s.p|} \\
+&\text{Allignment (s.l): } \dfrac{1}{|X|}\sum\limits_{x \in X}x.v - s.v \\
 \end{align*}
 $$
 
-The update function is as follows:
+To update the boid you add the cohesion, separation, and allignment to the velocity and then clamp it to some maximum value:
 $$
-s.v_{new} = \mathrm{clamp}(s.v_{old} + (\text{Cohesion} + \text{Separation} + \text{Allignment}),\ v_{max})
+\begin{align*}
+s.a &= s.c + s.s + s.l \\
+s.v_{new} &= \mathrm{clamp}(s.v_{old} + a,\ v_{max})
+\end{align*}
 $$
 
 Where $\mathrm{clamp}$ limits $|v|$ to $v_{max}$:
@@ -69,7 +72,10 @@ Clamping helps prevent the problem where boids *instantly accelerate into infini
 ### Rule Coefficients
 If we want to weight the different rules we can choose constant $w_{c}, w_{s}, w_{a} \in \mathbb{R}$ and update the velocity accordingly:
 $$
-s.v_{new} = \mathrm{clamp}(s.v_{old} + (w_{c} \text{Cohesion} + w_{s} \text{Separation} + w_{a} \text{Allignment}),\ v_{max})
+\begin{align*}
+s.a &= w_{c} s.c + w_{s} s.s + w_{a} s.l \\
+s.v_{new} &= \mathrm{clamp}(s.v_{old} + s.a,\ v_{max})
+\end{align*}
 $$
 
 This will cause different rules to have varying impacts on the behaviour of the boids.
