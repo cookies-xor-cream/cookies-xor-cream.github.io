@@ -52,13 +52,16 @@ const IndexPage: React.FC = () => {
 
       <div className={styles.contentMatrix}>
         <div className={cc([styles.contentBlock, styles.introBlock])}>
-          <h2> Welcome to my portfolio website! </h2>
+          <h2> Welcome to my site! </h2>
           <p>
-            Welcome! This is somewhere for me to publish information and projects I'd like to share, if you're interested in them head over to <a href="/projects">Projects</a> and check them out!
+            Welcome! This is somewhere for me to publish projects I'd like to
+            share, if you're interested in them head over to <a href="/projects">Projects</a> and check them out!
           </p>
-  
+
           <p>
-            The intended audience is for people who already have a little programming background but all of the terms are searchable so anyone should be able to read them.
+            A lot of them have a very math heavy approach but even without the
+            maths a novice programmer should still be able to follow them,
+            just with less depth of understanding.
           </p>
         </div>
   

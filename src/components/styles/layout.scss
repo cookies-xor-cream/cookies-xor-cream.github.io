@@ -6,10 +6,9 @@ html {
   font: 112.5%/1.45em sans-serif, georgia, serif;
   box-sizing: border-box;
   overflow-y: scroll;
+  overflow-x: hidden; // disable horizontal scroll
 }
 body {
-  width: 100%;
-  overflow: hidden;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
