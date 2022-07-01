@@ -28,7 +28,7 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	}
 	
 	const [open, setOpen] = useState<boolean>(false);
-	const height = useMemo(() => (open || !mobile) ? 'auto' : 0, [open, mobile]);
+	const height = useMemo(() => (open || !mobile) ? '100%' : 0, [open, mobile]);
 	const toggleOpen = () => setOpen(!open);
 	
 	useEffect(() => {
@@ -37,38 +37,38 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 	});
 
 	return (
-		<>
-			{mobile && <Hamburger onToggle={toggleOpen} />}
-			<AnimateHeight height={height} duration={200}>
-				<nav className={cc({
-					['dropShadow']: dropShadow && !mobile,
-				})}>
-					<ul>
-						<li>
-							<a href="/" className={currentPage == "/" ? "active-nav" : ""}>
-								<img src={Cookie} width="32px" height="32px" />
+		<nav className={cc({
+			['dropShadow']: dropShadow,
+		})}>
+			{mobile && (
+				<div className="nav-header">
+					<Hamburger onToggle={toggleOpen} />
+				</div>
+			)}
+			<ul className={cc({['open']: open || !mobile})}>
+				<li>
+					<a href="/" className={currentPage == "/" ? "active-nav" : ""}>
+						<img src={Cookie} width="32px" height="32px" />
+					</a>
+				</li>
+
+				{paths.map(path => {
+					const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
+					const regex = new RegExp(path.slice(1));
+					const navItemClass = regex.test(currentPage)
+						? "active-nav"
+						: "";
+
+					return (
+						<li key={path}>
+							<a href={path} className={navItemClass}>
+								{navItemText}
 							</a>
 						</li>
-
-						{paths.map(path => {
-							const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;
-							const regex = new RegExp(path.slice(1));
-							const navItemClass = regex.test(currentPage)
-								? "active-nav"
-								: "";
-
-							return (
-								<li key={path}>
-									<a href={path} className={navItemClass}>
-										{navItemText}
-									</a>
-								</li>
-							)
-						})}
-					</ul>
-				</nav>
-			</AnimateHeight>
-		</>
+					)
+				})}
+			</ul>
+		</nav>
 	)
 }
 

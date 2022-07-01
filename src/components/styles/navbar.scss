@@ -1,9 +1,20 @@
 @import "colors";
 @import "media";
 
+.nav-header{
+    width: 100%;
+    background-color: $background;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 64px;
+}
+
 nav {
     position: sticky;
+    height: 20px;
     top: 0;
+    height: max-content;
     background-color: $background;
     z-index: 1;
 
@@ -18,6 +29,24 @@ nav {
         list-style: none;
         padding: 16px;
         margin: 0;
+
+        @include mobile {
+            height: 0;
+            padding: 0;
+            top: 64px;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            transition: 800ms ease-in-out;
+            display: block;
+            background: $background;
+            position: fixed;
+            flex-direction: column;
+
+            &.open {
+                height: 100%;
+            }
+        }
 
         li {
             padding-right: 42px;
