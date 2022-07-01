@@ -46,7 +46,11 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 						<FontAwesomeIcon size='2x' icon={faBars}></FontAwesomeIcon>
 					</button>
 				)}
-				<li><a href="/" className={currentPage == "/" ? "active-nav" : ""}><img src={Cookie} width="32px" height="32px" /></a></li>
+				<li>
+					<a href="/" className={currentPage == "/" ? "active-nav" : ""}>
+						<img src={Cookie} width="32px" height="32px" />
+					</a>
+				</li>
 
 				{paths.map(path => {
 					const navItemText = `${path[1].toUpperCase()}${path.slice(2)}`;

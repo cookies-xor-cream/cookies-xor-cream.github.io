@@ -14,6 +14,7 @@ nav {
     ul {
         display: flex;
         flex-direction: row;
+        align-items: center;
         list-style: none;
         padding: 16px;
         margin: 0;
@@ -22,17 +23,23 @@ nav {
             padding-right: 42px;
             margin: 0;
             width: max-content;
-            vertical-align: text-bottom;
-            min-height: 1.5rem;
+            height: max-content;
 
             &:first-child {
                 padding-left: 0;
                 padding-right: 32px;
-                filter: drop-shadow(0 0 0 $primary);
+                filter: drop-shadow(0 0 0 $primaryHighlight);
                 transition: 500ms;
+                height: 32px;
+
+                a {
+                    width: max-content;
+                    height: 32px;
+                    display: inline-block;
+                }
 
                 img:hover {
-                    filter: drop-shadow(0 0 6px $primary);
+                    filter: drop-shadow(0 0 6px $primaryHighlight);
                     transition: 500ms;
                 }
             }

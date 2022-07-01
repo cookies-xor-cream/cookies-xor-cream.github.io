@@ -15,7 +15,11 @@ const projectTags: React.FC<Props> = ({ tags }) => (
     <ul className={styles.projectIcons}>
         {
             tags.map(tag =>
-                <li className={styles[tag.color]}> {tag.name} </li>
+                <li className={styles[tag.color]}>
+                    <p>
+                        {tag.name}
+                    </p>
+                </li>
             )
         }
     </ul>

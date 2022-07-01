@@ -61,11 +61,13 @@ a {
   -webkit-text-decoration-skip: objects;
   transition: color 0.15s;
   text-decoration: none;
+  transition: 200ms;
 }
 a:active,
 a:hover {
   outline-width: 0;
   color: $textHighlight;
+  transition: 200ms;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -645,7 +647,7 @@ h1 {
 
 .wave {
   position: relative;
-  top: -36px;
+  top: -40px;
   z-index: -1;
   aspect-ratio: 16/9;
   width: 100%;
