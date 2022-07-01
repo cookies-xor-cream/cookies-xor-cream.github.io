@@ -1,22 +1,23 @@
 $dark-brown: #cab87a;
 $darker-brown: #a8934d;
 
-$pink: #EEB0DD;
-$purple: #B6B0EE;
-$red: #F42272;
-$green: #B0EEC0;
-$lime: #bfff00;
-$blue: #A3E7FC;
-
 $white: #ffffff;
-$black: #0E141B; // onyx: 39393A
-$grey1: #2b2b2b;
-$grey2: #444444;
-$grey3: #525252;
-
 $background: #0E141B;
 $dark: #151F28;
+$dark2: #1B2936;
+$dark3: #213140;
+$dark4: #293D4F;
 $primary: #FFE100;
-$secondary: #F037A0;
-$textHighlight: #FFED69;
+$secondary: #FF36A8;
+
+$textHighlight: #62FF00;
 $primaryHighlight: #FFED69;
+
+$error: #F42272;
+$accept: #BFFF00;
+
+$tag1: #A3E7FC;
+$tag2: #EEB0DD;
+$tag3: #B6B0EE;
+$tag4: $error;
+$tag5: $accept;

@@ -21,10 +21,10 @@
 
         box-shadow: 0 0 1px $dark;
 
-        &.blue { background-color: $blue; }
-        &.pink { background-color: $pink; }    
-        &.purple { background-color: $purple; }
-        &.red { background-color: $red; }
-        &.green { background-color: $green; }
+        &.blue { background-color: $tag1; }
+        &.pink { background-color: $tag2; }
+        &.purple { background-color: $tag3; }
+        &.red { background-color: $tag4; }
+        &.green { background-color: $tag5; }
     }
 }

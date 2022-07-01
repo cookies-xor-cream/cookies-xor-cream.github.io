@@ -56,7 +56,7 @@ template {
   display: none;
 }
 a {
-  color: $textHighlight;
+  color: $primary;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
   transition: color 0.15s;
@@ -65,7 +65,7 @@ a {
 a:active,
 a:hover {
   outline-width: 0;
-  color: $darker-brown;
+  color: $textHighlight;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);
@@ -629,12 +629,12 @@ footer {
 
 h1 {
   color: $primary;
-  text-decoration-color: $grey2;
+  text-decoration-color: $dark3;
   text-shadow:
-    -1px -1px 0 $black,
-     1px -1px 0 $black,
-    -1px  1px 0 $black,
-     1px  1px 0 $black;
+    -1px -1px 0 $background,
+     1px -1px 0 $background,
+    -1px  1px 0 $background,
+     1px  1px 0 $background;
 }
 
 .wave {
@@ -655,4 +655,12 @@ h1 {
 
 .mspace.newline {
   margin-bottom: 1rem;
+}
+
+.outline {
+  text-shadow:
+    -1px -1px 0 $background,
+     1px -1px 0 $background,
+    -1px  1px 0 $background,
+     1px  1px 0 $background;
 }

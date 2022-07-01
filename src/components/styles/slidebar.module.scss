@@ -11,14 +11,14 @@ $skill-bar-height: 12px;
 
     border-radius: $border-radius;
 
-    background-color: $grey3;
-    background: linear-gradient(to right, $lime, $red);
+    background-color: $dark4;
+    background: linear-gradient(to right, $error, $accept);
     
     div {
         position: absolute;
         height: 100%;
 
-        background-color: $grey3;
+        background-color: $dark4;
 
         border-top-right-radius: $border-radius;
         border-bottom-right-radius: $border-radius;

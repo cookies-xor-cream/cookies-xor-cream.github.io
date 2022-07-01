@@ -23,7 +23,7 @@ const ProjectsPage = ({
     <Layout currentPage="projects">
       <Seo title="projects" />
       <h1>Projects</h1>
-      <h3>
+      <h3 className="outline">
         Click on a card to read its related post, the source code for most of these projects is available on <a href="https://github.com/cookies-xor-cream/">my Github</a>
       </h3>
       <ProjectCardGrid projectDetailsList={projectData} />
