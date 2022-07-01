@@ -1,7 +1,7 @@
 ---
 slug: /projects/maze-js/
 date: "2019-05-04"
-title: "Maze Generator/Solver"
+title: "Maze Generator and Solver"
 
 videoName: "MazeGenVid"
 
@@ -48,15 +48,19 @@ Brute force is the first obvious answer, we can try all the cells in every order
 One possible way to solve the maze is to add constraints to what these set of vertices could possibly be, this approach is called *pruning* the solution space. However even with the strictest definition possible for the solution of a maze this is an incredibly hard problem. We are simply left with too many combinations of vertices after we are done pruning.
 
 Let's look at the following constraints:
+1. All adjacent cells are connected
+2. Each cell visited is unique (no cycles)
+3. Vertices have at most 4 neighbours
+4. Two vertices connected to the same vertex are not connected
+
+The solution is assumed to be in the form: $(u_{1}, u_{2} \ldots, u_{n})$
 $$
 \begin{align*}
-&\text{Solution is assumed to be in the form: } (u_{1}, u_{2} \ldots, u_{n})\\
-\\
 &\text{Constraints:} \\
-1.&\forall i \in [1, n)\ldotp\ (u_{i}, u_{i+1}) \in E & \text{All adjacent cells are connected} \\
-2.&\forall i \in [1, n)\ldotp\ \forall j \in [1, n) \setminus i.\ i \neq j & \text{Each cell visited is unique (no cycles)} \\
-3.&\forall v \in V\ldotp\ \forall u \in (a, b, c, d, v)\ldotp\ (u, v) \in E\\ &\quad \implies \forall u \notin (a, b, c, d, v)\ldotp\ (u, v) \notin E & \text{Vertices have at most 4 neighbours} \\
-4.&(u, v) \in E \land (t, v) \in E \\ &\quad \implies (u, t) \notin E & \text{Two vertices connected to the same vertex are not connected} \\
+1.&\forall i \in [1, n)\ldotp\ (u_{i}, u_{i+1}) \in E & \\
+2.&\forall i \in [1, n)\ldotp\ \forall j \in [1, n) \setminus i.\ i \neq j & \\
+3.&\forall v \in V\ldotp\ \forall u \in (a, b, c, d, v)\ldotp\ (u, v) \in E\\ &\quad \implies \forall u \notin (a, b, c, d, v)\ldotp\ (u, v) \notin E & \\
+4.&(u, v) \in E \land (t, v) \in E \\ &\quad \implies (u, t) \notin E & \\
 \end{align*}
 $$
 

@@ -8,7 +8,7 @@ const ProjectNotFound = () => (
     <Layout currentPage="projects">
         <Seo />
         <h1>Blog Post Unavailable</h1>
-        <h3>
+        <h3 className="outline">
             Seems like the project you wanna check out doesn't have a blog post written up for it yet...
         </h3>
         <h3>

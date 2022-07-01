@@ -205,13 +205,13 @@ $$
 Where $\Im(X)$ is the imaginary component of $X$ and $\Re(X)$ is the real component of $X$.
 
 #### Calculating Amplitude at a Given Time
-Given an amplitude $a$ and phase $b$ corresponding to a frequency $n$ we can calculate the complex coordinate at each point in time using eulers formula:
+Given an amplitude $a$ and phase $b$ corresponding to a frequency $n$ we can calculate the complex coordinate at each point in time using [eulers formula](https://en.wikipedia.org/wiki/Euler%27s_formula). This will take our function from being a map $\mathbb{C} \rightarrow \mathbb{R}^{2}$ to being a map $\theta \rightarrow t$:
 $$
 \begin{align*}
 &e^{i (n\theta + b)} \\
-&a[\cos(n\theta+b) + i\sin(n\theta+b)] &\text{ using euler's formula} \\
-&a(\cos(n\theta+b),\ \sin(n\theta+b)) &\mathbb{C} \rightarrow \mathbb{R}^{2} \\
-&a(\cos(nt+b),\ \sin(nt+b)) &\theta \rightarrow t
+&a[\cos(n\theta+b) + i\sin(n\theta+b)] \\
+&a(\cos(n\theta+b),\ \sin(n\theta+b))\\
+&a(\cos(nt+b),\ \sin(nt+b))\\
 \end{align*}
 $$
 
