@@ -40,11 +40,9 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 		<nav className={cc({
 			['dropShadow']: dropShadow,
 		})}>
-			{mobile && (
-				<div className="nav-header">
-					<Hamburger onToggle={toggleOpen} size={32} direction={'left'} />
-				</div>
-			)}
+			<div className="mobile-nav-header">
+				<Hamburger onToggle={toggleOpen} size={32} direction={'left'} />
+			</div>
 			<ul className={cc({['open']: open && mobile})}>
 				<li>
 					<a href="/" className={currentPage == "/" ? "active-nav" : ""}>

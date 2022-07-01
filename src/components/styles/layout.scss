@@ -622,7 +622,12 @@ footer {
 .main {
   max-width: 960px;
   margin: 0 auto;
-  padding: 0 1.0875rem 1.45rem;
+  padding: 0 1rem 1.45rem;
+
+  @include mobile {
+    position: relative;
+    top: -16px;
+  }
 }
 
 h1 {
@@ -670,4 +675,21 @@ h1 {
      1px -1px 0 $background,
     -1px  1px 0 $background,
      1px  1px 0 $background;
+}
+
+h1.segmentedHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    flex-direction: column;
+    line-height: 80%;
+  }
+
+  > * {
+    margin: 0 0.5rem;
+    padding: 0;
+  }
 }

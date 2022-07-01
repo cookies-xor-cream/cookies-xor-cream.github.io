@@ -1,13 +1,17 @@
 @import "colors";
 @import "media";
 
-.nav-header{
+.mobile-nav-header{
     width: 100%;
     background-color: $background;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     height: 64px;
+
+    @include desktop {
+        display: none;
+    }
 }
 
 nav {

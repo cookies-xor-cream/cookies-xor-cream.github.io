@@ -44,8 +44,12 @@ const IndexPage: React.FC = () => {
 
   return (
     <Layout>
-      <h1>cookies-xor-cream</h1>
-  
+      <h1 className={"segmentedHeader"}>
+        <p>cookies</p>
+        <p>xor</p>
+        <p>cream</p>
+      </h1>
+
       <div className={styles.contentMatrix}>
         <div className={cc([styles.contentBlock, styles.introBlock])}>
           <h2> Welcome to my portfolio website! </h2>
