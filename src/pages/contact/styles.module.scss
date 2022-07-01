@@ -2,14 +2,14 @@
 
 ul.contact-list {
     list-style: none;
+    margin-top: 100px;
 
     ul {
         list-style: none;
         display: flex;
         flex-direction: row;
 
-        padding-top: 1em;
-        padding-bottom: 1em;
+        padding: 0.5em 0;
         margin: 0;
 
         align-items: center;

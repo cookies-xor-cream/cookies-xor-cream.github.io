@@ -6,7 +6,6 @@ import Seo from "../../components/seo"
 
 import * as styles from './styles.module.scss';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaCodeBranch, FaEnvelope, FaLinkedin } from 'react-icons/fa';
 
 const SecondPage: React.FC = () => (
