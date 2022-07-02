@@ -46,7 +46,7 @@ const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
 			<ul className={cc({['open']: open && mobile})}>
 				<li>
 					<a href="/" className={currentPage == "/" ? "active-nav" : ""}>
-						<img src={Cookie} width="32px" height="32px" />
+						<img src={Cookie} />
 					</a>
 				</li>
 
