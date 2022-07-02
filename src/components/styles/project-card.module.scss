@@ -64,10 +64,6 @@ $transition-speed: 0.1s;
                 max-height: 200px;
 
                 padding: $card-padding;
-
-                @include mobile {
-                    padding: $mobile-card-padding;
-                }
             }
 
             > h2 {

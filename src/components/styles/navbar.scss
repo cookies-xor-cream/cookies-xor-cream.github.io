@@ -1,6 +1,9 @@
 @import "colors";
 @import "media";
 
+$icon-size: 32px;
+$mobile-icon-size: 64px;
+
 .mobile-nav-header{
     width: 100%;
     background-color: $background;
@@ -37,7 +40,7 @@ nav {
         @include mobile {
             position: fixed;
             background: $background;
-            transition: height 500ms ease-in-out;
+            transition: 500ms ease-in-out;
             flex-direction: column;
             justify-content: flex-start;
             padding: 0;
@@ -60,29 +63,42 @@ nav {
             height: max-content;
 
             @include mobile {
-                padding: 4px 0;
+                padding: 16px 0;
+                font-size: 2rem;
             }
 
             &:first-child {
                 padding-left: 0;
-                padding-right: 32px;
+                padding-right: $icon-size;
                 filter: drop-shadow(0 0 3px $primaryHighlight);
                 transition: 500ms;
-                height: 32px;
+                height: $icon-size;
 
                 @include mobile {
                     padding: 4px 0;
                     margin-bottom: 12px;
+                    height: $mobile-icon-size;
                 }
 
                 a {
                     width: max-content;
-                    height: 32px;
+                    height: $icon-size;
                     display: inline-block;
+
+                    @include mobile {
+                        height: $mobile-icon-size;
+                    }
                 }
 
                 img {
                     transition: 500ms;
+                    width: $icon-size;
+                    height: $icon-size;
+
+                    @include mobile {
+                        width: $mobile-icon-size;
+                        height: $mobile-icon-size;
+                    }
 
                     &:hover {
                         filter: drop-shadow(0 0 6px $primaryHighlight);
