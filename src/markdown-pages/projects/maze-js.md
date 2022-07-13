@@ -70,38 +70,40 @@ Generally as you constraint your possible solutions more and more further constr
 
 ## Maze Solving Algorithms
 ### DFS
-- Has more variable performance (luck dependent)
-- Most simple to understand and implement
+- Efficiency (on average) depends on branching factor of maze
+- Simplest to understand and implement (the stick left strategy)
 - Requires a stack
-- O(N)
+- $O(N)$
 
 ### BFS
-- Often searches the whole maze is the solution is far away
+- Efficiency depends on length of the solution
 - Requires a queue
-- O(N)
+- $O(N)$
 
 ### Djikstra's / $A^{*}$
 - Smart BFS (PFS) priority first search
 - All weights are 1 so these are the same
 - Requires a heap / priority queue respectively
-- O(NlogN) with fib heap
+- $O(N\log{N})$ with a (Fibonacci) heap
 
 ## Maze Generating Algorithms
 ### Spanning Trees
-- Gen edge wieghts minimum spanning trees
+- Randomizes edge weights to generate a path through the maze
 - Find minimum spanning tree (MST)
 
 #### Prim's
-- Basically djikstra's
-- O(NlogN) with heap
+- Similar to Djikstra's
 - Harder than DFS, easier than Kruskal's
+- $O(N\log{N})$ with a (Fibonacci) heap
 
 #### Kruskal's
-- Requires a find union set (complex data structure)
-- Runs in basically O(N)
+- Requires a union-find set (complex data structure)
 - Incredibly difficult to implement from scratch
+- Easy to implement if supplied a union find set
+- $O(N)$
 
 ### DFS
-- Basically the same as the solver but 'breaks' wall boundaries on the way
-- Doesn't stop at exit like the solver
-- O(N)
+- Same algorithm as the solver
+- 'Breaks' wall boundaries during traversal
+- Visits all cells once
+- $O(N)$
