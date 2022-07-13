@@ -43,7 +43,6 @@ nav {
             background: $background;
             opacity: 0;
             transition: opacity 2 * $transition-speed, height $transition-speed;
-            // transition: height $transition-speed;
             flex-direction: column;
             justify-content: flex-start;
             padding: 0;
@@ -54,6 +53,7 @@ nav {
             top: 64px;
             left: 0;
             right: 0;
+            opacity: 0;
 
             &.open {
                 height: 100%;
