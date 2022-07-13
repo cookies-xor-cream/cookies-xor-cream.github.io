@@ -8,7 +8,7 @@ videoName: "MazeGenVid"
 carddesc: "A program that generates and solves mazes using a variety of seemingly unrelated graph algorithms."
 tags: ["graphtheory", "realtime"]
 
-overview: "test"
+overview: "The generation and solving of square mazes by implementing graph algorithms"
 techStack: ["html", "css", "javascript"]
 prereqs: ["trees"]
 timeest: "2 days"

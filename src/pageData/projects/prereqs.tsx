@@ -1,6 +1,7 @@
 import {
     FaArrowsAlt,
-    FaTree
+    FaTree,
+    FaCubes
 } from "react-icons/fa";
 
 import {
@@ -12,5 +13,6 @@ const logoSize = 36;
 export default {
     vectors: { logo: FaArrowsAlt, size: logoSize, name: "Vectors" },
     trig: { logo: BsTriangleHalf, size: logoSize, name: "Trig" },
-    trees: { logo: FaTree, size: logoSize, name: "Trees" }
+    trees: { logo: FaTree, size: logoSize, name: "Trees" },
+    matrices: {logo: FaCubes, size: logoSize, name: "Matrices"},
 }

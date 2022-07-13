@@ -8,7 +8,7 @@ videoName: "BoidVid"
 carddesc: "Simulates complex swarm-like behaviours through three simple rules. An example of emergent behaviour."
 tags: ["simulation", "realtime"]
 
-overview: "Emergent bird-like behaviours using three simple rules"
+overview: "Simulation of emergent bird-like behaviours through the application of three simple rules"
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
 timeest: "1 week"
