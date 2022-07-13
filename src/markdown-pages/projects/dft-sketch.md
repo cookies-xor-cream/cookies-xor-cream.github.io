@@ -11,7 +11,7 @@ tags: ["imageprocessing"]
 overview: "Tracing of image outline through a series of epicycles via the Fourier transform"
 techStack: ["python", "pillow", "numpy", "pygame"]
 prereqs: ["vectors", "trig"]
-timeest: "2 weeks"
+timeest: "2 week"
 difficulty: 4
 ---
 

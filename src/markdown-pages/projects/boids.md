@@ -11,7 +11,7 @@ tags: ["simulation", "realtime"]
 overview: "Simulation of emergent bird-like behaviours through the application of three simple rules"
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
-timeest: "1 week"
+timeest: "2 days"
 difficulty: 2
 ---
 

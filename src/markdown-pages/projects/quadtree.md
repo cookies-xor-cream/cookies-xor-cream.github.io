@@ -11,7 +11,7 @@ tags: ["imageprocessing"]
 overview: "Image compression via compact representations of regions of colour"
 techStack: ["python", "pillow"]
 prereqs: ["trees"]
-timeest: "1 week"
+timeest: "5 days"
 difficulty: 3
 ---
 

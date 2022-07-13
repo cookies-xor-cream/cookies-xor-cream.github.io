@@ -11,7 +11,7 @@ tags: ["graphtheory", "realtime"]
 overview: "The generation and solving of square mazes by implementing graph algorithms"
 techStack: ["html", "css", "javascript"]
 prereqs: ["trees"]
-timeest: "2 days"
+timeest: "3 days"
 difficulty: 4
 ---
 
