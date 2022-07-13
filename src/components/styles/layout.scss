@@ -1,5 +1,7 @@
 @import "media";
 
+$transition-speed: 250ms;
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -60,15 +62,14 @@ a {
   color: $primary;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-  transition: color 0.15s;
   text-decoration: none;
-  transition: 200ms;
+  transition: $transition-speed;
 }
 a:active,
 a:hover {
   outline-width: 0;
   color: $textHighlight;
-  transition: 200ms;
+  transition: $transition-speed;
 }
 abbr[title] {
   border-bottom: 1px dotted hsla(0, 0%, 0%, 0.5);

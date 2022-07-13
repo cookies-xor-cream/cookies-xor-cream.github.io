@@ -3,6 +3,7 @@
 
 $icon-size: 32px;
 $mobile-icon-size: 64px;
+$transition-speed: 250ms;
 
 .mobile-nav-header{
     width: 100%;
@@ -40,11 +41,14 @@ nav {
         @include mobile {
             position: fixed;
             background: $background;
-            transition: 500ms ease-in-out;
+            opacity: 0;
+            transition: opacity 2 * $transition-speed, height $transition-speed;
+            // transition: height $transition-speed;
             flex-direction: column;
             justify-content: flex-start;
             padding: 0;
             height: 0;
+            pointer-events: none;
             overflow: hidden;
 
             top: 64px;
@@ -53,6 +57,8 @@ nav {
 
             &.open {
                 height: 100%;
+                opacity: 100%;
+                transition: opacity $transition-speed, height 2 * $transition-speed;
             }
         }
 
@@ -71,7 +77,7 @@ nav {
                 padding-left: 0;
                 padding-right: $icon-size;
                 filter: drop-shadow(0 0 3px $primaryHighlight);
-                transition: 500ms;
+                transition: $transition-speed;
                 height: $icon-size;
 
                 @include mobile {
@@ -91,7 +97,7 @@ nav {
                 }
 
                 img {
-                    transition: 500ms;
+                    transition: $transition-speed;
                     width: $icon-size;
                     height: $icon-size;
 
