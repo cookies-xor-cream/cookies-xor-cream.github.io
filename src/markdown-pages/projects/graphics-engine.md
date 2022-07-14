@@ -135,9 +135,17 @@ $$
 #### Transformation of The Camera
 
 ### Directional Lighting
+Directional lights are a type of light source where every ray is parallel (going in the same direction). They are the simplest light source to implement as they only have a direction and intensity (no position or angle!).
+
+A directional light is simply assumed to be infinitely far away and never attenuate (get dimmer). This is analogous to extremely bright, extremely far away objects (such as the sun or the moon).
+
 #### Direction
+The direction of the light is encoded in a vector, and can be found by normalising the vector. For example if the vector $(1, 0)$ represents the directional light then we know that it goes in the direction $(1, 0)$ (since it's already normalized).
+
 #### Intensity
-#### Reflection Calculations
+Likewise the intensity of the light is encoded as the magnitude of the vector. For example if hte vector $(3, 4)$ represents the directional light then the intensity of the light is $5$ (using the pythagorean theorem). This extends to $3$ (or really any number of) dimensions.
+
+#### Lighting Calculations
 
 ### Extensions to The Engine
 ### Blinn-Phong Model
