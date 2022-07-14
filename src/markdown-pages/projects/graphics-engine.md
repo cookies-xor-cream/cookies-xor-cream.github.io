@@ -80,7 +80,7 @@ You should know about a few transformations when implementing a graphics engine:
 There is some background terminology that is important to cover so the next few sections are as clear as possible.
 
 ### Primitive
-A simple object that can be directly rendered (such as a line, or a point). We will be solely using triangles as our primitive. This is due to a few useful properties that they have, which are not guaranteed by other shapes.
+A simple object (shape) that can be directly rendered (such as a line, or a point). We will be solely using triangles as our primitive. This is due to a few useful properties that they have, which are not guaranteed by other shapes.
 
 ### Vertex
 Exactly what it means in English: it's simply a boundary point on an object.
@@ -89,7 +89,12 @@ Exactly what it means in English: it's simply a boundary point on an object.
 This term is *almost* interchangeable with pixel: we won't deal with them directly since we are only implementing rendering at the vertex level but a fragment is the smallest unit within a primitive that is distinct (has its own lighting).
 
 ### Mesh
-A collection of points, normally primitives (but not always triangles: quadrilaterals are common).
+A collection of faces, normally primitives (quadrilaterals or triangles). Meshes can have more data than this, for example including the normal data (normal map), texture mappings (UV map) etc.
+
+We will only focus on the vertices.
+
+### Space
+A vectorspace centered at a given position (world space has an arbitrary centre, camera space is centered on the camera, screen space is centered in the top left of the screen).
 
 ## Matrix Operations
 Matrix operations are composed in order to place objects at their desired position on the screen.
@@ -145,7 +150,6 @@ If you wish to learn more about what they are, I suggest [this video by 3Blue1Br
 
 #### Rotation Matrix
 The rotation matrix $R(\theta_{x}, \theta_{y}, \theta_{z})$ corresponds to the rotation of the $xyz$ axes. It can be represented as the composition of the rotation of each axis separately (where $R_{n}$ is the rotation of the axis $n$), like so:
-TODO: Rotation Matrix Construction
 
 $$
 \begin{align*}
@@ -214,16 +218,18 @@ $$
 T(d) T(t) S(x) T^{-1}(t) T(p) R(\theta) T^{-1}(p)
 $$
 
+Let's represent this composite transformation matrix by $M$.
+
 ## Camera
 ### View Fulcrum
+The viewing fulcrum is the area in which the camera can see, it is defined by a width ($w$), a height ($h$), a focal length ($f$ that defines the near clipping plane), and a field of view ($\theta$) that defines the angle of vision.
 
-### Focal Length
+All objects closer than the clipping plane are invisible in order to not obstruct large objects in the scene by extremely small but close ones.
 
-### Field of View
-
-### Orthographic Projection
 ### Perspective Projection
-The perspective projection is constructed as follows:
+The perspective projection is a type of projection that tries to adhere to how optics works in reality. It is not an accurate model of the objects it presents but aims to emulate real life vision.
+
+It's construction as follows:
 $$
 \begin{align*}
 &\text{Constants:} \\
@@ -246,16 +252,33 @@ $$
 \end{bmatrix}
 $$
 
+### Orthographic Projection
+Orthographic projection does not aim for realism but instead accuracy. It more accurately represents distances and axes and is often used in engineering or $3$D modelling. There are definitely usecases for orthographic projection in graphics (isometric games for example) but I will not be covering them.
+
 ### World Space
 World space means the space that contains the 'absolute' position of all the objects. The motion of any object doesn't change the world coordinates of any other object. This is the default representation of all coordinates before they are transformed into other spaces.
 
 ### Camera Space
 Camera space means the space that contains all positions relative to the camera. The camera is the origin $(0, 0)$ in camera space, while all objects have coordinates based on where they are relative to the camera.
 
+### Screen Space
+Screen space represents the coordinates on the screen where $(0, 0)$ is the top left and $(1, 1)$ is the bottom right. It provides an easy way to draw $2$D primitives on the scrreen in order to represent $3$D shapes.
+
 ### Transformation of The Camera
 To transform the camera maintain the translation vector and the euler angles. When translating simply add to the component of the translation vector by projecting the forward vector of the camera onto the $xyz$ planes and when rotating the camera simply increment the euler angle being rotated on.
 
 Non-axis-aligned rotations may look awkward, but that must be solved by using *quaternions*.
+
+### Converting to Screen Space
+Compute the transformation matrix $M$ and the perspective projection matrix $P$.
+Take some vector $v$ that you would like to convert into screen space, and extend it to a $4$ component vector (where the last component is $1$).
+
+The screen space coordinates of it are given by the components of the following vector:
+$$
+\begin{bmatrix}x & y & z & 1\end{bmatrix} = PMv
+$$
+
+To convert the positions from proportions to pixels simply multiply by the width and height of the screen as needed.
 
 ## Directional Lighting
 Directional lights are a type of light source where every ray is parallel (going in the same direction). They are the simplest light source to implement as they only have a direction and intensity (no position or angle!).
@@ -317,7 +340,7 @@ I &= \text{intensity of the light} \\
 c &= \text{camera forward unit vector} \\
 \theta_{l} &= \arccos{(\hat{n} \cdot \hat{l})} \\
 \theta_{c} &= \arccos{(\hat{n} \cdot c)} \\
-b &= \theta_{l} \theta_{c} I
+b &= (1 - \theta_{l}) (1 - \theta_{c}) I
 \end{align*}
 $$
 
@@ -325,9 +348,33 @@ Once $b$ is computed the triangle can be rendered with a brightness of $b$ (RGB 
 
 
 ## Rendering Meshes
+To render a mesh we first need to read all the mesh data, then convert it into screen coordinates and to render the individual primitives of the mesh.
+
+### File Format
+I have decided to work with [wavefront files](https://en.wikipedia.org/wiki/Wavefront_.obj_file) as they are a simple format to parse and view directly. They natively provide the vertex and index buffer to use, and it is a very human readable/useable format.
+
 ### Vertex Buffer
+The vertex buffer holds all the vertices in a single 'array'. The reasoning for this is that if the vertices were loaded directly in the mesh data there would be a lot of duplication since each vertex can be used many times. We will load each unique vertex into this buffer and replace all references to vertices by their index inside of the index buffer.
+
 ### Index Buffer
+The index buffer holds all the primitives of the mesh in a single 'array'. We will assume for our purposes that the index buffer will only ever hold triangles as that is the only primitive we render. In the index buffer every group of $3$ consecutive indices represent a single triangle's vertices.
+
+As such we can store the entire mesh as a single long index buffer and look up the vertex data as required when rendering.
+
 ### Triangulation
+Triangulation is the process of turning the quads that are present in the mesh data into triangles in order to render them. This is sometimes a trivial process since primitive vertices can be given in the same order for each primitive (clockwise or counter-clockwise).
+
+In that case to triangulate you take the $4$ vertices of the quad and construct $2$ triangles:
+- Triangle $1$ has vertices $1$, $2$, and $3$
+- Triangle $2$ has vertices $1$, $3$, and $4$
+
+However in the more general case there might be a need to triangulate them yourself. You *can* do this in code but please for the love of god load it into blender and export it already triangulated, saving yourself a lovely afternoon of misery.
+
+### Rendering
+To finally draw the mesh you must convert all vertices into screen space, and ignoring the $z$ component draw each triangle of the mesh.
+
+### Painter's Algorithm
+When drawing the triangles in an arbitrary order you can expect to see a self-intersecting abomination where far objects overlay near ones. The simplest solution by far is to sort them by their $z$ value (depth) before drawing them. This means that far objects are drawn first, and close objects are drawn over them subsequently.
 
 ## Extensions to The Engine
 ### Blinn-Phong Model
@@ -335,7 +382,7 @@ The Blinn-Phong model is a lighting model that provides more depth to the lighti
 
 It specifies the ambient, diffuse, and specular components which can more accurately display objects. For example due to the specular components spheres have the halo/shiny region that they would when viewed directly under a light source.
 
-This model of lighting also specifies how to interpolate lighting data correctly between fragments of a given primitive.
+This model of lighting also specifies how to interpolate lighting data correctly between fragments of a given primitive which will eliminate the seams present between neighbouring primitives in our current lighting model.
 
 ### Different Types of Lighting
 There are various types of light sources which all interact with their environment different and are used for varying purposes/effects. If you are curious then you can read more about them [here](https://www.pluralsight.com/blog/film-games/understanding-different-light-types).
@@ -349,3 +396,6 @@ These are the types of lighting you can implement:
 
 ### Quaternions
 Quaternions are a more robust method of performing rotations and they allow different techniques such as SLERP (spherical interpolation) which allows for smooth animations, as well as avoiding gimbal lock altogether.
+
+### z-buffering
+Z-buffering aims to avoid the downfalls of the painter's algorithm by maintaining a buffer of depth values and only writing to a fragment if the new depth value is less than the current one, meaning the new fragment is 'on top' of the current one.
