@@ -147,18 +147,79 @@ If you wish to learn more about what they are, I suggest [this video by 3Blue1Br
 The rotation matrix $R(\theta_{x}, \theta_{y}, \theta_{z})$ corresponds to the rotation of the $xyz$ axes. It can be represented as the composition of the rotation of each axis separately (where $R_{n}$ is the rotation of the axis $n$), like so:
 TODO: Rotation Matrix Construction
 
+$$
+\begin{align*}
+R_{x}(\theta) &=
+\begin{bmatrix*}
+1 & 0 & 0 \\
+0 & \cos{(\theta)} & \sin{(\theta)} \\
+0 & -\sin{(\theta)} & \cos{(\theta)} \\
+\end{bmatrix*} \\
+
+R_{y}(\theta) &=
+\begin{bmatrix*}
+\cos{(\theta)} & 0 & \sin{(\theta)} \\
+0 & 1 & 0 \\
+-\sin{(\theta)} & 0 & \cos{(\theta)} \\
+\end{bmatrix*} \\
+
+R_{z}(\theta) &=
+\begin{bmatrix*}
+\cos{(\theta)} & -\sin{(\theta)} & 0 \\
+\sin{(\theta)} & \cos{(\theta)} & 0 \\
+0 & 0 & 1 \\
+\end{bmatrix*} \\
+
+R(\theta_{x}, \theta_{y}, \theta_{z}) &= R_{z} R_{y} R_{x} \\
+\end{align*}
+$$
+
 #### Inverse Rotation Matrix
-TODO: Rotation Matrix Construction
+$$
+R(\theta_{x}, \theta_{y}, \theta_{z}) = R(-\theta_{x}, -\theta_{y}, -\theta_{z})
+$$
 
 ### Scaling
+Scaling is the only transformation that isn't required in order to convert from camera space to world space, though it is certainly a useful transformation and will therefore be covered.
+
 #### Scaling Matrix
+To scale by a factor $x$ where $I_{4}$ is the $4$D [identity matrix](https://en.wikipedia.org/wiki/Identity_matrix):
+$$
+S(x) = sI_{4}
+$$
+
 #### Inverse Scaling Matrix
+$$
+S^{-1}(x) = S(\dfrac{1}{x})
+$$
 
 ### Composition
+To rotate an object about a point $p$ (can be the object's centre point to rotate in place) by a vector of euler angles $\theta$ one must apply the inverse translation first:
+$$
+\text{Rotation:} \\
+T(p) R(\theta) T^{-1}(p)
+$$
+
+Scaling must be done with the object at the origin, so with the centre of the object at $t$ and the scaling factor $x$:
+$$
+\text{Scaling:} \\
+T(t) S(x) T^{-1}(t)
+$$
+
+Translation can be done in isolation at the end by some displacement $d$.
+
+Combining all transformations:
+$$
+\text{Rotate, Scale, and Translate:} \\
+T(d) T(t) S(x) T^{-1}(t) T(p) R(\theta) T^{-1}(p)
+$$
 
 ## Camera
-### Viewing Fulcrum
-TODO: focal length
+### View Fulcrum
+
+### Focal Length
+
+### Field of View
 
 ### Orthographic Projection
 ### Perspective Projection
