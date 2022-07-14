@@ -8,9 +8,9 @@ videoName: "GraphicsVid"
 carddesc: "A rudimentary graphics engine that runs solely on 1 CPU thread, written to practice the mathematical foundations of graphics programming."
 tags: ["interactive", "realtime"]
 
-overview: "" # "A rudimentary graphics engine built to teach about vectorspaces, graphics, directional lighting"
+overview: "A rudimentary graphics engine built to teach about vectorspaces, graphics, directional lighting"
 techStack: ["cpp", "sfml"]
-prereqs: ["vectors", "matrices"]
+prereqs: ["vectors", "matrices", "trig"]
 timeest: "2 weeks"
 difficulty: 8
 ---
@@ -67,28 +67,64 @@ You should know about a few transformations when implementing a graphics engine:
 2. Rotation
 3. Scaling
 
-## First Steps
-TODO
+## Matrix Operations
+Matrix operations are composed in order to place objects at their desired position on the screen.
 
-## TODO:
-- Matrix Operations
-  - 4D Affine Matrix composition
-  - Inverse transformations
-  - Translation
-  - Rotation
-    - Euler Angles
-    - Gimbal Lock
-    - Quaternions
-  - Scaling
-  - Composition of all transformations
-- Camera
-  - Perspective Projection
-  - Spaces
-    - World Space
-    - Camera Space
-  - Transforming (moving/rotating) the camera
-- Directional Lighting
-  - Direction
-  - Intensity
-  - Reflection calculation
-    - Blinn-phong model
+### Matrix Structure
+Matrices are assumed to be constructed with row vectors for our purposes (though it doesn't matter if it's row vectors). We will be using affine matrices, which are a type of $4\times 4$ matrix that can represent and compose translation as well as the other operations.
+
+
+### Inverse Transformations
+
+### Translation
+#### Translation Matrix
+#### Inverse Translation Matrix
+
+### Rotation
+#### Euler Angles
+#### Gimbal Lock
+#### Quaternions
+#### Rotation Matrix
+#### Inverse Rotation Matrix
+
+### Scaling
+#### Scaling Matrix
+#### Inverse Scaling Matrix
+
+### Composition
+
+### Camera
+#### Orthographic Projection
+#### Perspective Projection
+The perspective projection is constructed as follows:
+$$
+\begin{align*}
+&\text{Constants:} \\
+w &= \text{near clipping plane width} \\
+h &= \text{near clipping plane height} \\
+\theta &= \text{field of view} \\
+f &= \text{focal length} \\
+b &= n\tan{\frac{\theta}{2}} \\
+r &= \frac{nw}{h}\tan{\frac{\theta}{2}}
+\end{align*}
+$$
+---
+$$
+\text{Perspective Projection Matrix:} \\
+\begin{bmatrix}
+\dfrac{n}{r} & 0 & 0 & 0 \\
+0 & \dfrac{n}{b} & 0 & 0 \\
+0 & 0 & \dfrac{f}{f - n} & \dfrac{-fn}{f - n} \\
+0 & 0 & 1 & 0
+\end{bmatrix}
+$$
+
+#### World Space
+#### Camera Space
+#### Transformation of The Camera
+
+### Directional Lighting
+#### Direction
+#### Intensity
+#### Reflection Calculations
+##### Blinn-Phong Model
