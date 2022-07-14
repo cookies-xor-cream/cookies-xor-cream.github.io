@@ -46,43 +46,43 @@ export default [
         logo: FaHtml5,
         name: "HTML",
         id: "html",
-        desc: "The universal markup language of the web"
+        desc: "A markup language that serves as the universal markup language of the web"
     },
     {
         logo: FaCss3,
         name: "CSS",
         id: "css",
-        desc: "Language used to style markup (HTML)"
+        desc: "A styling language to make markup (HTML) look pretty"
     },
     {
         logo: SiJavascript,
         name: "Javascript",
         id: "js",
-        desc: "Language that runs natively in the browser"
+        desc: "A dynamically typed interpreted language that runs natively in the browser"
     },
     {
         logo: SiTypescript,
         name: "Typescript",
         id: "ts",
-        desc: "Superset of Javascript with a type system"
+        desc: "A superset of Javascript with a type system"
     },
     {
         logo: FaPython,
         name: "Python",
         id: "python",
-        desc: "Dynamically typed interpretted general purpose language"
+        desc: "A dynamically typed interpretted general purpose language"
     },
     {
         logo: FaJava,
         name: "Java",
         id: "java",
-        desc: "Staticaly typed language - compiled to bytecode that runs on the JVM"
+        desc: "A staticaly typed language - compiled to bytecode that runs on the JVM"
     },
     {
         logo: SiC,
         name: "C",
         id: "c",
-        desc: "Statically typed language that runs natively on almost all hardware"
+        desc: "A statically typed language that runs natively on almost all hardware"
     },
     {
         logo: SiCplusplus,
@@ -106,7 +106,7 @@ export default [
         logo: SiSfml,
         name: "SFML",
         id: "sfml",
-        desc: "A C++ library for 'simple, fast' multimedia functionality"
+        desc: "A C++ library for 'simple, fast' multimedia functionality. Built on top of SDL2"
     },
     {
         logo: GiPillow,
