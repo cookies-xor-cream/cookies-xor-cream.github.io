@@ -8,7 +8,7 @@ videoName: "GraphicsVid"
 carddesc: "A rudimentary graphics engine that runs solely on 1 CPU thread, written to practice the mathematical foundations of graphics programming."
 tags: ["interactive", "realtime"]
 
-overview: "A rudimentary graphics engine built to teach about vectorspaces, graphics, directional lighting"
+overview: "" # "A rudimentary graphics engine built to teach about vectorspaces, graphics, directional lighting"
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "matrices"]
 timeest: "2 weeks"
@@ -56,8 +56,39 @@ Matrices are vectors of vectors (drawn as a square of numbers) that can represen
 
 Their most useful property is *composition* where if you have two matrices $M$ and $N$ that represent two separate transformations, their product $NM$ represents applying the transformation $M$, and then applying the transformation $N$ (read right to left).
 
+4-dimensional matrices are used ($4\times 4$) matrices in order to represent translations.
+
 #### Vectorspaces
-Vector
+Vectorspaces are a way to think about objects and transformation. When teaching the maths behind graphics it is generally conceptualized as transformations on the vectorspace rather than the objects being transformed. For example if you scale an object by a factor of $2$ (make it twice as big) that is equivalent to doubling the distance of every point to the origin (multiplying all vectors in the space by $2$).
 
 #### Transformations
+You should know about a few transformations when implementing a graphics engine:
+1. Translation
+2. Rotation
+3. Scaling
 
+## First Steps
+TODO
+
+## TODO:
+- Matrix Operations
+  - 4D Affine Matrix composition
+  - Inverse transformations
+  - Translation
+  - Rotation
+    - Euler Angles
+    - Gimbal Lock
+    - Quaternions
+  - Scaling
+  - Composition of all transformations
+- Camera
+  - Perspective Projection
+  - Spaces
+    - World Space
+    - Camera Space
+  - Transforming (moving/rotating) the camera
+- Directional Lighting
+  - Direction
+  - Intensity
+  - Reflection calculation
+    - Blinn-phong model
