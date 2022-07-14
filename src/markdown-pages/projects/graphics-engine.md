@@ -37,6 +37,15 @@ To be absolutely specific we will learn about how objects are rendered, and the 
 
 Our engine will run all the code on the CPU, using only a single thread. As such the performance will be abysmal since we are not taking advantage of the graphics components in our computer (the GPU). If you would like to learn about the graphics pipeline instead, [this is a good start](https://www.khronos.org/opengl/wiki/Rendering_Pipeline_Overview) and explains how the graphics pipeline is optimized and leveraged in order to squeeze out every ounce of performance.
 
+### Ommited Features
+There are many features that we will not include as they either won't teach us much or require a disproportionate amount of work:
+- Colour
+- Rasterization
+- Interpolation
+- Specular Lighting
+
+(Rasterization, interpolation, and specular lighting all require us to write our own algorithm to render triangles, and that will definitely not be able to run in real time on the CPU. I will opt to use [SFML](/technologies#sfml) in order to render triangles instead).
+
 ## What Do I Need To Know?
 It's hard to go over what the pre-requisites are for while dodging all the needed terminology. If you see anything that you don't know the meaning of (yet):
 1. It will be explained soon
@@ -68,10 +77,19 @@ You should know about a few transformations when implementing a graphics engine:
 3. Scaling
 
 ## Background Terminology
-### Vertex
-### Fragment
+There is some background terminology that is important to cover so the next few sections are as clear as possible.
+
 ### Primitive
+A simple object that can be directly rendered (such as a line, or a point). We will be solely using triangles as our primitive. This is due to a few useful properties that they have, which are not guaranteed by other shapes.
+
+### Vertex
+Exactly what it means in English: it's simply a boundary point on an object.
+
+### Fragment
+This term is *almost* interchangeable with pixel: we won't deal with them directly since we are only implementing rendering at the vertex level but a fragment is the smallest unit within a primitive that is distinct (has its own lighting).
+
 ### Mesh
+A collection of points, normally primitives (but not always triangles: quadrilaterals are common).
 
 ## Matrix Operations
 Matrix operations are composed in order to place objects at their desired position on the screen.
@@ -81,7 +99,6 @@ Matrices are assumed to be constructed with row vectors for our purposes (though
 
 The structure of the affine matrix will be explained separately in due time. For now we can simply ignore the $4$th row and $4$th column.
 
-
 ### Inverse Transformations
 Each matrix implies a transformation, but there also exists an *inverse* matrix that undoes this transformation. Inverting matrices is not a trivial problem, therefore for speed and clarity we will be doing each inversion individually.
 
@@ -89,14 +106,49 @@ Each matrix implies a transformation, but there also exists an *inverse* matrix 
 Translation (also sometimes called displacement by *physics majors*) is a transformation that takes an object and moves it in space. It preserves everything about the object except for its position. All angles, rotations, etc. are conserved.
 
 #### Translation Matrix
+Instead of talking about the full $4\times 4$ matrix for translation we will talk about a column vector ($1\times 4$) matrix. This simply reduces the amount of clutter and simplifies the notation.
+
+Our translation matrix for a given translation $T$ will encode how many units in each cardinal direction we are to move the object.
+$$
+T(x, y, z) =
+\begin{bmatrix}
+T_{x} \\ T_{x} \\ T_{y} \\ T_{z} \\ 1
+\end{bmatrix}
+$$
+
+The 1 at the end is simply so that when it comes to the composition of the matrices we can combine it into a $4\times 4$ matrix. It is called the *perspective scale*.
+
 #### Inverse Translation Matrix
+The inverse of the translation matrix is easy to construct, you simply negate all the components (but not the perspective scale):
+$$
+T^{-1}(x, y, z) = T(-x, -y, -z)
+$$
 
 ### Rotation
+The rotation matrix that represents the desired rotation can be constructed by combining $3$ separate rotations, one on each axis.
+
 #### Euler Angles
+Euler angles are the name for the angles of each axis. They will be written as $\theta_{x}, \theta_{y}, \text{and} \theta_{z}$. These angles encode every possible $3$D rotation, but each rotation does not correspond to a unique set of euler angles and so it leads to a problem called *gimbal lock* where one degree of freedom is lost in rotation.
+
 #### Gimbal Lock
+When the axes align in a particular arrangement it can give rise to a problem called gimbal lock where rotation cannot be applied in an arbitrary direction any longer. This happens when two directions ('gimbals') are parallel and therefore moving either of them would result in the same axis of rotation. For example consider the case that a camera is pointing straight up:
+- If it rotates on the $x$ axis it will shift the view downwards
+- If it rotates on the $y$ axis it will turn the view in place
+- If it rotates on the $z$ axis it will turn the view in place
+- The $y$ and $z$ axis rotations now result in the same outcome, leaving only 2 possible axes of rotation
+
 #### Quaternions
+Quaternions are four dimensional complex numbers with three complex components and one real component. They are a more robust (and efficient) way to represent rotations in $3$D space. However they can be tedious to implement and test, and this project has neither animations, nor a huge need to solve gimbal lock.
+
+Since these are the two main advantages of quaternions I will not be implementing them.
+If you wish to learn more about what they are, I suggest [this video by 3Blue1Brown](https://www.youtube.com/watch?v=d4EgbgTm0Bg&t=1s).
+
 #### Rotation Matrix
+The rotation matrix $R(\theta_{x}, \theta_{y}, \theta_{z})$ corresponds to the rotation of the $xyz$ axes. It can be represented as the composition of the rotation of each axis separately (where $R_{n}$ is the rotation of the axis $n$), like so:
+TODO: Rotation Matrix Construction
+
 #### Inverse Rotation Matrix
+TODO: Rotation Matrix Construction
 
 ### Scaling
 #### Scaling Matrix
@@ -104,9 +156,12 @@ Translation (also sometimes called displacement by *physics majors*) is a transf
 
 ### Composition
 
-### Camera
-#### Orthographic Projection
-#### Perspective Projection
+## Camera
+### Viewing Fulcrum
+TODO: focal length
+
+### Orthographic Projection
+### Perspective Projection
 The perspective projection is constructed as follows:
 $$
 \begin{align*}
@@ -130,24 +185,90 @@ $$
 \end{bmatrix}
 $$
 
-#### World Space
-#### Camera Space
-#### Transformation of The Camera
+### World Space
+World space means the space that contains the 'absolute' position of all the objects. The motion of any object doesn't change the world coordinates of any other object. This is the default representation of all coordinates before they are transformed into other spaces.
 
-### Directional Lighting
+### Camera Space
+Camera space means the space that contains all positions relative to the camera. The camera is the origin $(0, 0)$ in camera space, while all objects have coordinates based on where they are relative to the camera.
+
+### Transformation of The Camera
+To transform the camera maintain the translation vector and the euler angles. When translating simply add to the component of the translation vector by projecting the forward vector of the camera onto the $xyz$ planes and when rotating the camera simply increment the euler angle being rotated on.
+
+Non-axis-aligned rotations may look awkward, but that must be solved by using *quaternions*.
+
+## Directional Lighting
 Directional lights are a type of light source where every ray is parallel (going in the same direction). They are the simplest light source to implement as they only have a direction and intensity (no position or angle!).
 
 A directional light is simply assumed to be infinitely far away and never attenuate (get dimmer). This is analogous to extremely bright, extremely far away objects (such as the sun or the moon).
 
-#### Direction
+### Direction
 The direction of the light is encoded in a vector, and can be found by normalising the vector. For example if the vector $(1, 0)$ represents the directional light then we know that it goes in the direction $(1, 0)$ (since it's already normalized).
 
-#### Intensity
+### Intensity
 Likewise the intensity of the light is encoded as the magnitude of the vector. For example if hte vector $(3, 4)$ represents the directional light then the intensity of the light is $5$ (using the pythagorean theorem). This extends to $3$ (or really any number of) dimensions.
 
-#### Lighting Calculations
+### Lighting Calculations
+The lighting calculation relies on two angles and an intensity: the angle from the camera to the object, and the angle from the light to the object.
 
-### Extensions to The Engine
+Given a directional light vector $l$ we can compute the direction $\hat{l}$ and the intensity $I$:
+$$
+\begin{align*}
+I &= |l| \\
+\hat{l} &= \dfrac{l}{I} \\
+\end{align*}
+$$
+
+When tlaking about angles from the object this really means the angle of the *surface normal* (which is the directional perpendicular to the surface where the light reflects).
+
+$$
+\text{Needed Constants:} \\
+\begin{align*}
+I &= \text{intensity of the light} \\
+\theta_{l} &= \text{angle from the light to the object} \\
+\theta_{c} &= \text{angle from the camera to the object} \\
+\end{align*}
+$$
+
+The angle between two unit vectors $x$ and $y$ can be computed using the dot product (a type of vector product). The formula for it is:
+$$
+\arccos{(x \cdot y)}
+$$
+
+A useful property of triangles in graphics is that they are coplanar, meaning that the entire shape only lies on a single plane and therefore has a single surface normal across the entire shape. We can find the surface normal ($\hat{n}$) in the direction of the light with a cross product.
+
+$$
+\begin{align*}
+v_{1}, v_{2}, v_{3} &= \text{the vertices of the triangle} \\
+d_{1} &= v_{1} - v{2} \\
+d_{2} &= v_{1} - v{3} \\
+n &= d_{1} \times d_{2} \\
+\hat{n} &= \frac{n}{|n|} \\
+\end{align*}
+$$
+
+With our new-found surface normal we can now compute all the values we need. Our final luminosity will be computed as $b$ meaning 'brightness'.
+$$
+\text{Lighting Computation:} \\
+\begin{align*}
+I &= \text{intensity of the light} \\
+\hat{n} &= \text{surface normal} \\
+\hat{l} &= \text{light unit vector} \\
+c &= \text{camera forward unit vector} \\
+\theta_{l} &= \arccos{(\hat{n} \cdot \hat{l})} \\
+\theta_{c} &= \arccos{(\hat{n} \cdot c)} \\
+b &= \theta_{l} \theta_{c} I
+\end{align*}
+$$
+
+Once $b$ is computed the triangle can be rendered with a brightness of $b$ (RGB value of $(255b, 255b, 255b)$).
+
+
+## Rendering Meshes
+### Vertex Buffer
+### Index Buffer
+### Triangulation
+
+## Extensions to The Engine
 ### Blinn-Phong Model
 The Blinn-Phong model is a lighting model that provides more depth to the lighting than how bright each primitive is.
 
@@ -164,3 +285,6 @@ These are the types of lighting you can implement:
 - Volume Light
 - Ambient Light
 - Area Light
+
+### Quaternions
+Quaternions are a more robust method of performing rotations and they allow different techniques such as SLERP (spherical interpolation) which allows for smooth animations, as well as avoiding gimbal lock altogether.
