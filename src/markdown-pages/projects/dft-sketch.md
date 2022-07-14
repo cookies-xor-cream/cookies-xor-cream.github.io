@@ -12,7 +12,7 @@ overview: "Tracing of image outline through a series of epicycles via the Fourie
 techStack: ["python", "pillow", "numpy", "pygame"]
 prereqs: ["vectors", "trig"]
 timeest: "2 week"
-difficulty: 4
+difficulty: 7
 ---
 
 ## Objective

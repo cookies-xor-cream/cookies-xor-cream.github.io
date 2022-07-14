@@ -12,7 +12,7 @@ overview: "Image compression via compact representations of regions of colour"
 techStack: ["python", "pillow"]
 prereqs: ["trees"]
 timeest: "5 days"
-difficulty: 3
+difficulty: 6
 ---
 
 ## What Is a Quadtree?

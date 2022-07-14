@@ -12,7 +12,7 @@ overview: "Simulation of emergent bird-like behaviours through the application o
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
 timeest: "2 days"
-difficulty: 2
+difficulty: 4
 ---
 
 ## What Are Boids?

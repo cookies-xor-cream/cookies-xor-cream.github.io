@@ -12,7 +12,7 @@ overview: "The generation and solving of square mazes by implementing graph algo
 techStack: ["html", "css", "javascript"]
 prereqs: ["trees"]
 timeest: "3 days"
-difficulty: 4
+difficulty: 5
 ---
 
 ## What Is a Maze?
