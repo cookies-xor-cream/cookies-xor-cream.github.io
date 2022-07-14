@@ -28,6 +28,7 @@ export default function ProjectPost({ data }) {
       timeest: rawData.frontmatter.timeest,
       __html: rawData.html,
       tableOfContents: rawData.tableOfContents,
+      githubLink: rawData.frontmatter.githubLink,
   };
 
   if(postData.overview === "") {
@@ -46,6 +47,7 @@ export default function ProjectPost({ data }) {
               overview={postData.overview}
               techStack={postData.techStack}
               prereqs={postData.prereqs}
+              githubLink={postData?.githubLink}
           />
 
           <div
@@ -67,6 +69,7 @@ export const pageQuery = graphql`
         techStack
         timeest
         videoName
+        githubLink
       }
       html
       tableOfContents

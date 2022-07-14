@@ -13,6 +13,7 @@ techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
 timeest: "2 days"
 difficulty: 4
+githubLink: "https://github.com/cookies-xor-cream/Boids"
 ---
 
 ## What Are Boids?

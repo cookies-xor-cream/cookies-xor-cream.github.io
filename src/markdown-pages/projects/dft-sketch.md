@@ -13,6 +13,7 @@ techStack: ["python", "pillow", "numpy", "pygame"]
 prereqs: ["vectors", "trig"]
 timeest: "2 week"
 difficulty: 7
+githubLink: "https://github.com/cookies-xor-cream/DFT"
 ---
 
 ## Objective

@@ -13,6 +13,7 @@ techStack: ["python", "pillow"]
 prereqs: ["trees"]
 timeest: "5 days"
 difficulty: 6
+githubLink: "https://github.com/cookies-xor-cream/QuadtreeCompression"
 ---
 
 ## What Is a Quadtree?

@@ -13,6 +13,7 @@ techStack: ["html", "css", "javascript"]
 prereqs: ["trees"]
 timeest: "3 days"
 difficulty: 5
+githubLink: "https://github.com/cookies-xor-cream/MazeJS"
 ---
 
 ## What Is a Maze?

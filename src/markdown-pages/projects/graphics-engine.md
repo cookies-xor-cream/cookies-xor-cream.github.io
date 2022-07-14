@@ -13,6 +13,7 @@ techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "matrices", "trig"]
 timeest: "2 weeks"
 difficulty: 8
+githubLink: "https://github.com/cookies-xor-cream/Aquila"
 ---
 
 ## What Is a Graphic Engine?
