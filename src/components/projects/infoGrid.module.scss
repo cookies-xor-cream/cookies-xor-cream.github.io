@@ -110,8 +110,8 @@ $transition-speed: 250ms;
                 width: 2 * $padding;
                 height: 2 * $padding;
                 z-index: 1;
-                background-color: transparent;
-                border-radius: 20%;
+                background-color: $background;
+                border-radius: 50%;
 
                 svg {
                     width: 100%;
