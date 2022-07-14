@@ -1,8 +1,7 @@
 import * as React from "react";
 import * as styles from "./infoGrid.module.scss";
 
-import { FaClock, FaTree, FaPython } from "react-icons/fa";
-import { GiPillow } from "react-icons/gi";
+import { FaClock, FaGithub} from "react-icons/fa";
 
 import TechStack from "../home/TechStack";
 import SlideBar from "../slidebar";
@@ -14,6 +13,7 @@ interface Props {
     timeEstimate: string;
     techStack: any;
     prereqs: any;
+    githubLink?: string;
 }
 
 const InfoGrid: React.FC<Props> = ({
@@ -22,13 +22,21 @@ const InfoGrid: React.FC<Props> = ({
     techStack,
     prereqs,
     difficulty,
-    timeEstimate
+    timeEstimate,
+    githubLink,
 }) => (
     <div className={styles.overviewWrapper}>
         <div className={styles.infoGrid}>
-            <video autoPlay muted loop className={styles.demoVid}>
-                <source src={vidSrc} />
-            </video>
+            <div className={styles.demoVid}>
+                <video autoPlay muted loop className={styles.demoVideo}>
+                    <source src={vidSrc} />
+                </video>
+                {githubLink &&
+                    <a href={githubLink}>
+                        <FaGithub />
+                    </a>
+                }
+            </div>
 
             <div className={styles.overview}>
                 <h3> Overview </h3>

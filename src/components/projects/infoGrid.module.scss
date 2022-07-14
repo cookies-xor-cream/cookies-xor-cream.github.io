@@ -1,17 +1,19 @@
 @import "../styles/colors";
 @import "../styles/media";
 
+$padding: 16px;
+
 .overviewWrapper {
     .infoGrid {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        padding: 16px;
-        gap: 8px;
+        padding: $padding;
+        gap: 0.5 * $padding;
         width: 100%;
         height: 100%;
 
         > * {
-            padding: 16px;
+            padding: $padding;
             background-color: $dark;
 
             > h3 {
@@ -29,10 +31,6 @@
 
                 width: 80%;
             }
-        }
-
-        .demoVid {
-            width: 100%;
         }
 
         @include desktop {
@@ -93,10 +91,32 @@
                 grid-column: span 6;
             }
         }
-        
+
         .demoVid {
+            position: relative;
+        }
+
+        .demoVid,
+        .demoVid > video {
             max-width: 100%;
             height: 100%;
+            width: 100%;
+
+            a {
+                position: absolute;
+                top: $padding;
+                left: $padding;
+                width: 2 * $padding;
+                height: 2 * $padding;
+                z-index: 1;
+                background-color: $background;
+                border-radius: 20%;
+
+                svg {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
         }
 
         .prerequisites,
@@ -113,7 +133,7 @@
                     align-items: center;
 
                     svg {
-                        margin-right: 16px;
+                        margin-right: $padding;
                     }
                 }
             }
