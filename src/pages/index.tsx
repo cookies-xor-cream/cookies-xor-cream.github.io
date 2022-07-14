@@ -19,7 +19,11 @@ import skills from "../pageData/skills";
 
 const IndexPage: React.FC = () => {
   const recentPostRawData = useStaticQuery(graphql`{
-    allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}, limit: 3) {
+    allMarkdownRemark(
+      filter: {frontmatter: {overview: {ne: ""}}},
+      sort: {fields: frontmatter___date, order: DESC},
+      limit: 3
+    ) {
       nodes {
         frontmatter {
           date(formatString: "DD/MM/YYYY")
