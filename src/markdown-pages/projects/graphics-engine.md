@@ -38,7 +38,7 @@ To be absolutely specific we will learn about how objects are rendered, and the 
 Our engine will run all the code on the CPU, using only a single thread. As such the performance will be abysmal since we are not taking advantage of the graphics components in our computer (the GPU). If you would like to learn about the graphics pipeline instead, [this is a good start](https://www.khronos.org/opengl/wiki/Rendering_Pipeline_Overview) and explains how the graphics pipeline is optimized and leveraged in order to squeeze out every ounce of performance.
 
 ## What Do I Need To Know?
-It's hard to go over what the pre-requisites are for while dodging all the needed terminology. If you see anything that you don't know the meaning of:
+It's hard to go over what the pre-requisites are for while dodging all the needed terminology. If you see anything that you don't know the meaning of (yet):
 1. It will be explained soon
 2. It probably means what it sounds like anyways
 
@@ -52,14 +52,14 @@ Point vectors represent a position relative to some assumed position (normally t
 Rays are like point vectors but they don't represent the relative position of two things, they simply represent a direction. For example is a *ray* of light is travelling at $45\degree$ upwards and to the right then the vector representing it might be $(1, 1)$ (though they are often normalized).
 
 ### Matrices
-Matrices are vectors of vectors (drawn as a square of numbers) that can represent transformations in space. For example if you rotate an object that can be represented by a *rotation matrix*. They are to convert the position of *vertices* from *world space* to *camera space*. They can also be used to manipulate objects in general.
+Matrices are vectors of vectors (drawn as a square of numbers) that can represent transformations in space. For example if we rotate an object that can be represented by a *rotation matrix*. They are to convert the position of *vertices* from *world space* to *camera space*. They can also be used to manipulate objects in general.
 
-Their most useful property is *composition* where if you have two matrices $M$ and $N$ that represent two separate transformations, their product $NM$ represents applying the transformation $M$, and then applying the transformation $N$ (read right to left).
+Their most useful property is *composition* where if we have two matrices $M$ and $N$ that represent two separate transformations, their product $NM$ represents applying the transformation $M$, and then applying the transformation $N$ (read right to left).
 
 4-dimensional matrices are used ($4\times 4$) matrices in order to represent translations.
 
 #### Vectorspaces
-Vectorspaces are a way to think about objects and transformation. When teaching the maths behind graphics it is generally conceptualized as transformations on the vectorspace rather than the objects being transformed. For example if you scale an object by a factor of $2$ (make it twice as big) that is equivalent to doubling the distance of every point to the origin (multiplying all vectors in the space by $2$).
+Vectorspaces are a way to think about objects and transformation. When teaching the maths behind graphics it is generally conceptualized as transformations on the vectorspace rather than the objects being transformed. For example if we scale an object by a factor of $2$ (make it twice as big) that is equivalent to doubling the distance of every point to the origin (multiplying all vectors in the space by $2$).
 
 #### Transformations
 You should know about a few transformations when implementing a graphics engine:
@@ -67,16 +67,27 @@ You should know about a few transformations when implementing a graphics engine:
 2. Rotation
 3. Scaling
 
+## Background Terminology
+### Vertex
+### Fragment
+### Primitive
+### Mesh
+
 ## Matrix Operations
 Matrix operations are composed in order to place objects at their desired position on the screen.
 
 ### Matrix Structure
 Matrices are assumed to be constructed with row vectors for our purposes (though it doesn't matter if it's row vectors). We will be using affine matrices, which are a type of $4\times 4$ matrix that can represent and compose translation as well as the other operations.
 
+The structure of the affine matrix will be explained separately in due time. For now we can simply ignore the $4$th row and $4$th column.
+
 
 ### Inverse Transformations
+Each matrix implies a transformation, but there also exists an *inverse* matrix that undoes this transformation. Inverting matrices is not a trivial problem, therefore for speed and clarity we will be doing each inversion individually.
 
 ### Translation
+Translation (also sometimes called displacement by *physics majors*) is a transformation that takes an object and moves it in space. It preserves everything about the object except for its position. All angles, rotations, etc. are conserved.
+
 #### Translation Matrix
 #### Inverse Translation Matrix
 
@@ -127,4 +138,21 @@ $$
 #### Direction
 #### Intensity
 #### Reflection Calculations
-##### Blinn-Phong Model
+
+### Extensions to The Engine
+### Blinn-Phong Model
+The Blinn-Phong model is a lighting model that provides more depth to the lighting than how bright each primitive is.
+
+It specifies the ambient, diffuse, and specular components which can more accurately display objects. For example due to the specular components spheres have the halo/shiny region that they would when viewed directly under a light source.
+
+This model of lighting also specifies how to interpolate lighting data correctly between fragments of a given primitive.
+
+### Different Types of Lighting
+There are various types of light sources which all interact with their environment different and are used for varying purposes/effects. If you are curious then you can read more about them [here](https://www.pluralsight.com/blog/film-games/understanding-different-light-types).
+
+These are the types of lighting you can implement:
+- Point Light
+- Spot Light
+- Volume Light
+- Ambient Light
+- Area Light
