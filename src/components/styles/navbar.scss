@@ -77,7 +77,7 @@ nav {
                 padding-left: 0;
                 padding-right: $icon-size;
                 filter: drop-shadow(0 0 3px $primaryHighlight);
-                transition: $transition-speed;
+                transition: filter $transition-speed;
                 height: $icon-size;
 
                 @include mobile {
