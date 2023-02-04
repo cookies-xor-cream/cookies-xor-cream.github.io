@@ -5,7 +5,7 @@ title: "PictoMath"
 
 videoName: "BoidVid"
 
-carddesc: "Simulates complex swarm-like behaviours through three simple rules. An example of emergent behaviour."
+carddesc: "A simple CRUD webapp for children to practice and hone their mental math skills. Built on top of sqlite, Flask, and Jinja2"
 tags: ["simulation", "realtime"]
 
 overview: "Simulation of emergent bird-like behaviours through the application of three simple rules"
