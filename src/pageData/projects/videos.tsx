@@ -4,6 +4,7 @@ import GraphicsVid from "/src/videos/cat_graphics_demo.webm";
 import MazeGenVid from "/src/videos/mazejs_gen.webm";
 import MazeSolveVid from "/src/videos/mazejs_solve.webm";
 import DFTVid from "/src/videos/wile_dft.webm";
+import TransrustrateVid from "/src/videos/transrustrate.webm";
 
 export default {
 	BoidVid,
@@ -11,5 +12,6 @@ export default {
 	GraphicsVid,
 	MazeGenVid,
 	MazeSolveVid,
-	DFTVid
+	DFTVid,
+	TransrustrateVid,
 }
