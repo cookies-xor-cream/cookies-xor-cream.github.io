@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle: Mandibles-Eyes:
-uriTitle: Mandibles-Eyes:
+displayTitle: Mandibles-Eyes
+uriTitle: Mandibles-Eyes
 ---
 
 Mandibles-Eyes: Stepping Over An Arthropod
