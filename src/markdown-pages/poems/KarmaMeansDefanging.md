@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: Ullapool
+uriTitle: Ullapool
 ---
 
 Ullapool And Bombard: Karma Means Defanging Myself

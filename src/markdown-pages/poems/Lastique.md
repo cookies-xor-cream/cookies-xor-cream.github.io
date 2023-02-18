@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Denial's
+uriTitle: Denial's
 ---
 
 Denial's Inelastic: New Evidence For The Etymology Of Lastique

@@ -1,7 +1,7 @@
 ---
 section: Liz
-displayTitle:
-uriTitle:
+displayTitle: Conviction
+uriTitle: Conviction
 ---
 
 Conviction On A Whim: The GenZ Playbook

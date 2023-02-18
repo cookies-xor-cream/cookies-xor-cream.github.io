@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Arycyclohexylamine
+uriTitle: Arycyclohexylamine
 ---
 
 Arycyclohexylamine And Diethylamide Salts

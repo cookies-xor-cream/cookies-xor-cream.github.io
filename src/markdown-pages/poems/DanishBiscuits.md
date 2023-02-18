@@ -1,7 +1,7 @@
 ---
 section: Myself
-displayTitle:
-uriTitle:
+displayTitle: Laura
+uriTitle: Laura
 ---
 
 Laura And Danish Biscuits Couldn't Animate Fire From A Corpse: آتش، کالی

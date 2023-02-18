@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Pascal's
+uriTitle: Pascal's
 ---
 
 Pascal's Slotmachine

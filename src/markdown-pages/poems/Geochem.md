@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Geochemistry
+uriTitle: Geochemistry
 ---
 
 Geochemistry Of The Western States

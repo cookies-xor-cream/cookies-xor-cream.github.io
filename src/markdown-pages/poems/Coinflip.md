@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: Coin
+uriTitle: Coin
 ---
 
 Coin Flip Of An Exit Plan And Barbed Wire On The Slamming Door

@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: A
+uriTitle: A
 ---
 
 A 9:30 Start Is 90 Minutes Lost To Timezones

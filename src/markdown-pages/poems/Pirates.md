@@ -1,7 +1,7 @@
 ---
 section: Other Peoples
-displayTitle:
-uriTitle:
+displayTitle: The
+uriTitle: The
 ---
 
 The Pirate Caught Me Curbing: Pretty Faes Mid-Sprint And Awake

@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: Unpublished
+uriTitle: Unpublished
 ---
 
 Unpublished Obituary Of A Living Girl: Received By 7 With An Hour Delay

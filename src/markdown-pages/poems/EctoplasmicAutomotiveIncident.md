@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Ectoplasmic
+uriTitle: Ectoplasmic
 ---
 
 Ectoplasmic Automative Incident: A Postmortem Retrospective

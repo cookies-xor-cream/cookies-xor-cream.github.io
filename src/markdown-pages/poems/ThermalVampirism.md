@@ -1,7 +1,7 @@
 ---
 section: Daniella
-displayTitle:
-uriTitle:
+displayTitle: Love's
+uriTitle: Love's
 ---
 
 Love's Thermal Vampirism

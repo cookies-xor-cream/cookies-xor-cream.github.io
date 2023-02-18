@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Nightmare
+uriTitle: Nightmare
 ---
 
 Nightmare In A Dream

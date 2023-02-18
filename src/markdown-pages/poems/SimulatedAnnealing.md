@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Stuck
+uriTitle: Stuck
 ---
 
 Stuck In The Glass Lake Of A Local Extrema

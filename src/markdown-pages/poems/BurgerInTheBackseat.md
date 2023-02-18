@@ -1,7 +1,7 @@
 ---
 section: Myself
-displayTitle:
-uriTitle:
+displayTitle: Driving
+uriTitle: Driving
 ---
 
 Driving While Eating A Fucking Burger

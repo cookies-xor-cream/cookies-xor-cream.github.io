@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: I
+uriTitle: I
 ---
 
 I Recycled So Many Memories But You Recycled Christ

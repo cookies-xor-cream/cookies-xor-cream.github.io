@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Travesty
+uriTitle: Travesty
 ---
 
 Travesty Is Circumstance Gone Genetic: Her Nightmares Stayed Longer Than Mine

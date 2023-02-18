@@ -1,6 +1,6 @@
 ---
 section: Katherine
-displayTitle:
+displayTitle: Katherine
 uriTitle:
 ---
 

@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Crazy
+uriTitle: Crazy
 ---
 
 Crazy Talk From XRay Ribs

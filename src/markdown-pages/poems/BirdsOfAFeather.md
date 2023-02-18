@@ -1,16 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
----
-
-Birds Of A Feather: She Said It Was Okay To Break The Tether
-
-The last we saw of her that night,
-Was the cawing and the laughs,
-Of the cigarette-wielding parrot,
-trying to get into her pants.
-
+displayTitle: She
+uriTitle: She
 ---
 
 She was a parrot of her love,

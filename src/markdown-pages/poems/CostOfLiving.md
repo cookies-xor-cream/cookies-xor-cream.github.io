@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Death
+uriTitle: Death
 ---
 
 Death Is The Cost Of Living

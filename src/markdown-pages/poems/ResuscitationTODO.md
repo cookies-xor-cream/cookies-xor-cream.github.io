@@ -1,6 +1,6 @@
 ---
 section: Amber
-displayTitle:
+displayTitle: Amber
 uriTitle:
 ---
 

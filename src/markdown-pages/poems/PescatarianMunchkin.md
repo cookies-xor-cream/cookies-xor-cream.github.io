@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Terrifying
+uriTitle: Terrifying
 ---
 
 Terrifying Pescatarian Munchkin

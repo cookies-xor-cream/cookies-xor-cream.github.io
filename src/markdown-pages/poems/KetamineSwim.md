@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Ketamine
+uriTitle: Ketamine
 ---
 
 Ketamine And A Badly Timed Swim (We Fell Off The Fucking Bridge Apparently)

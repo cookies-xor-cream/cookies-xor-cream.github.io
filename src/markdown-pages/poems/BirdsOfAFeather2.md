@@ -1,16 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
----
-
-Birds Of A Feather 2: Beaten Half To Death In The Stormy Weather
-
-The last you saw of her that night,
-Was the nurses working overtime,
-While they were shooting side-eyed stares,
-As they were pulling out the glass.
-
+displayTitle: There
+uriTitle: There
 ---
 
 There was a bottle on the ground,

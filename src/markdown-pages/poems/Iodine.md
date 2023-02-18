@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Iodine
+uriTitle: Iodine
 ---
 
 Iodine Wishes It Were Silicon

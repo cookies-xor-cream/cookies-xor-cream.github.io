@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Non
+uriTitle: Non
 ---
 
 Non Spararle

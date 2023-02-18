@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Les
+uriTitle: Les
 ---
 
 Les Échalotes

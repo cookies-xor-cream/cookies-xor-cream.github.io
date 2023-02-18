@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Quest
+uriTitle: Quest
 ---
 
 Quest For A Few Fewer Celsius

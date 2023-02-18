@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: Kill
+uriTitle: Kill
 ---
 
 Kill The Religion Stuck Inside

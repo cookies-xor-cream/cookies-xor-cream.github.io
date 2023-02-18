@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Denial's
+uriTitle: Denial's
 ---
 
 Denial's Inelastic. Forgetting You Know And Remembering You Don't: A Formal Disproof Of The KK Thesis

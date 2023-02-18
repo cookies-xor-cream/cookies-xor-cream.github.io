@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle:
-uriTitle:
+displayTitle: The
+uriTitle: The
 ---
 
 The Iberian Peninsula: What The Fuck Were You Thinking With That Age Gap

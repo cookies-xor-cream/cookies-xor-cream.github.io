@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: Murder
+uriTitle: Murder
 ---
 
 Murder At The Nursery: When Death Preempts Living

@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: The
+uriTitle: The
 ---
 
 The Seamstress' Patchwork Reality

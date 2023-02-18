@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Red
+uriTitle: Red
 ---
 
 Red Tape Pollution In Her Time

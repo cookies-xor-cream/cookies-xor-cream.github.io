@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: Jackson
+uriTitle: Jackson
 ---
 
 Jackson Avenue: I Hated Who I Was At 16

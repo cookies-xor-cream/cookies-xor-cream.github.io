@@ -1,7 +1,7 @@
 ---
 section: Claudia
-displayTitle:
-uriTitle:
+displayTitle: Leaning
+uriTitle: Leaning
 ---
 
 Leaning Too Close Wasn't Close Enough

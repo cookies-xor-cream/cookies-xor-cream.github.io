@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle:
-uriTitle:
+displayTitle: Doctor's
+uriTitle: Doctor's
 ---
 
 Doctor's Office
