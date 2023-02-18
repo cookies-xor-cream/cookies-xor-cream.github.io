@@ -14,6 +14,8 @@ const PoemSections: React.FC = () => {
             nodes {
               frontmatter {
                 title
+                displayTitle
+                uriTitle
               }
             }
             fieldValue
@@ -34,7 +36,7 @@ const PoemSections: React.FC = () => {
         <Seo title="404: Not found" />
         <ul>
           {sectionsData.map(sectionInfo => (
-            <li><a href={`./${sectionInfo.section}`}>
+            <li><a href={sectionInfo.section}>
               {sectionInfo.section}
             </a></li>
           ))}

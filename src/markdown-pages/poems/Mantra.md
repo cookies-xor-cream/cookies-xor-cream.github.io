@@ -1,7 +1,7 @@
 ---
 section: Katherine
-displayTitle: Katherine
-uriTitle:
+displayTitle: Mantra
+uriTitle: Mantra
 ---
 
 Mantra

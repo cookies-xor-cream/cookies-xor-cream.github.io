@@ -1,7 +1,7 @@
 ---
 section: My Coworker, Whatshername
-displayTitle: My Coworker, Whatshername
-uriTitle:
+displayTitle: My
+uriTitle: My
 ---
 
 
