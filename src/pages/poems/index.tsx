@@ -27,18 +27,26 @@ const PoemSections: React.FC = () => {
     const sectionsData = sectionsRawData.map(group => ({
         section: group.fieldValue,
         poems: group.nodes.map(node => ({
-            title: node.frontmatter.title,
+            title: node.frontmatter.displayTitle,
+            uri: node.frontmatter.uriTitle,
         }))
     })).sort(group => -group.poems.length)
 
     return (
       <Layout>
-        <Seo title="404: Not found" />
+        <Seo title="poems"/>
         <ul>
           {sectionsData.map(sectionInfo => (
-            <li><a href={sectionInfo.section}>
+            <li>
               {sectionInfo.section}
-            </a></li>
+              <ul>
+                {sectionInfo.poems.map(poem => (
+                  <li><a href={poem.uri}>
+                    {poem.title}
+                  </a></li>
+                ))}
+              </ul>
+            </li>
           ))}
         </ul>
       </Layout>
