@@ -1,10 +1,8 @@
 ---
 section: Myself
-displayTitle: Laura
-uriTitle: Laura
+displayTitle: "Laura And Danish Butter Biscuits Couldn't Animate Fire From A Corpse: آتش، کالی"
+uriTitle: danish-butter-biscuits
 ---
-
-Laura And Danish Biscuits Couldn't Animate Fire From A Corpse: آتش، کالی
 
 I pick up every sound I hear,
 It distorts and never stays the same,

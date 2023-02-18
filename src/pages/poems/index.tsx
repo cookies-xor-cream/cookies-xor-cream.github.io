@@ -17,6 +17,10 @@ const PoemSections: React.FC = () => {
               displayTitle
               uriTitle
             }
+
+            wordCount {
+              words
+            }
           }
           fieldValue
         }
@@ -29,6 +33,7 @@ const PoemSections: React.FC = () => {
       poems: group.nodes.map(node => ({
           title: node.frontmatter.displayTitle,
           uri: node.frontmatter.uriTitle,
+          words: node.wordCount.words,
       }))
   })).sort(group => -group.poems.length)
 
@@ -41,8 +46,9 @@ const PoemSections: React.FC = () => {
             {sectionInfo.section}
             <ul>
               {sectionInfo.poems.map(poem => (
-                <li><a href={poem.uri}>
-                  {poem.title}
+                <li><a href={`poems/${poem.uri}`}>
+                  {poem.title} <br/>
+                  {poem.words} words
                 </a></li>
               ))}
             </ul>
