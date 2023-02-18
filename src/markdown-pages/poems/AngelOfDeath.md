@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Kill
-uriTitle: Kill
+displayTitle: Killing Azrael
+uriTitle: azrael
 ---
-
-Kill The Religion Stuck Inside
 
 I couldn't stop for Azreal to weather burning wings,
 And the Muslim in the girl that raised me thinks that that's a sin,
