@@ -39,8 +39,6 @@ const IndexPage: React.FC = () => {
     }
   }`).allMarkdownRemark.nodes;
 
-  console.log('!!!', recentPostData)
-
   const recentPostData = recentPostRawData.map(post => {
     return {
       title: post.frontmatter.title,
