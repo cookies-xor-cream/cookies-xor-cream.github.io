@@ -1,6 +1,9 @@
 import * as React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Layout from "../../components/layout"
+import Seo from "../../components/seo"
+
 import cc from "classcat";
 
 const PoemSections: React.FC = () => {
@@ -18,18 +21,26 @@ const PoemSections: React.FC = () => {
         }
       }      
     `).allMarkdownRemark.group;
-
     
-    const a = sectionsRawData.map(group => ({
+    const sectionsData = sectionsRawData.map(group => ({
         section: group.fieldValue,
         poems: group.nodes.map(node => ({
             title: node.frontmatter.title,
         }))
-    }))
+    })).sort(group => -group.poems.length)
 
-    console.log(a)
-
-    return null;
+    return (
+      <Layout>
+        <Seo title="404: Not found" />
+        <ul>
+          {sectionsData.map(sectionInfo => (
+            <li><a href={`./${sectionInfo.section}`}>
+              {sectionInfo.section}
+            </a></li>
+          ))}
+        </ul>
+      </Layout>
+    );
 }
 
 export default PoemSections

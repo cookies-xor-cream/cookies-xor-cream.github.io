@@ -14,7 +14,7 @@ type Props  = {
 };
 
 const Navbar: React.FC<Props> = ({ currentPage='/' }) => {
-	const paths = ["/projects", "/contact", "/technologies"];
+	const paths = ["/projects", "/contact", "/technologies", "/poems"];
 	
 	const mobileWidth = 768;
 	const isMobile = () => window.innerWidth < mobileWidth;
