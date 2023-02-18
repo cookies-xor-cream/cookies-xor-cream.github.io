@@ -1,5 +1,7 @@
 ---
 section: Myself
+displayTitle:
+uriTitle:
 ---
 
 The Pills Robbed My Heartrate And My Words:

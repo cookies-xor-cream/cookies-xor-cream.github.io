@@ -1,5 +1,7 @@
 ---
 section: Claudia
+displayTitle:
+uriTitle:
 ---
 
 Blind Strangers Gambling At The Existential Casino

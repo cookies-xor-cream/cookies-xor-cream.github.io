@@ -1,5 +1,7 @@
 ---
 section: Amber
+displayTitle:
+uriTitle:
 ---
 
 KHoled At Midnight, By The Seaside Mid-River, And Allegedly Dry

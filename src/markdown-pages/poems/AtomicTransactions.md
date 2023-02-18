@@ -1,5 +1,7 @@
 ---
 section: Claudia
+displayTitle:
+uriTitle:
 ---
 
 Pending Atomic Transaction During An Application Of Bayes' Rule

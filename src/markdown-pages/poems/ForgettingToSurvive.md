@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 I Tried So Hard To Live That I Forgot To Survive

@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 Nevermore Fought Dirty Then Played Her Closing Act: The 2010s In A Post 2016 World

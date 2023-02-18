@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 I Wouldn't Recommend Infidelity, Especially If It's Her Doing It

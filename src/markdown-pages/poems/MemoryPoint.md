@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 Memorypoint: Smokey Oneliners In A Flashbulb Pistol

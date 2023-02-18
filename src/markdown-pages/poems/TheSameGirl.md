@@ -1,5 +1,7 @@
 ---
 section: Amber
+displayTitle:
+uriTitle:
 ---
 
 From Every Time I Shut My Eyes, Down To Almost Never

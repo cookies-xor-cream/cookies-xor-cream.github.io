@@ -1,5 +1,7 @@
 ---
 section: Claudia
+displayTitle:
+uriTitle:
 ---
 
 The Same Option Twice: Asking For A Second Is Allegedly Overindulgent

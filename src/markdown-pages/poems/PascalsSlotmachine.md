@@ -1,5 +1,10 @@
-Pascal's Slotmachine
 ---
+section: Amber
+displayTitle:
+uriTitle:
+---
+
+Pascal's Slotmachine
 
 "If you think about it, think enough,
 Take a few pills and it's a problem,

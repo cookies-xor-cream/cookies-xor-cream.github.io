@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 I'm Photosensitive And I Got Swooped

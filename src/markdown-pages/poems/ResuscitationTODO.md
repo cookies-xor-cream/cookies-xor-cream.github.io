@@ -1,5 +1,7 @@
 ---
 section: Amber
+displayTitle:
+uriTitle:
 ---
 
 Resuscitation

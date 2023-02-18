@@ -1,5 +1,7 @@
 ---
 section: Claudia
+displayTitle:
+uriTitle:
 ---
 
 Mutilating My Cadaver: Ghūl-e Biābān

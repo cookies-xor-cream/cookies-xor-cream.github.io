@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 The KK Thesis 2: Disproof Of The Disproof. Proof By Denial

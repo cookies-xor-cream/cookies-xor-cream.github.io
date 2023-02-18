@@ -1,5 +1,7 @@
 ---
 section: My Coworker, Whatshername
+displayTitle:
+uriTitle:
 ---
 
 

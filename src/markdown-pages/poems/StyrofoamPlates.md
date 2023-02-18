@@ -1,5 +1,7 @@
 ---
 section: My Favourite Bands
+displayTitle:
+uriTitle:
 ---
 
 Death Cab For Cutie's Styrofoam Plates

@@ -1,5 +1,7 @@
 ---
 section: Daniella
+displayTitle:
+uriTitle:
 ---
 
 Mute By Way Of Birthday Cake (Amongst Other Things)

@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 Life Here Is Like Watching The Desert Floor Try To Sew Itself Up

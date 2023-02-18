@@ -1,5 +1,7 @@
 ---
 section: Katherine
+displayTitle:
+uriTitle:
 ---
 
 A 9:30 Start Is 90 Minutes Lost To Timezones
