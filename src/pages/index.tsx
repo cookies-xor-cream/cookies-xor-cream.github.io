@@ -20,7 +20,10 @@ import skills from "../pageData/skills";
 const IndexPage: React.FC = () => {
   const recentPostRawData = useStaticQuery(graphql`{
     allMarkdownRemark(
-      filter: {frontmatter: {overview: {ne: ""}}},
+      filter: {
+        frontmatter: {overview: {ne: ""}},
+        fileAbsolutePath: {glob: "**/projects/*.md"}
+      },
       sort: {fields: frontmatter___date, order: DESC},
       limit: 3
     ) {

@@ -5,10 +5,10 @@ title: "Transrustrate"
 
 videoName: "TransrustrateVid"
 
-carddesc: "Simulates complex swarm-like behaviours through three simple rules. An example of emergent behaviour."
+carddesc: "TODO"
 tags: ["simulation", "realtime"]
 
-overview: "Simulation of emergent bird-like behaviours through the application of three simple rules"
+overview: ""
 techStack: ["cpp", "sfml"]
 prereqs: ["vectors", "trig"]
 timeest: "2 days"
