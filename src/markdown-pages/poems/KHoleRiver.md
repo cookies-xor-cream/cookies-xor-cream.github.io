@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: KHoled
-uriTitle: KHoled
+displayTitle: KHoled At Midnight, By The Seaside Mid-River, And Allegedly Dry
+uriTitle: kholed-at-midnight
 ---
-
-KHoled At Midnight, By The Seaside Mid-River, And Allegedly Dry
 
 Just tell me how you spiked this cup,
 Coz that's an offer that I'd take up,

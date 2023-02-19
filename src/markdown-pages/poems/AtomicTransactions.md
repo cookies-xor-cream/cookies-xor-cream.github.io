@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Pending
-uriTitle: Pending
+displayTitle: Pending Atomic Transaction During An Application Of Bayes' Rule
+uriTitle: bayes-rule
 ---
-
-Pending Atomic Transaction During An Application Of Bayes' Rule
 
 Bayes would kill me or hand a trophy
 If he saw how I had used his rule.

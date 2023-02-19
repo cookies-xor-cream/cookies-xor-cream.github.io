@@ -1,11 +1,8 @@
 ---
 section: My Coworker, Whatshername
-displayTitle: My
-uriTitle: My
+displayTitle: "Casual Racism: Coda For The Winterscape Of Maternity Leave Ending"
+uriTitle: casual-racism
 ---
-
-
-Casual Racism: Coda For The Winterscape Of Maternity Leave Ending
 
 He's out here playing 'conjure slurs',
 With his dart-set and a map,

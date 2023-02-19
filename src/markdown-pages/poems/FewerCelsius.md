@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Quest
-uriTitle: Quest
+displayTitle: Quest For A Few Fewer Celsius
+uriTitle: a-few-fewer-celcius
 ---
-
-Quest For A Few Fewer Celsius
 
 The sky was once so cold at night,
 To nip the desert heat that bites,

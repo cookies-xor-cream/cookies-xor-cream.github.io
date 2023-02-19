@@ -1,10 +1,8 @@
 ---
 section: Zahra
-displayTitle: Fly
-uriTitle: Fly
+displayTitle: Fly Higher, I'd Like To See A Comet.
+uriTitle: id-like-to-see-a-comet
 ---
-
-Fly Higher, I'd Like To See A Comet.
 
 It's fucking weird that I can't breath,
 What's that saying that she used?

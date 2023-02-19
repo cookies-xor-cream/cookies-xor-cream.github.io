@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Ectoplasmic
-uriTitle: Ectoplasmic
+displayTitle: "Ectoplasmic Automotive Incident: A Posthumous Retrospective"
+uriTitle: ectoplasmic-automotive-incident
 ---
-
-Ectoplasmic Automative Incident: A Postmortem Retrospective
 
 I may be a half wit
 But youre at your at your wits end

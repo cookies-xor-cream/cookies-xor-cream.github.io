@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Ketamine
-uriTitle: Ketamine
+displayTitle: Ketamine And A Badly Timed Swim (We Fell Off The Fucking Bridge Apparently)
+uriTitle: ketamine-and-a-badly-timed-swim
 ---
-
-Ketamine And A Badly Timed Swim (We Fell Off The Fucking Bridge Apparently)
 
 I'm sat by the shore,
 On the side that you fell.

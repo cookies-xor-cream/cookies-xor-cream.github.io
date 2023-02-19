@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: The
-uriTitle: The
+displayTitle: "The Same Option Twice: Asking For A Second Is Allegedly Overindulgent"
+uriTitle: the-same-option-twice
 ---
-
-The Same Option Twice: Asking For A Second Is Allegedly Overindulgent
 
 I'm caught between charybdis and Scylla.
 I'm coiled between a serpent and a snake.

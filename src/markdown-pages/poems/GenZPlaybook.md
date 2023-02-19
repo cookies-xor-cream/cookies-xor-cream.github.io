@@ -1,10 +1,8 @@
 ---
 section: Liz
-displayTitle: Conviction
-uriTitle: Conviction
+displayTitle: "Conviction On A Whim: The GenZ Playbook"
+uriTitle: the-genz-playbook
 ---
-
-Conviction On A Whim: The GenZ Playbook
 
 I'd make you unhand the phone,
 But you're glued to the screen,

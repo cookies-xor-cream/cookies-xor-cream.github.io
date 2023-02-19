@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Mutilating
-uriTitle: Mutilating
+displayTitle: "Mutilating My Cadaver: Ghūl-e Biābān"
+uriTitle: ghul-e-biaban
 ---
-
-Mutilating My Cadaver: Ghūl-e Biābān
 
 Every breath I took today,
 Is stunted slightly lighter,

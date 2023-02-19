@@ -1,11 +1,10 @@
 ---
 section: Amber
-displayTitle: The
-uriTitle: The
+displayTitle: |
+    The Iberian Peninsula: What The Fuck Were You Thinking With That Age Gap
+    (She Normalized It For Me?)
+uriTitle: the-iberian-peninsula
 ---
-
-The Iberian Peninsula: What The Fuck Were You Thinking With That Age Gap
-(She Normalized It For Me?)
 
 From Amber's Perspective:
 "The less you speak the more you write,
@@ -15,7 +14,7 @@ If I didn't know any better, I'd say by
 
 So watch the news, and ink your beak,
 I'll write to you, and you'll respond,
-So please write back if wat you write,
+So please write back if what you write,
 And what you miss just might belong.
 
 Though in my head, it's obvious,
@@ -29,29 +28,29 @@ And I need time to think it through,
 So we'll talk to match speed of snails.
 
 I never asked for her ID,
-And when I saw I had played pretend,
-That it was something that I'd never seen.
+And when I saw I played pretend,
+That it was something I'd never seen.
 But you were younger, and I'm content.
 
 And if the way you thought of me,
 Was the slightest indication to
 The love or lust that she had breathed.
-Then that's enough, and I'd be through"
+Then that's enough, and I am through"
 
 From My Perspective:
-None of us have a leg to stand on,
-But you had eight years more.
-And she had three. You never
-Grew up, and she had never breathed.
+None of us had a leg to stand on,
+But you had eight years longer.
+And she had three. You never grew up,
+And she had never breathed.
 
-She's seventeen, and never saw
+She was seventeen, and never saw
 The gap in age. Just old enough
 For play-pretend to falsely think
-It sundered from her play-belief.
+That it sundered from her play-belief.
 
-I don't know, won't say posthaste
+I don't know, and won't say posthaste
 How I feel post-fact and as of late.
-I will come and I will leaves the haste,
+I will come and I will drop the haste,
 Before it comes and grows till hate.
 
 My feelings scatter and undulate,

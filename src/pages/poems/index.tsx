@@ -46,7 +46,7 @@ const PoemSections: React.FC = () => {
             {sectionInfo.section}
             <ul>
               {sectionInfo.poems.map(poem => (
-                <li><a href={`poems/${poem.uri}`}>
+                <li><a href={`/poems/${poem.uri}`}>
                   {poem.title} <br/>
                   {poem.words} words
                 </a></li>

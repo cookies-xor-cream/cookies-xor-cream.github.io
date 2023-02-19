@@ -1,7 +1,7 @@
 ---
 section: Amber
-displayTitle: There
-uriTitle: There
+displayTitle: "Birds Of A Feather: Postmortem"
+uriTitle: birds-of-a-feather-postmortem
 ---
 
 There was a bottle on the ground,
@@ -12,7 +12,7 @@ Waiting for the gore.
 There were three of them,
 And two of you, one of which partook,
 Because she was the only one,
-They wouldn't let off the hook.
+They wouldn't let off of the hook.
 
 They beat your ribcage in,
 They rolled you in the glass,
@@ -25,9 +25,9 @@ Tried to figure out what in the fuck,
 The violence was about.
 
 "Remember from before"
-'Don't speak for me,
+*"Don't speak for me,
 you're coughing blood,
-Kath? what is this all for?'
+Kath? what is this all for?"*
 
 But she didn't take a break,
 From the rib-pressed words,
@@ -37,7 +37,7 @@ That would be finishing this verse:
 
 "Remember the parrot that I met,
 When I lost track of my old date,
-The pretty one, I caught in my net,
+The pretty one, I caught within my net,
 Well her boyfriend wasn't calm"
 
 "He was the protagonist to a beat-em-up,
@@ -46,9 +46,10 @@ In which it looks like I got caught"
 The emergency room limp-walk,
 Was the most awkward one we've took,
 And neither of us talked,
-But we would trade back-and-forth the looks.
+But we would trade and barter looks.
 
 She did this way too much,
 And I'm happy this transpired,
 Her age limit of twenty-three,
-On this kind of shit expired.
+On this kind of shit was due to
+Have expired.

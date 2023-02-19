@@ -1,10 +1,8 @@
 ---
 section: Katherine
 displayTitle: Mantra
-uriTitle: Mantra
+uriTitle: mantra
 ---
-
-Mantra
 
 The light and sound,
 Both pale besides,

@@ -1,10 +1,8 @@
 ---
 section: Myself
-displayTitle: Driving
-uriTitle: Driving
+displayTitle: Driving While Eating A Fucking Burger
+uriTitle: driving-while-eating-a-burger
 ---
-
-Driving While Eating A Fucking Burger
 
 The logistics of an early dinner,
 And overbites will find the off-road,

@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Denial's
-uriTitle: Denial's
+displayTitle: "Denial's Inelastic. Forgetting You Know And Remembering You Don't: A Formal Disproof Of The KK Thesis"
+uriTitle: disproving-the-kk-thesis
 ---
-
-Denial's Inelastic. Forgetting You Know And Remembering You Don't: A Formal Disproof Of The KK Thesis
 
 I need the fucking verbosity
 To be thinking through the gravity

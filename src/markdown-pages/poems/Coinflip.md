@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Coin
-uriTitle: Coin
+displayTitle: "Coin Flip Of An Exit Plan: Barbed Wire On A Slamming Door"
+uriTitle: coin-flip-exit-plan
 ---
-
-Coin Flip Of An Exit Plan And Barbed Wire On The Slamming Door
 
 She's the corpus of a spirit,
 She's a smear of the past,

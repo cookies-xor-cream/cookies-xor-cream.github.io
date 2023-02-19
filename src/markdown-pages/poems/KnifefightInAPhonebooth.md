@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Nevermore
-uriTitle: Nevermore
+displayTitle: "Nevermore Fought Dirty Then Played Her Closing Act: The 2010s In A Post 2016 World"
+uriTitle: nevermores-closing-act
 ---
-
-Nevermore Fought Dirty Then Played Her Closing Act: The 2010s In A Post 2016 World
 
 We're a knifefight in a phonebooth
 And I was begging you to end it,

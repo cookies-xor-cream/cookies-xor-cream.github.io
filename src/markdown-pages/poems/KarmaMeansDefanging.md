@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Ullapool
-uriTitle: Ullapool
+displayTitle: "Ullapool And Bombard: Karma Means Defanging Myself"
+uriTitle: karma-means-defanging-myself
 ---
-
-Ullapool And Bombard: Karma Means Defanging Myself
 
 Keep me breathing,
 I'll live with heaving,

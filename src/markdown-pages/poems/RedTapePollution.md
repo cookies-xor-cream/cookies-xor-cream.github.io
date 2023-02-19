@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Red
-uriTitle: Red
+displayTitle: Red Tape Pollution In Her Time
+uriTitle: red-tape-pollution
 ---
-
-Red Tape Pollution In Her Time
 
 So drag me by the wrist,
 Then show me all the blue you bleed,

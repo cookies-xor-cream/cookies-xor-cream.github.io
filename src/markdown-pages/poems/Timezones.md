@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: A
-uriTitle: A
+displayTitle: A 9:30 Start Is 90 Minutes Lost To Timezones
+uriTitle: 90-mins-lost-to-timezones
 ---
-
-A 9:30 Start Is 90 Minutes Lost To Timezones
 
 Butterflies with tattered wings
 Are you ones who fight but fail submit,

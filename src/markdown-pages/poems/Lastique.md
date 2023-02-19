@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Denial's
-uriTitle: Denial's
+displayTitle: "Denial's Inelastic: New Evidence For The Etymology Of Lastique"
+uriTitle: etymology-of-lastique
 ---
-
-Denial's Inelastic: New Evidence For The Etymology Of Lastique
 
 I sleep with my arms crossed
 And my hands entwined,

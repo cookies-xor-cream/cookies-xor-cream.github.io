@@ -1,11 +1,10 @@
 ---
 section: Amber
-displayTitle: If
-uriTitle: If
+displayTitle: |
+    If It Had To Be Somebody's Fault, Wouldn't It Have Been Circumstance's?
+    Help Was Elusive
+uriTitle: help-was-elusive
 ---
-
-If It Had To Be Somebody's Fault, Wouldn't It Have Been Circumstance's?
-Help Was Elusive
 
 She always muttered winged words,
 That never fluttered, were never heard,

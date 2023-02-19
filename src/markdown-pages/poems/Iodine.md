@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Iodine
-uriTitle: Iodine
+displayTitle: Iodine Wishes It Were Silicon
+uriTitle: iodine
 ---
-
-Iodine Wishes It Were Silicon
 
 She played the part of shards of glass,
 That punctured, fastened, through my hand

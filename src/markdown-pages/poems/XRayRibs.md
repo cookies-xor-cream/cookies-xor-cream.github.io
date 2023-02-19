@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Crazy
-uriTitle: Crazy
+displayTitle: Crazy Talk From XRay Ribs
+uriTitle: crazy-talk-from-xray-ribs
 ---
-
-Crazy Talk From XRay Ribs
 
 You came back from the doctor's,
 and the discussions of your bruise,

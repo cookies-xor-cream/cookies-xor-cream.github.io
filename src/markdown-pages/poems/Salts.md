@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Arycyclohexylamine
-uriTitle: Arycyclohexylamine
+displayTitle: Arycyclohexylamine And Diethylamide Salts
+uriTitle: arycyclohexylamine
 ---
-
-Arycyclohexylamine And Diethylamide Salts
 
 When I cleaned my drawer's shelves,
 I'd found her old notebook,

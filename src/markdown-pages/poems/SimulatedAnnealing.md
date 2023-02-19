@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Stuck
-uriTitle: Stuck
+displayTitle: Stuck In The Glass Lake Of A Local Extrema
+uriTitle: stuck-in-the-glass-lake
 ---
-
-Stuck In The Glass Lake Of A Local Extrema
 
 Stick me in this lake of ash,
 While the fire lays expunged,

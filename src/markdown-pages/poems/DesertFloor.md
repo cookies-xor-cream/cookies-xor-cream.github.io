@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Life
-uriTitle: Life
+displayTitle: Life Here Is Like Watching The Desert Floor Try To Sew Itself Up
+uriTitle: desert-floor-pathwork
 ---
-
-Life Here Is Like Watching The Desert Floor Try To Sew Itself Up
 
 It's the subtle cracks in creviced stone
 That's brittle, broken to its core,

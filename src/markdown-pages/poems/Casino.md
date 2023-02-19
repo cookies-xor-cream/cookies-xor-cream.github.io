@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Blind
-uriTitle: Blind
+displayTitle: Blind Strangers Gambling At The Existential Casino
+uriTitle: blind-strangers-gambling
 ---
-
-Blind Strangers Gambling At The Existential Casino
 
 Your steely guards and glassy stares,
 Are from bloodshot eyes who do not care.

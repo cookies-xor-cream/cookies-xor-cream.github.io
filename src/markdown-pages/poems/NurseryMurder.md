@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Murder
-uriTitle: Murder
+displayTitle: "Murder At The Nursery: When Death Preempts Living"
+uriTitle: murder-at-the-nursery
 ---
-
-Murder At The Nursery: When Death Preempts Living
 
 I said hi to you in passing,
 On a day in the dead of summer,

@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: I'm
-uriTitle: I'm
+displayTitle: I'm Photosensitive And I Got Swooped
+uriTitle: i-got-swooped
 ---
-
-I'm Photosensitive And I Got Swooped
 
 I think that I
 Can't bear to watch

@@ -1,13 +1,11 @@
 ---
 section: Katherine
-displayTitle: I
-uriTitle: I
+displayTitle: I Tried So Hard To Live That I Forgot To Survive
+uriTitle: forgetting-to-survive
 ---
 
-I Tried So Hard To Live That I Forgot To Survive
-
 Water never meant to freeze,
-I call it ice that gambled feet,
+Liquid's ice that gambled feet,
 Twenty higher and it would run,
 It only needs the naked sun.
 

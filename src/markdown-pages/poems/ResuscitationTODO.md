@@ -1,10 +1,8 @@
 ---
 section: Amber
 displayTitle: Resuscitation
-uriTitle: Resuscitation
+uriTitle: resuscitation
 ---
-
-Resuscitation
 
 She read notes she shouldn't read,
 From girls she shouldn't,

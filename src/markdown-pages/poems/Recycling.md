@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: I
-uriTitle: I
+displayTitle: I Recycled So Many Memories But You Recycled Christ
+uriTitle: recycling-memories
 ---
-
-I Recycled So Many Memories But You Recycled Christ
 
 I never realised how much I recycled,
 Till it was the passage of time that turned the wine sour.

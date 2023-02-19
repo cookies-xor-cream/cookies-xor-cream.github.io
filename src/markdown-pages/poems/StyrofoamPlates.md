@@ -1,10 +1,8 @@
 ---
 section: My Favourite Bands
-displayTitle: Death
-uriTitle: Death
+displayTitle: Death Cab For Cutie's Styrofoam Plates
+uriTitle: styrofoam-plates
 ---
-
-Death Cab For Cutie's Styrofoam Plates
 
 I'm par for the course
 Just as I have been living,

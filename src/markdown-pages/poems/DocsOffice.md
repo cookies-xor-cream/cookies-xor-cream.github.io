@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Doctor's
-uriTitle: Doctor's
+displayTitle: The Doctor's Office
+uriTitle: the-doctors-office
 ---
-
-Doctor's Office
 
 I hate these syllabic ramblings
 Of these feelgood and these speakfast feelings,

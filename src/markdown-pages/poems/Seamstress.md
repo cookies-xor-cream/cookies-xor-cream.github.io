@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: The
-uriTitle: The
+displayTitle: The Seamstress' Patchwork Reality
+uriTitle: patchwork-reality
 ---
-
-The Seamstress' Patchwork Reality
 
 Tethered, ringing,
 Broken bones,

@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Mandibles-Eyes
-uriTitle: Mandibles-Eyes
+displayTitle: "Mandibles-Eyes: Stepping Over An Arthropod"
+uriTitle: mandibles-eyes
 ---
-
-Mandibles-Eyes: Stepping Over An Arthropod
 
 Frosted glass and broken windows,
 The barking on the midnight walk,

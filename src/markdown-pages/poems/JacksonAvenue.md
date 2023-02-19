@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Jackson
-uriTitle: Jackson
+displayTitle: "Jackson Avenue: I Hated Who I Was At 16"
+uriTitle: jackson-avenue
 ---
-
-Jackson Avenue: I Hated Who I Was At 16
 
 I always borrow tempered time,
 Devoid of anchored stopping-signs,

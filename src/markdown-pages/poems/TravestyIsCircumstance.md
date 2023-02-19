@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Travesty
-uriTitle: Travesty
+displayTitle: "Travesty Is Circumstance Gone Genetic: Her Nightmares Stayed Longer Than Mine"
+uriTitle: travesty-is-circumstance-gone-genetic
 ---
-
-Travesty Is Circumstance Gone Genetic: Her Nightmares Stayed Longer Than Mine
 
 "You have a one track mind,
 Is how I'd put it I suppose.

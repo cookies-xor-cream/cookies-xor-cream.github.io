@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: The
-uriTitle: The
+displayTitle: "The KK Thesis 2: Disproof Of The Disproof. Proof By Denial"
+uriTitle: proving-the-kk-thesis
 ---
-
-The KK Thesis 2: Disproof Of The Disproof. Proof By Denial
 
 "If I know I know, could I have forgot?"
 'Well now you're thinking fallacies

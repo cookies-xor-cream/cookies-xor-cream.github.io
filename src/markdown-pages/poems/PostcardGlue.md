@@ -1,10 +1,8 @@
 ---
-section: TODO
-displayTitle: Expired
-uriTitle: Expired
+section: Amber
+displayTitle: Expired Postcard Glue
+uriTitle: expired-postcard-glue
 ---
-
-Expired Postcard Glue
 
 "So tell me all the things that you can't be,
 Then I'll fill in the vacancies,

@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Death
-uriTitle: Death
+displayTitle: Death Is The Cost Of Living
+uriTitle: death-is-the-cost-of-living
 ---
-
-Death Is The Cost Of Living
 
 There was something in her voice
 When it washed over me,

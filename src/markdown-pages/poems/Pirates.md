@@ -1,10 +1,8 @@
 ---
 section: Other Peoples
-displayTitle: The
-uriTitle: The
+displayTitle: "The Pirate Caught Me Curbing: Pretty Faes Mid-Sprint And Awake"
+uriTitle: the-pirate-caught-me-curbing
 ---
-
-The Pirate Caught Me Curbing: Pretty Faes Mid-Sprint And Awake
 
 I'll mark my path
 And then I'll hound,

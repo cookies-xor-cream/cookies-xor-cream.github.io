@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Terrifying
-uriTitle: Terrifying
+displayTitle: Terrifying Pescatarian Munchkin
+uriTitle: terrifying-pescatarian-munchkin
 ---
-
-Terrifying Pescatarian Munchkin
 
 The fish and chips were stale ingested,
 A finch beak sunders to a solar width,

@@ -1,10 +1,8 @@
 ---
 section: Daniella
-displayTitle: Mute
-uriTitle: Mute
+displayTitle: Mute By Way Of Birthday Cake (Amongst Other Things)
+uriTitle: mute-by-way-of-birthday-cake
 ---
-
-Mute By Way Of Birthday Cake (Amongst Other Things)
 
 I threw up all my words last night,
 Gonna take a little break,

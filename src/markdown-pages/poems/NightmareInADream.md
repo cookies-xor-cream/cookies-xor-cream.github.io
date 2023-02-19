@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Nightmare
-uriTitle: Nightmare
+displayTitle: Nightmare In A Dream
+uriTitle: nightmare-in-a-dream
 ---
-
-Nightmare In A Dream
 
 I had a nightmare in a dream
 That evergreen became a tree,

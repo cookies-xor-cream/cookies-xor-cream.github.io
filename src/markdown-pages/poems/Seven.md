@@ -1,10 +1,8 @@
 ---
 section: Claudia
-displayTitle: Unpublished
-uriTitle: Unpublished
+displayTitle: "Unpublished Obituary Of A Living Girl: Received By 7 With An Hour Delay"
+uriTitle: unpublished-obituary
 ---
-
-Unpublished Obituary Of A Living Girl: Received By 7 With An Hour Delay
 
 Funny number, please riddle me,
 Not with words but with heavy lead.

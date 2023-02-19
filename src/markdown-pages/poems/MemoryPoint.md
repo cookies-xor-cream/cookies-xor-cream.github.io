@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Memorypoint
-uriTitle: Memorypoint
+displayTitle: "Memorypoint: Smokey Oneliners In A Flashbulb Pistol"
+uriTitle: memorypoint
 ---
-
-Memorypoint: Smokey Oneliners In A Flashbulb Pistol
 
 With a shutter snap and full force flash
 She flatlined her batteries.

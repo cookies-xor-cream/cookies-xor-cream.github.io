@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Geochemistry
-uriTitle: Geochemistry
+displayTitle: Geochemistry Of The Western States
+uriTitle: geochemistry
 ---
-
-Geochemistry Of The Western States
 
 I'm rolled up in their red tape,
 And their bullshit policies,

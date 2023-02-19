@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: From
-uriTitle: From
+displayTitle: "From Every Time I Shut My Eyes, Down To Almost Never: Losing Flashbacks To Time"
+uriTitle: losing-flashbacks-to-time
 ---
-
-From Every Time I Shut My Eyes, Down To Almost Never
 
 I know I never wrote back,
 But you know what that implies.

@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: Les
-uriTitle: Les
+displayTitle: Les Échalotes
+uriTitle: les-echalotes
 ---
-
-Les Échalotes
 
 Fuck, it's like when you'd have too much speed,
 Can't stay awake but you never caught any sleep,

@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: The
-uriTitle: The
+displayTitle: "The Cause Of Causality: Ghost On A Boat"
+uriTitle: cause-of-causality
 ---
-
-The Cause Of Causality: Ghost On A Boat
 
 You've been stunlocked all this time,
 By the pictures that we took of her,

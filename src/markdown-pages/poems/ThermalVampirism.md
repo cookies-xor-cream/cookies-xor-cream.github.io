@@ -1,10 +1,8 @@
 ---
 section: Daniella
-displayTitle: Love's
-uriTitle: Love's
+displayTitle: Love's Thermal Vampirism
+uriTitle: thermal-vampirism
 ---
-
-Love's Thermal Vampirism
 
 There's an absence in the heat,
 That I don't feel inside the cold.

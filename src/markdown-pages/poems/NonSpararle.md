@@ -1,10 +1,8 @@
 ---
 section: Amber
-displayTitle: Non
-uriTitle: Non
+displayTitle: Non Spararle
+uriTitle: non-spararle
 ---
-
-Non Spararle
 
 "I don't know why all this wait,
 I feel like we've stopped crossing fates"

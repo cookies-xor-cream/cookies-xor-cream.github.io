@@ -1,10 +1,8 @@
 ---
 section: Katherine
-displayTitle: I
-uriTitle: I
+displayTitle: I Wouldn't Recommend Infidelity, Especially If It's Her Doing It
+uriTitle: infidelity
 ---
-
-I Wouldn't Recommend Infidelity, Especially If It's Her Doing It
 
 "If you kill me I won't call it murder,
 It'd just be self-relief".
