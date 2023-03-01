@@ -37,11 +37,28 @@ const PoemSections: React.FC = () => {
       }))
   })).sort(group => -group.poems.length)
 
+  const groupRequirements = (group) => group.poems.length > 3 && group.section != 'Daniella'
+
+  const ungroupedPoems = sectionsData
+    .filter(group => !groupRequirements(group))
+    .map(group => group.poems)
+    .flat()
+
+  const groupedSections = sectionsData.filter(groupRequirements)
+
+  const regroupedSectionsData = [
+    ...groupedSections,
+    ({
+      section: "Other People",
+      poems: ungroupedPoems
+    }),
+  ]
+
   return (
     <Layout>
       <Seo title="poems"/>
       <ul>
-        {sectionsData.map(sectionInfo => (
+        {regroupedSectionsData.map(sectionInfo => (
           <li>
             {sectionInfo.section}
             <ul>
