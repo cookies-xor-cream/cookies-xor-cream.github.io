@@ -1,55 +1,56 @@
 ---
 section: Amber
-displayTitle: "Birds Of A Feather: Postmortem"
-uriTitle: birds-of-a-feather-postmortem
+displayTitle: "Birds Of A Feather: Mise En Quoi"
+uriTitle: birds-of-a-feather-mise-en-quoi
 ---
 
-There was a bottle on the ground,
-That was shattered long before,
-And the splinters stuck around,
-Waiting for the gore.
+The blood, and crying,
+And a thousand things you can't recall,
+Are no excuse for you to stall,
+Give me the keys to the cabinet,
+I'll lock up your alcohol.
 
-There were three of them,
-And two of you, one of which partook,
-Because she was the only one,
-They wouldn't let off of the hook.
+I find your gaze in eyeless stares,
+That found flight as they had carried you,
+To stories above my newfound glare.
+"You know it that I couldn't care."
 
-They beat your ribcage in,
-They rolled you in the glass,
-The only pain you vocalised,
-was the sassy cawing of a casket-looking laugh.
+The difference in the downwards pull,
+From here and from the earth below,
+Is strong enough to extract your bones,
+However dense, however however hollow.
 
-And I stood there as I watched,
-I tried to reason it all out,
-Tried to figure out what in the fuck,
-The violence was about.
+I'm nightmareless, I'm flashback sans,
+I don't want to dig up the visions,
+Of your broken and your sanguine hands,
+I just want you to come and
+To gamble and to take a chance.
 
-"Remember from before"
-*"Don't speak for me,
-you're coughing blood,
-Kath? what is this all for?"*
+A chance for you,
+A chance for me,
+Let me talk you
+Off the window sill.
 
-But she didn't take a break,
-From the rib-pressed words,
-As she conferred,
-That would be finishing this verse:
-"Katherine just let me answer".
+And then we're through.
+"You know that I can't care"
+I don't know what more to do with you,
+You'd make the jump on a fucking dare.
 
-"Remember the parrot that I met,
-When I lost track of my old date,
-The pretty one, I caught within my net,
-Well her boyfriend wasn't calm"
+A bottle says you could,
+And if they could speak the
+Rest would that,
+That sorely you must do.
 
-"He was the protagonist to a beat-em-up,
-In which it looks like I got caught"
+I'm not looking for a fight,
+I'm not looking to speak in metre,
+I'm not looking to be forcing you
+To rhyme.
 
-The emergency room limp-walk,
-Was the most awkward one we've took,
-And neither of us talked,
-But we would trade and barter looks.
+Give me keys, it's come the time,
+I'll separate you from yourself,
+And when you're finally not spinning out,
+They'll be waiting on the lowest shelf.
 
-She did this way too much,
-And I'm happy this transpired,
-Her age limit of twenty-three,
-On this kind of shit was due to
-Have expired.
+And you'll be waiting on the ground,
+Not sound of mind but in every other way,
+We'll find you safe and sound.

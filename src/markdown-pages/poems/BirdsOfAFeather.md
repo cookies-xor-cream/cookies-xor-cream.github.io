@@ -4,19 +4,26 @@ displayTitle: "Birds Of A Feather: Prelude"
 uriTitle: birds-of-a-feather-prelude
 ---
 
+The last we saw of her that night,
+Was the cawing and the laughs,
+Of a cigarette-wielding parrot,
+trying to get into her pants
+
+---
+
 She was a parrot of her love,
 She was the reflection found inside,
 She was the sad truth that,
-she held a mirror sans the doves.
+she held a mirrors without her doves.
 
 She was echoes of of her tone,
 That reinforced what she thought,
 Further, and forevermore,
 A wooden house recast in stone.
 
-And the concrete grew its wings,
+And the concrete had to grow its wings,
 A tattered pair, but colourful,
-And light enough to catch
+And light enough to catch and scoop
 the air found underneath.
 
 She said that he was still:

@@ -10,7 +10,7 @@ She's a hollow shell of
 What she inherits at last.
 
 She's the lack of a battle,
-She's the backflow's reverse,
+She's the chorus reversed,
 She's the carapace of
 The finish to a quieter verse.
 
